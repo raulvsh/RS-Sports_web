@@ -1,90 +1,78 @@
 
-/*function load() {
-  //alert(carreras[0].titulo)
-  //alert(JSON.stringify(carreras))
-  
-  localStorage.mis_carreras =
-  localStorage.mis_carreras || JSON.stringify(carreras);
-
-  indexContr();
-}*/
-
-
+const categorias = ["Atletismo", "Ciclismo", "Mushing",];
 
 /*localStorage.mis_carreras =
   localStorage.mis_carreras || JSON.stringify(carreras);*/
-  /*localStorage.mis_carreras =
-  localStorage.mis_carreras || carreras;*/
+/*localStorage.mis_carreras =
+localStorage.mis_carreras || carreras;*/
 
-  //let carreras_local = JSON.stringify(carreras);
-  let carreras_local;
+//let carreras_local = JSON.stringify(carreras);
+let carreras_local;
+//let resultados_busqueda;
 
 // VISTAS
 const indexView = (carreras) => {
-  //alert(carreras)
 
   let i = 0;
   let view = "";
+  //Añadir botones reset y búsquedas
+  view += `<div class="actions">
+                <button class="reset">inicio</button>
+                <button class="searchDate" data-my-id="${2022}">buscar 2022</button>
+                <button class="searchDate" data-my-id="${2021}">buscar 2021</button>
+                <button class="searchDate" data-my-id="${2020}">buscar 2020</button>
+            </div>`;
 
+  view += `<div class="actions">
+            <!--<button class="reset" >inicio</button>-->
+            <button class="searchCat" data-my-id="${0}">buscar atletismo</button>
+            <button class="searchCat" data-my-id="${1}">buscar ciclismo</button>
+            <button class="searchCat" data-my-id="${2}">buscar mushing</button>
+          </div>`;
+
+  //view+=`<div class="grid">`          
   while (i < carreras.length) {
+
 
     //OBTENER AÑO, ÚTIL PARA HACER BÚSQUEDAS
     //let year = parseDate(carreras[i].fecha).getFullYear();
 
     view += `
-        <div class="movie">
+        <div class="movie" class=show data-my-id="${i}">
         
-           <div class="movie-img">
-           
+          <div class="movie-img">
                <img data-my-id="${i}" src="${carreras[i].miniatura}" onerror="this.src='files/placeholder.png'" class="show"/>
-           </div>
-           <div class="contenedor">
-            <div class="title">
-                <div class="show" data-my-id="${i}"  >
-                  ${carreras[i].titulo || "<em>Sin título</em>"}
-                </div>
-            </div>   
-
-
-            <div class="contentTitle">
-              <div>Fecha:</div>
-              <div>Hora: </div>
-              <div>Inscripciones: </div>
-              <div>Precio: </div>
-              <div>Distancia: </div>
-              <div>Organizador: </div>
-              <div>Página web: </div>
-              <div>Recorrido: </div>
+          </div>
+          <div class="title" >
+            <div class="show" data-my-id="${i}">
+            ${carreras[i].titulo || "<em>Sin título</em>"}
             </div>
-                
-            <div class="contentDescription">
-              <div>${formatDate(parseDate(carreras[i].fecha)) || "<em>Sin título</em>"}</div>
-              <div>${formatDate(parseDate(carreras[i].fecha)) || "<em>Sin título</em>"}</div>
-              <div>${formatDate(parseDate(carreras[i].fecha)) || "<em>Sin título</em>"}</div>
-              <div>${formatDate(parseDate(carreras[i].fecha)) || "<em>Sin título</em>"}</div>
-              <div>${formatDate(parseDate(carreras[i].fecha)) || "<em>Sin título</em>"}</div>
-              <div>${formatDate(parseDate(carreras[i].fecha)) || "<em>Sin título</em>"}</div>
-              <div>${formatDate(parseDate(carreras[i].fecha)) || "<em>Sin título</em>"}</div>
-              <div>${formatDate(parseDate(carreras[i].fecha)) || "<em>Sin título</em>"}</div>
+          </div>
+          <div class="subtitle">
+            <div class="show" data-my-id="${i}">
+            ${carreras[i].fecha || "<em>Sin título</em>"}
             </div>
-                
-            <div class="actions">`
+          </div>
+          `
 
-    for (let j = 0; j < carreras[i].clasificaciones.length; j++) {
+    /*for (let j = 0; j < carreras[i].clasificaciones.length; j++) {
       view += `<button><a href=${carreras[i].clasificaciones[j].archivo} target=_blank>${carreras[i].clasificaciones[j].titulo}</a></button> `;
     }
-    //Fin de clase actions, contenedor y movie
-    view += `</div></div></div>\n`;
-    i = i + 1;
-  }
+    //Fin de clase actions, contenedor y movie*/
+    //view += `</div></div></div>\n`;
+       
+    //Fin de clase movie
 
-  //Añadir botones reset y búsquedas
-  view += `<div class="actions">
-                <button class="reset" data-my-id="${i}">inicio</button>
-                <button class="search" data-my-id="${2022}">buscar 2022</button>
-                <button class="search" data-my-id="${2021}">buscar 2021</button>
-                <button class="search" data-my-id="${2020}">buscar 2020</button>
-            </div>`;
+    view += `</div>\n`;
+
+    i = i + 1;
+
+
+  }
+  //cierre grid
+  //view += `</div>\n`;
+
+
   return view;
 };
 
@@ -119,19 +107,53 @@ const indexView = (carreras) => {
 };*/
 
 const showView = (carrera) => {
-  return `
-     <p>
-     <h2>${carrera.titulo}</h2>
-     <!--<a href=${carrera.miniatura}>-->
-     <img id="miniaturaShow" src=${carrera.miniatura}></img>
-     <!--</a>-->
-     <h4>${carrera.fecha}</h4>
-     <h4>FINO MARICÓN</h4>
+  view = `
+  <div class="tituloDetalle">${carrera.titulo}</div>
+  <!--<a href=${carrera.miniatura}>-->
+  <img id="miniaturaShow" src=${carrera.miniatura}></img>
+  <!--</a>-->
+  <h4>${carrera.fecha}</h4>
+  <h4>${carrera.categoria}</h4>
+  <div class="contenedor">
+    <div class="contentTitle">
+             <div>Fecha:</div>
+             <div>Categoría:</div>
+             <div>Hora: </div>
+             <div>Inscripciones: </div>
+             <div>Precio: </div>
+             <div>Distancia: </div>
+             <div>Organizador: </div>
+             <div>Página web: </div>
+             <div>Recorrido: </div>
+    </div>
 
-     </p>
-     <div class="actions">
-        <button class="index">Volver</button>
-     </div>`;
+    <div class="contentDescription">
+      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div>${carrera.categoria || "<em>Sin título</em>"}</div>
+      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+    </div>
+  </div>
+  <div class="actions">`  
+
+  
+  for (let j = 0; j < carrera.clasificaciones.length; j++) {
+    view += `<button><a href=${carrera.clasificaciones[j].archivo} target=_blank>${carrera.clasificaciones[j].titulo}</a></button> `;
+  }
+
+  view+=
+  `</div>
+  <div class="actions">
+     <button class="index">Volver</button>
+  </div>`
+  //Fin de clase actions, contenedor 
+  view += `</div></div>\n`;
+  return view;
 };
 
 /*const newView = () => {
@@ -156,8 +178,9 @@ const showView = (carrera) => {
 const indexContr = () => {
   //let mis_carreras = JSON.parse(localStorage.mis_carreras);
   //let mis_carreras = carreras;
-  carreras_local = carreras;
 
+  //reset
+  carreras_local = carreras;
   document.getElementById("main").innerHTML = indexView(carreras_local);
 };
 
@@ -215,39 +238,47 @@ const showContr = (i) => {
 
 };*/
 
-const resetContr = () => {
+/*const resetContr = () => {
   //let mis_carreras = JSON.parse(localStorage.mis_carreras);
-  /*if (
+  //carreras_local = carreras;
+  if (
     confirm(
       `¿Está seguro de que desea resetear la lista de carreras?`
     )
-  ) {*/
-  carreras_local = carreras;
+  ) {
+  //carreras_local = carreras;
   //localStorage.mis_carreras = JSON.stringify(carreras_local);
   //}
   indexContr();
-};
+};*/
 
-const searchContr = (year) => {
-
-  // let mis_carreras = JSON.parse(localStorage.mis_carreras);
-  let mis_carreras = carreras;
-  //alert(mis_carreras)
+const searchDateContr = (year) => {
   let resultado = [];
-  //alert(resultado + " longitud: " + mis_carreras.length)
 
-  for (i = 0; i < mis_carreras.length; i++) {
-    if (parseDate(mis_carreras[i].fecha).getFullYear() == year) {
+  for (i = 0; i < carreras.length; i++) {
+    if (parseDate(carreras[i].fecha).getFullYear() == year) {
       //Encontrado
-      resultado.push(mis_carreras[i]);
+      resultado.push(carreras[i]);
     }
   }
-  //alert(JSON.stringify(resultado))
-  //localStorage.mis_carreras = JSON.stringify(resultado);
-  
-  carreras = resultado;
-  indexContr();
+
+  document.getElementById("main").innerHTML = indexView(resultado);
 }
+
+const searchCatContr = (cat) => {
+  let resultado = [];
+  for (i = 0; i < carreras.length; i++) {
+    // alert("i: " + i + " carrera: " + carreras[i].titulo + " categoria " + carreras[i].categoria)
+    if (carreras[i].categoria == categorias[cat]) {
+      //Encontrado
+      resultado.push(carreras[i]);
+    }
+  }
+  document.getElementById("main").innerHTML = indexView(resultado);
+}
+
+// Inicialización
+document.addEventListener("DOMContentLoaded", indexContr);
 
 
 
@@ -256,7 +287,7 @@ const matchEvent = (ev, sel) => ev.target.matches(sel);
 const myId = (ev) => Number(ev.target.dataset.myId);
 
 document.addEventListener("click", (ev) => {
-  if (matchEvent(ev, ".index")) indexContr();
+  if (matchEvent(ev, ".index")) indexContr(carreras);
   //else if (matchEvent(ev, ".edit")) editContr(myId(ev));
   //else if (matchEvent(ev, ".update")) updateContr(myId(ev));
   else if (matchEvent(ev, ".show")) showContr(myId(ev));
@@ -265,13 +296,14 @@ document.addEventListener("click", (ev) => {
   //else if (matchEvent(ev, ".new")) newContr();
   //else if (matchEvent(ev, ".create")) createContr();
   //else if (matchEvent(ev, ".delete")) deleteContr(myId(ev));
-  else if (matchEvent(ev, ".reset")) resetContr();
-  else if (matchEvent(ev, ".search")) searchContr(myId(ev));
+  else if (matchEvent(ev, ".reset")) indexContr();
+  else if (matchEvent(ev, ".searchDate")) searchDateContr(myId(ev));
+  else if (matchEvent(ev, ".searchCat")) searchCatContr(myId(ev));
+
 
 });
 
-// Inicialización
-document.addEventListener("DOMContentLoaded", indexContr);
+
 
 //Formateo de fechas
 const formatDate = (current_datetime) => {

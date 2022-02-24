@@ -1,8 +1,10 @@
+/*ATRIBUTOS GENERALES*/
 body {
-  --primary: #009EE2;
-  --secondary: #29b6f6;
+  
+  --primary: #01b7ff;
+  --secondary: #01b7ff;
   margin: 0px;
-  width: 800px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
@@ -12,13 +14,12 @@ body {
   font-family: sans-serif;
 }
 
-
 button {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   text-decoration: none;
   margin: 2px;
-  color: var(--primary);
+  /*color: var(--primary);*/
   background: white;
   border: 1px solid var(--primary);
   height: 28px;
@@ -27,6 +28,11 @@ button {
   cursor: pointer;
   transition: ease-in 0.2s all;
   padding: 0 8px 0 8px;
+  font-weight: bold;
+}
+button:hover {
+  background: var(--primary);
+  color: white;
 
 }
 
@@ -34,12 +40,12 @@ div#main {
   padding: 10px;
 }
 
-input {
+/*input {
   margin-bottom: 5px;
   margin-top: 2px;
   padding: 4px;
   font-size: 12px;
-}
+}*/
 
 h1 {
   background: var(--primary);
@@ -58,45 +64,55 @@ h2 {
   color: var(--primary);
 }
 
+a {
+  text-decoration: none;
+  color: black;
 
+}
+a:hover {
+  color: white;
+}
 
-
-/*div.movie {
-  display: grid;
-  width: auto;
-  padding: 10px;
-  box-shadow: 2px 2px 7px #ccc;
-  margin: 5px;
-  background-color: antiquewhite;
-}*/
-
-div.cabecera{
-  display: flex;
-  background-color: red;
+/*PÁGINA PRINCIPAL*/
+div.cabecera {
+  display: inline-block;
+  /*background-color: red;*/
   justify-content: center;
 
 }
 
 div.movie {
-  display: flex;
-  flex:1;
-  width: auto;
-  box-shadow: 2px 2px 7px #ccc;
+  display: inline-block;
+  /*flex-direction: column;
+  flex-wrap: wrap;*/
+  /*flex: 1;*/
+  width: 200px;
+  box-shadow: 2px 2px 7px grey;
   margin: 5px;
-  grid-gap: 10px;
-  /*background-color: antiquewhite;*/
+  /*grid-gap: 10px;*/
+  /*background-color: var(--primary);*/
   padding: 10px;
+  /*align-content: center;*/
+  /*background-color: #ccc;*/
+}
+div.movie:hover div.title {
+  transition: ease-in 0.2s all;
+  color: var(--primary);
 }
 
+
 div.movie div.movie-img {
-  grid-area: img;
+  /*grid-area: img;*/
+  
   width: 200px;
   height: auto;
   min-height: 200px;
   cursor: pointer;
 
- /* background-color: green;*/
+  /* background-color: green;*/
 }
+
+
 
 div.movie div.movie-img img {
   width: 100%;
@@ -104,105 +120,91 @@ div.movie div.movie-img img {
 
 }
 
-div.movie div.contenedor {
-
-  display: grid;
-  grid-template-areas: 
-  "title title title title"
-  "contentTitle contentDescription contentDescription contentDescription"
-  "contentTitle contentDescription contentDescription contentDescription"
-  "contentTitle contentDescription contentDescription contentDescription"
-  "contentTitle contentDescription contentDescription contentDescription"
-  "actions actions actions actions"
-  ;
-  flex: 1;
-  /*background-color: violet;*/
-  padding: 5px;
-
-
-
-}
-
 div.movie div.title {
-  grid-area: title;
-  text-align: end;
+  text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  background-color: #09598E;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: larger;
   cursor: pointer;
+  margin-top: 10px;
   
-  /*align-items: center;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  margin-top: auto;  
-  margin-bottom: auto;*/
-  padding: 15px;  
+
+  height: 65px;  
 }
 
-div.movie div.contentTitle {
-  padding: 15px;
+div.movie div.subtitle {
+  text-align: center;
+}
 
+
+/*PÁGINA DETALLE*/
+.tituloDetalle{
+  background: var(--primary);
+  color: white;
+  
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 15px 0;
+  padding: 15px;
+}
+
+
+#miniaturaShow {
+  /*width: 20em;*/
+  width: 200px;
+  height: auto;
+  min-height: 200px;
+}
+
+
+div.contenedor {
+  display: grid;
+  grid-template-areas:
+    "title title title title"
+    "contentTitle contentDescription contentDescription contentDescription"
+    "contentTitle contentDescription contentDescription contentDescription"
+    "contentTitle contentDescription contentDescription contentDescription"
+    "contentTitle contentDescription contentDescription contentDescription"
+    "actions actions actions actions";
+  /*padding: 5px;*/
+}
+
+div.contenedor div.contentTitle {
+  /*padding: 0 15px 15px 15px;*/
+  padding: auto;
   grid-area: contentTitle;
-  text-align: start;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  
   /*background-color: pink;*/
   font-weight: bold;
 }
 
-div.movie div.contentDescription {
+div.contenedor div.contentDescription {
   padding: 15px;
   grid-area: contentDescription;
-  text-align: start;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  justify-content: center;
-  justify-items: center;
-  justify-self: center;
-  display: block;
-  flex:1;
-  align-items: center;
+  
+  
   /*background-color: yellow;*/
 }
 
 
 div.actions {
   grid-area: actions;
-  margin-top: 10px;
+  padding-top: 10px;
 
-  /*background-color: bisque;*/
-
+  align-self: center;
+  align-items: center;
+  align-content: center;
 }
 
-button:hover {
-  background: var(--primary);
-  color:white;
 
-}
 
-div.field {
+/*div.field {
   color: var(--primary);
   text-transform: uppercase;
   font-size: 12px;
-}
+}*/
 
-#miniaturaShow {
-  width: 20em;
-}
 
-a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
 
-}
-a:hover{
-  color:white;
-}

@@ -3,8 +3,9 @@ carreras = [
 
   //INICIO CARRERA
   {
-    titulo: "carrera de prueba",
+    titulo: "Carrera de prueba ciclismo 22",
     fecha: "20-02-2022",
+    categoria: "Ciclismo",
     miniatura: "https://cdn.mos.cms.futurecdn.net/h2G46PnJDjxCLUFmUx8Sym.jpg",
     clasificaciones:
       [
@@ -41,6 +42,7 @@ carreras = [
   {
     titulo: "VII Maratón de Montaña OGRO 2022",
     fecha: "20-02-2022",
+    categoria: "Atletismo",
     miniatura: "files/cartel_Ogro_Maraton_2022.jpg",
     clasificaciones:
       [
@@ -65,6 +67,7 @@ carreras = [
   {
     titulo: "Copa de España Mushing Villamanta",
     fecha: "13-02-2022",
+    categoria: "Mushing",
     miniatura: "files/cartelvillamanta2022.jpg",
     clasificaciones:
       [
@@ -85,6 +88,7 @@ carreras = [
   {
     titulo: "I Mushing Villa de Lerma 2021",
     fecha: "18-12-2021",
+    categoria: "Mushing",
     miniatura: "files/cartelmushinglerma2021.jpg",
     clasificaciones:
       [
@@ -109,6 +113,7 @@ carreras = [
   {
     titulo: "Desafío de Helios 2020",
     fecha: "25-01-2020",
+    categoria: "Atletismo",
     miniatura: "files/carteldesafiohelios2020.jpg",
     clasificaciones:
       [
