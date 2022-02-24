@@ -13,9 +13,16 @@
 
 /*localStorage.mis_carreras =
   localStorage.mis_carreras || JSON.stringify(carreras);*/
+  /*localStorage.mis_carreras =
+  localStorage.mis_carreras || carreras;*/
+
+  //let carreras_local = JSON.stringify(carreras);
+  let carreras_local;
 
 // VISTAS
 const indexView = (carreras) => {
+  //alert(carreras)
+
   let i = 0;
   let view = "";
 
@@ -149,8 +156,9 @@ const showView = (carrera) => {
 const indexContr = () => {
   //let mis_carreras = JSON.parse(localStorage.mis_carreras);
   //let mis_carreras = carreras;
+  carreras_local = carreras;
 
-  document.getElementById("main").innerHTML = indexView(carreras);
+  document.getElementById("main").innerHTML = indexView(carreras_local);
 };
 
 const showContr = (i) => {
@@ -214,8 +222,8 @@ const resetContr = () => {
       `¿Está seguro de que desea resetear la lista de carreras?`
     )
   ) {*/
-  mis_carreras = carreras;
-  localStorage.mis_carreras = JSON.stringify(mis_carreras);
+  carreras_local = carreras;
+  //localStorage.mis_carreras = JSON.stringify(carreras_local);
   //}
   indexContr();
 };
