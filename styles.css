@@ -1,0 +1,208 @@
+body {
+  --primary: #009EE2;
+  --secondary: #29b6f6;
+  margin: 0px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+
+button {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: none;
+  margin: 2px;
+  color: var(--primary);
+  background: white;
+  border: 1px solid var(--primary);
+  height: 28px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: ease-in 0.2s all;
+  padding: 0 8px 0 8px;
+
+}
+
+div#main {
+  padding: 10px;
+}
+
+input {
+  margin-bottom: 5px;
+  margin-top: 2px;
+  padding: 4px;
+  font-size: 12px;
+}
+
+h1 {
+  background: var(--primary);
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0px;
+  padding: 15px;
+}
+
+h2 {
+  margin-block-start: 0px;
+  margin-block-end: 10px;
+  font-size: 20px;
+  color: var(--primary);
+}
+
+
+
+
+/*div.movie {
+  display: grid;
+  width: auto;
+  padding: 10px;
+  box-shadow: 2px 2px 7px #ccc;
+  margin: 5px;
+  background-color: antiquewhite;
+}*/
+
+div.cabecera{
+  display: flex;
+  background-color: red;
+  justify-content: center;
+
+}
+
+div.movie {
+  display: flex;
+  flex:1;
+  width: auto;
+  box-shadow: 2px 2px 7px #ccc;
+  margin: 5px;
+  grid-gap: 10px;
+  /*background-color: antiquewhite;*/
+  padding: 10px;
+}
+
+div.movie div.movie-img {
+  grid-area: img;
+  width: 200px;
+  height: auto;
+  min-height: 200px;
+  cursor: pointer;
+
+ /* background-color: green;*/
+}
+
+div.movie div.movie-img img {
+  width: 100%;
+  height: 16em;
+
+}
+
+div.movie div.contenedor {
+
+  display: grid;
+  grid-template-areas: 
+  "title title title title"
+  "contentTitle contentDescription contentDescription contentDescription"
+  "contentTitle contentDescription contentDescription contentDescription"
+  "contentTitle contentDescription contentDescription contentDescription"
+  "contentTitle contentDescription contentDescription contentDescription"
+  "actions actions actions actions"
+  ;
+  flex: 1;
+  /*background-color: violet;*/
+  padding: 5px;
+
+
+
+}
+
+div.movie div.title {
+  grid-area: title;
+  text-align: end;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #09598E;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+  
+  /*align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  margin-top: auto;  
+  margin-bottom: auto;*/
+  padding: 15px;  
+}
+
+div.movie div.contentTitle {
+  padding: 15px;
+
+  grid-area: contentTitle;
+  text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /*background-color: pink;*/
+  font-weight: bold;
+}
+
+div.movie div.contentDescription {
+  padding: 15px;
+  grid-area: contentDescription;
+  text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  display: block;
+  flex:1;
+  align-items: center;
+  /*background-color: yellow;*/
+}
+
+
+div.actions {
+  grid-area: actions;
+  margin-top: 10px;
+
+  /*background-color: bisque;*/
+
+}
+
+button:hover {
+  background: var(--primary);
+  color:white;
+
+}
+
+div.field {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+#miniaturaShow {
+  width: 20em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+
+}
+a:hover{
+  color:white;
+}
