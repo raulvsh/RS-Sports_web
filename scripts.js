@@ -16,7 +16,7 @@ const indexView = (carreras) => {
   let i = 0;
   let view = "";
   //Añadir botones reset y búsquedas
-  view += `<div class="actions">
+  /*view += `<div class="actions">
                 <button class="reset">inicio</button>
                 <button class="searchDate" data-my-id="${2022}">buscar 2022</button>
                 <button class="searchDate" data-my-id="${2021}">buscar 2021</button>
@@ -28,14 +28,13 @@ const indexView = (carreras) => {
             <button class="searchCat" data-my-id="${0}">buscar atletismo</button>
             <button class="searchCat" data-my-id="${1}">buscar ciclismo</button>
             <button class="searchCat" data-my-id="${2}">buscar mushing</button>
-          </div>`;
+          </div>`;*/
 
   //view+=`<div class="grid">`          
   while (i < carreras.length) {
 
 
-    //OBTENER AÑO, ÚTIL PARA HACER BÚSQUEDAS
-    //let year = parseDate(carreras[i].fecha).getFullYear();
+
 
     view += `
         <div class="movie" class=show data-my-id="${i}">
@@ -109,37 +108,33 @@ const indexView = (carreras) => {
 const showView = (carrera) => {
   view = `
   <div class="tituloDetalle">${carrera.titulo}</div>
-  <!--<a href=${carrera.miniatura}>-->
+  <div class="contenedorDetalle">
   <img id="miniaturaShow" src=${carrera.miniatura}></img>
-  <!--</a>-->
-  <h4>${carrera.fecha}</h4>
-  <h4>${carrera.categoria}</h4>
-  <div class="contenedor">
+
     <div class="contentTitle">
-             <div>Fecha:</div>
-             <div>Categoría:</div>
-             <div>Hora: </div>
-             <div>Inscripciones: </div>
-             <div>Precio: </div>
-             <div>Distancia: </div>
-             <div>Organizador: </div>
-             <div>Página web: </div>
-             <div>Recorrido: </div>
+             <div class="elementoTitulo">Fecha:</div>
+             <div class="elementoTitulo">Categoría:</div>
+             <div class="elementoTitulo">Hora: </div>
+             <div class="elementoTitulo">Inscripciones: </div>
+             <div class="elementoTitulo">Precio: </div>
+             <div class="elementoTitulo">Distancia: </div>
+             <div class="elementoTitulo">Organizador: </div>
+             <div class="elementoTitulo">Página web: </div>
+             <div class="elementoTitulo">Recorrido: </div>
     </div>
 
     <div class="contentDescription">
-      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
-      <div>${carrera.categoria || "<em>Sin título</em>"}</div>
-      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
-      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
-      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
-      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
-      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
-      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
-      <div>${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div class="elementoDescription">${carrera.categoria || "<em>Sin título</em>"}</div>
+      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
     </div>
-  </div>
-  <div class="actions">`  
+    <div class="actions">`  
 
   
   for (let j = 0; j < carrera.clasificaciones.length; j++) {
@@ -147,12 +142,12 @@ const showView = (carrera) => {
   }
 
   view+=
-  `</div>
+  `</div></div>
   <div class="actions">
      <button class="index">Volver</button>
   </div>`
   //Fin de clase actions, contenedor 
-  view += `</div></div>\n`;
+  //view += `</div></div>\n`;
   return view;
 };
 
@@ -173,6 +168,38 @@ const showView = (carrera) => {
   return '<h2>resultado búsqueda</h2>'
 
 }*/
+
+const menuView = ()=>{
+  view="";
+
+  view+=`<ul>
+            <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
+              <p>Año</p>
+              <div id="subseccion1">
+                <button class="searchDate" data-my-id="${2022}">2022</button>
+                <button class="searchDate" data-my-id="${2021}">2021</button>
+                <button class="searchDate" data-my-id="${2020}">2020</button>
+                <button class="searchDate" data-my-id="${2019}">2019</button>
+                <button class="searchDate" data-my-id="${2018}">2018</button>
+                <button class="searchDate" data-my-id="${2017}">2017</button>
+                <button class="searchDate" data-my-id="${2016}">2016</button>
+                <button class="searchDate" data-my-id="${2015}">2015</button>
+ 
+              </div>
+            </li>
+            <li id="seccion2"  onmouseover="ver(2)" onmouseout="ocultar(2)">
+              <p>Categoría</p>
+              <div id="subseccion2">
+              <button class="searchCat" data-my-id="${0}">atletismo</button>
+              <button class="searchCat" data-my-id="${1}">ciclismo</button>
+              <button class="searchCat" data-my-id="${2}">mushing</button>
+              </div>			
+            </li>
+            
+          </ul>`
+
+  return view;
+}
 
 // CONTROLADORES
 const indexContr = () => {
@@ -277,8 +304,16 @@ const searchCatContr = (cat) => {
   document.getElementById("main").innerHTML = indexView(resultado);
 }
 
+const menuContr = ()=> {
+
+  document.getElementById("navegador").innerHTML = menuView();
+
+}
+
 // Inicialización
 document.addEventListener("DOMContentLoaded", indexContr);
+document.addEventListener("DOMContentLoaded", menuContr);
+
 
 
 
@@ -317,3 +352,13 @@ function parseDate(str) {
   return (m) ? new Date(m[3], m[2] - 1, m[1]) : null;
 }
 
+//OBTENER AÑO, ÚTIL PARA HACER BÚSQUEDAS
+//let year = parseDate(carreras[i].fecha).getFullYear();
+
+//Funciones menú desplegable
+function ver(n) {
+  document.getElementById("subseccion"+n).style.display="block"
+  }
+function ocultar(n) {
+  document.getElementById("subseccion"+n).style.display="none"
+  }
