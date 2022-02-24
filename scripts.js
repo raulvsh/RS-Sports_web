@@ -173,7 +173,11 @@ const menuView = ()=>{
   view="";
 
   view+=`<ul>
-            <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
+            <li class="reset">
+              <p class="reset">Inicio</p>
+            </li>
+
+            <li onmouseover="ver(1)" onmouseout="ocultar(1)">
               <p>Año</p>
               <div id="subseccion1">
                 <button class="searchDate" data-my-id="${2022}">2022</button>
@@ -187,7 +191,7 @@ const menuView = ()=>{
  
               </div>
             </li>
-            <li id="seccion2"  onmouseover="ver(2)" onmouseout="ocultar(2)">
+            <li onmouseover="ver(2)" onmouseout="ocultar(2)">
               <p>Categoría</p>
               <div id="subseccion2">
               <button class="searchCat" data-my-id="${0}">atletismo</button>

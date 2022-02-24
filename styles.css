@@ -1,6 +1,6 @@
 /*ATRIBUTOS GENERALES*/
 body {
-  
+
   --primary: #01b7ff;
   --secondary: #01b7ff;
   margin: 0px;
@@ -29,7 +29,9 @@ button {
   transition: ease-in 0.2s all;
   padding: 0 8px 0 8px;
   font-weight: bold;
+  min-width: 150px;
 }
+
 button:hover {
   background: var(--primary);
   color: white;
@@ -69,6 +71,7 @@ a {
   color: black;
 
 }
+
 a:hover {
   color: white;
 }
@@ -95,6 +98,7 @@ div.movie {
   /*align-content: center;*/
   /*background-color: #ccc;*/
 }
+
 div.movie:hover div.title {
   transition: ease-in 0.2s all;
   color: var(--primary);
@@ -103,7 +107,7 @@ div.movie:hover div.title {
 
 div.movie div.movie-img {
   /*grid-area: img;*/
-  
+
   width: 200px;
   height: auto;
   min-height: 200px;
@@ -129,9 +133,9 @@ div.movie div.title {
   font-size: larger;
   cursor: pointer;
   margin-top: 10px;
-  
 
-  height: 65px;  
+
+  height: 65px;
 }
 
 div.movie div.subtitle {
@@ -140,26 +144,21 @@ div.movie div.subtitle {
 
 
 /*PÁGINA DETALLE*/
-.tituloDetalle{
+.tituloDetalle {
   background: var(--primary);
   color: white;
-  
+
   text-transform: uppercase;
   font-size: 20px;
   margin: 15px 0;
   padding: 15px;
 }
 
+.contenedorDetalle {
+  box-shadow: 2px 2px 7px grey;
 
-#miniaturaShow {
-  /*width: 20em;*/
-  width: 200px;
-  height: auto;
-  min-height: 200px;
-}
+  /*background-color: pink;*/
 
-
-div.contenedor {
   display: grid;
   grid-template-areas:
     "title title title title"
@@ -168,34 +167,66 @@ div.contenedor {
     "contentTitle contentDescription contentDescription contentDescription"
     "contentTitle contentDescription contentDescription contentDescription"
     "actions actions actions actions";
-  /*padding: 5px;*/
 }
+
+
+
+#miniaturaShow {
+  /*width: 20em;*/
+  width: 200px;
+  height: auto;
+  min-height: 200px;
+  padding: 10px;
+}
+
+
+/*div.contenedor {
+  display: grid;
+  background-color: red;
+  grid-template-areas:
+    "title title title title"
+    "contentTitle contentDescription contentDescription contentDescription"
+    "contentTitle contentDescription contentDescription contentDescription"
+    "contentTitle contentDescription contentDescription contentDescription"
+    "contentTitle contentDescription contentDescription contentDescription"
+    "actions actions actions actions";
+  /*padding: 5px;
+}*/
 
 div.contenedor div.contentTitle {
   /*padding: 0 15px 15px 15px;*/
-  padding: auto;
+  padding: 15px 50px;
   grid-area: contentTitle;
-  
+
   /*background-color: pink;*/
   font-weight: bold;
+
+}
+
+div.elementoTitulo {
+  padding: 7px;
+}
+
+div.elementoDescription {
+  padding: 7px;
 }
 
 div.contenedor div.contentDescription {
   padding: 15px;
   grid-area: contentDescription;
-  
-  
+
+
   /*background-color: yellow;*/
 }
 
 
 div.actions {
   grid-area: actions;
-  padding-top: 10px;
+  padding: 10px;
 
-  align-self: center;
-  align-items: center;
-  align-content: center;
+
+  /*margin-left: auto;
+  margin-right: auto;*/
 }
 
 
@@ -207,4 +238,72 @@ div.actions {
 }*/
 
 
+/*MENÚS DESPLEGABLES*/
 
+#navegador {
+  /*background-color: var(--primary);
+  padding: 0px 0 0px 0;
+  margin: 10px;*/
+  /*padding: 0.5em;*/
+}
+
+#navegador li {
+  /*margin: 0px 5px;*/
+  /*background-color: #9933cc;*/
+  /*width: 12%;*/
+  min-width: 150px;
+  
+
+  /*list-style-type: none;*/
+  position: relative;
+
+  /*-webkit-font-smoothing: antialiased;*/
+  display: inline-block;
+  /*text-decoration: none;*/
+  /*color: var(--primary);*/
+  background: white;
+  border: 1px solid var(--primary);
+  height: 28px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  /*transition: ease-in 0.2s all;
+  padding: 0 8px 0 8px;*/
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  padding: 0 0 14px;
+  margin: 2px;
+
+  
+}
+#navegador li:hover, #navegador li:active {
+  color: white;
+  text-decoration: none;
+  background-color: var(--primary);
+}
+
+#subseccion1, #subseccion2 {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  /*background-color: #41338b;*/
+  /*font: normal 0.8em arial;*/
+  padding: 0.2em 0.5em;
+  display: none;
+}
+
+/*#navegador li:hover {
+  background-color: #990033;
+}*/
+
+/*#navegador li a:link, #navegador li a:visited {
+  /*color: #feffe4;
+  /*text-decoration: none;
+}*/
+
+
+
+.borrar {
+  clear: both;
+}
