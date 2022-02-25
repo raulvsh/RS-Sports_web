@@ -34,7 +34,7 @@ proximos = [
 
   //INICIO CARRERA
   {
-    titulo: "VII Maratón de Montaña OGRO 2022",
+    titulo: "proximo evento VII Maratón de Montaña OGRO 2022",
     fecha: "20-02-2022",
     categoria: "Atletismo",
     miniatura: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcorprensa-la-prensa-prod.cdn.arcpublishing.com%2Fresizer%2FqjhblvDNdyntbZC9p50HcQbfc1I%3D%2Ffit-in%2F1000x1000%2Fsmart%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fcorprensa%2FRICEP7PGL5AC7BSRVXCEMEWTAM.jpeg&f=1&nofb=1",
@@ -59,10 +59,10 @@ proximos = [
 
   //INICIO CARRERA
   {
-    titulo: "Copa de España Mushing Villamanta",
+    titulo: "proximo Copa de España Mushing Villamanta",
     fecha: "13-02-2022",
     categoria: "Mushing",
-    miniatura: "img/2022/cartelvillamanta2022.jpg",
+    miniatura: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthorcanes.es%2Fwp-content%2Fuploads%2F2020%2F04%2FIMG_20200417_172446_769.jpg&f=1&nofb=1",
     clasificaciones:
       [
         {
@@ -80,10 +80,10 @@ proximos = [
 
   //INICIO CARRERA
   {
-    titulo: "I Mushing Villa de Lerma 2021",
+    titulo: "proximo I Mushing Villa de Lerma 2021",
     fecha: "18-12-2021",
     categoria: "Mushing",
-    miniatura: "img/2021/cartelmushinglerma2021.jpg",
+    miniatura: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.nordicexperience.co.uk%2Fsites%2Fnordicexperience.co.uk%2Ffiles%2Fimages%2Ftour%2Fiso-syote_hundeslaede_033.jpg%3F1347539179&f=1&nofb=1",
     clasificaciones:
       [
         {
@@ -108,7 +108,7 @@ proximos = [
     titulo: "Desafío de Helios 2020",
     fecha: "25-01-2020",
     categoria: "Atletismo",
-    miniatura: "img/2020/carteldesafiohelios2020.jpg",
+    miniatura: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flaservet.es%2Fwp-content%2Fuploads%2F2015%2F09%2Fmushing-300x200.jpg&f=1&nofb=1",
     clasificaciones:
       [
         {

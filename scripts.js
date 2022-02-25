@@ -8,10 +8,10 @@ localStorage.mis_carreras || carreras;*/
 
 //let carreras_local = JSON.stringify(carreras);
 let carreras_local;
-let resultados_busqueda ;
+let resultados_busqueda;
 
 // VISTAS
-const indexView = (carreras) => {
+const indexView = (carreras, seccion) => {
 
   let i = 0;
   let view = "";
@@ -30,38 +30,44 @@ const indexView = (carreras) => {
             <button class="searchCat" data-my-id="${2}">buscar mushing</button>
           </div>`;*/
 
-  //view+=`<div class="grid">`          
+  //view+=`<div class="grid">`        
+
+  //discriminar tipo para hacer el show individual
+  //let show;
+  /*if(seccion=="servicios"){
+    show="showServicios";
+  }else{
+    show="show"
+  }*/
+
+  //Discrimino entre servicios y el resto, si hubiese que hacer más categorías separar en if / else if
+  let show = seccion == "servicios" ? "showServicios" : "show";
+  //alert("Show " + show)
+
   while (i < carreras.length) {
+
     view += `
-        <div class="movie" class=show data-my-id="${i}">
+        <div class="movie" class="${show}" data-my-id="${i}">
         
           <div class="movie-img">
-               <img data-my-id="${i}" src="${carreras[i].miniatura}" onerror="this.src='assets/placeholder.png'" class="show"/>
+               <img data-my-id="${i}" src="${carreras[i].miniatura}" onerror="this.src='assets/placeholder.png'" class="${show}"/>
           </div>
           <div class="title" >
-            <div class="show" data-my-id="${i}">
+            <div class="${show}" data-my-id="${i}">
             ${carreras[i].titulo || "<em>Sin título</em>"}
             </div>
           </div>
           <div class="subtitle">
-            <div class="show" data-my-id="${i}">
+            <div class="${show}" data-my-id="${i}">
             ${carreras[i].fecha || "<em>Sin título</em>"}
             </div>
           </div>
+          </div>\n
           `
 
-    /*for (let j = 0; j < carreras[i].clasificaciones.length; j++) {
-      view += `<button><a href=${carreras[i].clasificaciones[j].archivo} target=_blank>${carreras[i].clasificaciones[j].titulo}</a></button> `;
-    }
-    //Fin de clase actions, contenedor y movie*/
-    //view += `</div></div></div>\n`;
-
-    //Fin de clase movie
-    view += `</div>\n`;
     i = i + 1;
   }
-  //cierre grid
-  //view += `</div>\n`;
+
   return view;
 };
 
@@ -134,10 +140,42 @@ const showView = (carrera) => {
   }
 
   view +=
-    `</div></div>
-  <div class="actions">
+    `</div></div>`
+  /*view+=`<div class="actions">
      <button class="index">Volver</button>
+  </div>`*/
+  //Fin de clase actions, contenedor 
+  //view += `</div></div>\n`;
+  return view;
+};
+
+
+const showServiciosView = (carrera) => {
+  view = `
+  <div class="tituloDetalle">${carrera.titulo}</div>
+  <div class="contenedorDetalleServicios">
+  <img id="miniaturaShow" src=${carrera.miniatura}></img>
+  <div class="contentTitle">
+
+    <h2>Descripcion 1</h2>
+
+    <h2>Descripcion 2</h2>
+    <p></p>
+    <p>Introducir descripción en campo de servicios.js</p>
   </div>`
+    //view+=`<div class="actions">`
+
+
+  /*for (let j = 0; j < carrera.clasificaciones.length; j++) {
+    view += `<a href=${carrera.clasificaciones[j].archivo} target=_blank><button>${carrera.clasificaciones[j].titulo}</button></a> `;
+  }*/
+  
+  view +=`</div>`
+
+ // view +=`</div></div></div>`
+  /*view+=`<div class="actions">
+     <button class="index">Volver</button>
+  </div>`*/
   //Fin de clase actions, contenedor 
   //view += `</div></div>\n`;
   return view;
@@ -166,11 +204,14 @@ const menuView = () => {
 
   view += `<ul>
             <li class="proximos">
-              <p class="proximos">Inicio</p>
+              <p class="proximos">inscripciones</p>
             </li>
 
+            <li class="servicios">
+            <p class="servicios">servicios</p>
+            </li>
             <li class="reset">
-              <p class="reset">Inicio</p>
+              <p class="reset">clasificaciones</p>
             </li>
 
             <li onmouseover="ver(1)" onmouseout="ocultar(1)">
@@ -195,6 +236,9 @@ const menuView = () => {
               <button class="searchCat" data-my-id="${2}">mushing</button>
               </div>			
             </li>
+            <li class="contacto">
+            <p class="contacto">contacto</p>
+          </li>
             
           </ul>`
 
@@ -217,19 +261,38 @@ const proximosContr = () => {
   //let mis_carreras = carreras;
 
   //reset
-  carreras_local = proximos;
+  resultados_busqueda = proximos;
   //document.getElementById("main").innerHTML = indexView(carreras_local);
-  resetContr(carreras_local);
+  document.getElementById("main").innerHTML = indexView(proximos, "proximos");
+};
+
+const serviciosContr = () => {
+  //let mis_carreras = JSON.parse(localStorage.mis_carreras);
+  //let mis_carreras = carreras;
+
+  //reset
+  //carreras_local = servicios;
+  //document.getElementById("main").innerHTML = indexView(carreras_local);
+  resultados_busqueda = servicios;
+
+
+  document.getElementById("main").innerHTML = indexView(servicios, "servicios");
 };
 
 const showContr = (i) => {
   // let carrera = JSON.parse(localStorage.mis_carreras)[i];
-  //discriminar entre resultados busqueda y carreras total
   //let carrera = carreras[i];
   let carrera = resultados_busqueda[i];
-  //alert(JSON.stringify(carrera))
 
   document.getElementById("main").innerHTML = showView(carrera);
+};
+
+const showServiciosContr = (i) => {
+  // let carrera = JSON.parse(localStorage.mis_carreras)[i];
+  //let carrera = carreras[i];
+  let carrera = resultados_busqueda[i];
+
+  document.getElementById("main").innerHTML = showServiciosView(carrera);
 };
 
 /*const newContr = () => {
@@ -292,7 +355,7 @@ const resetContr = (carreras) => {
   //}
   resultados_busqueda = carreras;
 
-  document.getElementById("main").innerHTML = indexView(resultados_busqueda);
+  document.getElementById("main").innerHTML = indexView(resultados_busqueda, "clasificaciones");
   //indexContr(resultados_busqueda);
 };
 
@@ -309,20 +372,19 @@ const searchDateContr = (year) => {
   }
   resultados_busqueda = resultado;
 
-  document.getElementById("main").innerHTML = indexView(resultado);
+  document.getElementById("main").innerHTML = indexView(resultado, "clasifDate");
 }
 
 const searchCatContr = (cat) => {
   let resultado = [];
   for (i = 0; i < carreras.length; i++) {
-    // alert("i: " + i + " carrera: " + carreras[i].titulo + " categoria " + carreras[i].categoria)
     if (carreras[i].categoria == categorias[cat]) {
       //Encontrado
       resultado.push(carreras[i]);
     }
   }
   resultados_busqueda = resultado;
-  document.getElementById("main").innerHTML = indexView(resultado);
+  document.getElementById("main").innerHTML = indexView(resultado, "clasifCat");
 }
 
 const menuContr = () => {
@@ -332,7 +394,7 @@ const menuContr = () => {
 }
 
 // Inicialización
-document.addEventListener("DOMContentLoaded", indexContr);
+document.addEventListener("DOMContentLoaded", proximosContr);
 document.addEventListener("DOMContentLoaded", menuContr);
 
 
@@ -346,9 +408,13 @@ document.addEventListener("click", (ev) => {
   //Añadir nueva clase de boton para las de inicio (próximos)
   if (matchEvent(ev, ".index")) indexContr();
   if (matchEvent(ev, ".proximos")) proximosContr();
+  if (matchEvent(ev, ".servicios")) serviciosContr();
+
   //else if (matchEvent(ev, ".edit")) editContr(myId(ev));
   //else if (matchEvent(ev, ".update")) updateContr(myId(ev));
   else if (matchEvent(ev, ".show")) showContr(myId(ev));
+  else if (matchEvent(ev, ".showServicios")) showServiciosContr(myId(ev));
+
   //else if (matchEvent(ev, ".title")) showContr(myId(ev));
 
   //else if (matchEvent(ev, ".new")) newContr();

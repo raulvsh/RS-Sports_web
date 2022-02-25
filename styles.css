@@ -162,12 +162,29 @@ div.movie div.subtitle {
 
   display: grid;
   grid-template-areas:
-    "title title title title"
+    /*"title title title title"*/
     "contentTitle contentDescription contentDescription contentDescription"
     "contentTitle contentDescription contentDescription contentDescription"
     "contentTitle contentDescription contentDescription contentDescription"
     "contentTitle contentDescription contentDescription contentDescription"
     "actions actions actions actions";
+}
+
+.contenedorDetalleServicios{
+  box-shadow: 2px 2px 7px grey;
+
+  /*background-color: pink;*/
+
+  display: grid;
+  grid-template-areas:
+    /*"title title title title"*/
+    "contentTitle contentDescription contentDescription contentDescription"
+    "contentTitle contentDescription contentDescription contentDescription"
+    "contentTitle contentDescription contentDescription contentDescription"
+    "contentTitle contentDescription contentDescription contentDescription"
+    "actions actions actions actions";
+
+
 }
 
 
@@ -247,7 +264,10 @@ div.actions {
   margin: 10px;
   /*padding: 0.5em;
 }*/
-
+#navegador ul{
+  padding: 0;
+  margin-left: 12px;
+}
 #navegador li {
   /*margin: 0px 5px;*/
   /*background-color: #9933cc;*/
