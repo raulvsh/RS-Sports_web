@@ -8,7 +8,7 @@ localStorage.mis_carreras || carreras;*/
 
 //let carreras_local = JSON.stringify(carreras);
 let carreras_local;
-//let resultados_busqueda;
+let resultados_busqueda ;
 
 // VISTAS
 const indexView = (carreras) => {
@@ -32,15 +32,11 @@ const indexView = (carreras) => {
 
   //view+=`<div class="grid">`          
   while (i < carreras.length) {
-
-
-
-
     view += `
         <div class="movie" class=show data-my-id="${i}">
         
           <div class="movie-img">
-               <img data-my-id="${i}" src="${carreras[i].miniatura}" onerror="this.src='files/placeholder.png'" class="show"/>
+               <img data-my-id="${i}" src="${carreras[i].miniatura}" onerror="this.src='assets/placeholder.png'" class="show"/>
           </div>
           <div class="title" >
             <div class="show" data-my-id="${i}">
@@ -59,19 +55,13 @@ const indexView = (carreras) => {
     }
     //Fin de clase actions, contenedor y movie*/
     //view += `</div></div></div>\n`;
-       
+
     //Fin de clase movie
-
     view += `</div>\n`;
-
     i = i + 1;
-
-
   }
   //cierre grid
   //view += `</div>\n`;
-
-
   return view;
 };
 
@@ -134,15 +124,17 @@ const showView = (carrera) => {
       <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
       <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
     </div>
-    <div class="actions">`  
+    <div class="actions">`
 
-  
+
   for (let j = 0; j < carrera.clasificaciones.length; j++) {
-    view += `<button><a href=${carrera.clasificaciones[j].archivo} target=_blank>${carrera.clasificaciones[j].titulo}</a></button> `;
+    view += `<a href=${carrera.clasificaciones[j].archivo} target=_blank><button>${carrera.clasificaciones[j].titulo}</button></a> `;
+    //view += `<button href=${carrera.clasificaciones[j].archivo} target=_blank>${carrera.clasificaciones[j].titulo}</button> `;
+
   }
 
-  view+=
-  `</div></div>
+  view +=
+    `</div></div>
   <div class="actions">
      <button class="index">Volver</button>
   </div>`
@@ -169,10 +161,14 @@ const showView = (carrera) => {
 
 }*/
 
-const menuView = ()=>{
-  view="";
+const menuView = () => {
+  view = "";
 
-  view+=`<ul>
+  view += `<ul>
+            <li class="proximos">
+              <p class="proximos">Inicio</p>
+            </li>
+
             <li class="reset">
               <p class="reset">Inicio</p>
             </li>
@@ -212,12 +208,26 @@ const indexContr = () => {
 
   //reset
   carreras_local = carreras;
-  document.getElementById("main").innerHTML = indexView(carreras_local);
+  //document.getElementById("main").innerHTML = indexView(carreras_local);
+  resetContr(carreras_local);
+};
+
+const proximosContr = () => {
+  //let mis_carreras = JSON.parse(localStorage.mis_carreras);
+  //let mis_carreras = carreras;
+
+  //reset
+  carreras_local = proximos;
+  //document.getElementById("main").innerHTML = indexView(carreras_local);
+  resetContr(carreras_local);
 };
 
 const showContr = (i) => {
   // let carrera = JSON.parse(localStorage.mis_carreras)[i];
-  let carrera = carreras[i];
+  //discriminar entre resultados busqueda y carreras total
+  //let carrera = carreras[i];
+  let carrera = resultados_busqueda[i];
+  //alert(JSON.stringify(carrera))
 
   document.getElementById("main").innerHTML = showView(carrera);
 };
@@ -269,19 +279,24 @@ const showContr = (i) => {
 
 };*/
 
-/*const resetContr = () => {
+const resetContr = (carreras) => {
   //let mis_carreras = JSON.parse(localStorage.mis_carreras);
   //carreras_local = carreras;
-  if (
+  /*if (
     confirm(
       `¿Está seguro de que desea resetear la lista de carreras?`
     )
-  ) {
+  ) {*/
   //carreras_local = carreras;
   //localStorage.mis_carreras = JSON.stringify(carreras_local);
   //}
-  indexContr();
-};*/
+  resultados_busqueda = carreras;
+
+  document.getElementById("main").innerHTML = indexView(resultados_busqueda);
+  //indexContr(resultados_busqueda);
+};
+
+
 
 const searchDateContr = (year) => {
   let resultado = [];
@@ -292,6 +307,7 @@ const searchDateContr = (year) => {
       resultado.push(carreras[i]);
     }
   }
+  resultados_busqueda = resultado;
 
   document.getElementById("main").innerHTML = indexView(resultado);
 }
@@ -305,10 +321,11 @@ const searchCatContr = (cat) => {
       resultado.push(carreras[i]);
     }
   }
+  resultados_busqueda = resultado;
   document.getElementById("main").innerHTML = indexView(resultado);
 }
 
-const menuContr = ()=> {
+const menuContr = () => {
 
   document.getElementById("navegador").innerHTML = menuView();
 
@@ -326,7 +343,9 @@ const matchEvent = (ev, sel) => ev.target.matches(sel);
 const myId = (ev) => Number(ev.target.dataset.myId);
 
 document.addEventListener("click", (ev) => {
-  if (matchEvent(ev, ".index")) indexContr(carreras);
+  //Añadir nueva clase de boton para las de inicio (próximos)
+  if (matchEvent(ev, ".index")) indexContr();
+  if (matchEvent(ev, ".proximos")) proximosContr();
   //else if (matchEvent(ev, ".edit")) editContr(myId(ev));
   //else if (matchEvent(ev, ".update")) updateContr(myId(ev));
   else if (matchEvent(ev, ".show")) showContr(myId(ev));
@@ -335,7 +354,7 @@ document.addEventListener("click", (ev) => {
   //else if (matchEvent(ev, ".new")) newContr();
   //else if (matchEvent(ev, ".create")) createContr();
   //else if (matchEvent(ev, ".delete")) deleteContr(myId(ev));
-  else if (matchEvent(ev, ".reset")) indexContr();
+  else if (matchEvent(ev, ".reset")) resetContr(carreras);
   else if (matchEvent(ev, ".searchDate")) searchDateContr(myId(ev));
   else if (matchEvent(ev, ".searchCat")) searchCatContr(myId(ev));
 
@@ -361,8 +380,8 @@ function parseDate(str) {
 
 //Funciones menú desplegable
 function ver(n) {
-  document.getElementById("subseccion"+n).style.display="block"
-  }
+  document.getElementById("subseccion" + n).style.display = "block"
+}
 function ocultar(n) {
-  document.getElementById("subseccion"+n).style.display="none"
-  }
+  document.getElementById("subseccion" + n).style.display = "none"
+}

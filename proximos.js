@@ -1,12 +1,12 @@
-carreras = [
+proximos = [
 
 
   //INICIO CARRERA
   {
-    titulo: "Carrera de prueba ciclismo 22",
+    titulo: "proximo evento 22",
     fecha: "20-02-2022",
     categoria: "Ciclismo",
-    miniatura: "https://cdn.mos.cms.futurecdn.net/h2G46PnJDjxCLUFmUx8Sym.jpg",
+    miniatura: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fe00-marca.uecdn.es%2Fassets%2Fmultimedia%2Fimagenes%2F2020%2F01%2F18%2F15793615967979.jpg&f=1&nofb=1",
     clasificaciones:
       [
         {
@@ -37,7 +37,7 @@ carreras = [
     titulo: "VII Maratón de Montaña OGRO 2022",
     fecha: "20-02-2022",
     categoria: "Atletismo",
-    miniatura: "img/2022/cartel_Ogro_Maraton_2022.jpg",
+    miniatura: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcorprensa-la-prensa-prod.cdn.arcpublishing.com%2Fresizer%2FqjhblvDNdyntbZC9p50HcQbfc1I%3D%2Ffit-in%2F1000x1000%2Fsmart%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fcorprensa%2FRICEP7PGL5AC7BSRVXCEMEWTAM.jpeg&f=1&nofb=1",
     clasificaciones:
       [
         {
