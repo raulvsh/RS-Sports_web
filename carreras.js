@@ -7,7 +7,7 @@ carreras = [
     fecha: "20-02-2022",
     categoria: "Ciclismo",
     miniatura: "https://cdn.mos.cms.futurecdn.net/h2G46PnJDjxCLUFmUx8Sym.jpg",
-    clasificaciones:
+    botones:
       [
         {
           titulo: "Clasif prueba",
@@ -37,9 +37,16 @@ carreras = [
     titulo: "VII Maratón de Montaña OGRO 2022",
     fecha: "20-02-2022",
     categoria: "Atletismo",
+    hora: "08:30 / 09:00 / 09:30",
+    distancia: "42km / 22.5km",
+    organizador: "Ayuntamiento de Autol",
     miniatura: "img/2022/cartel_Ogro_Maraton_2022.jpg",
-    clasificaciones:
+    botones:
       [
+        {
+          titulo: "Página Web",
+          archivo: "http://www.ogromaraton.com/",
+        },
         {
           titulo: "Clasif Ogro",
           archivo: "pdf/2022/ogro.pdf"
@@ -63,7 +70,7 @@ carreras = [
     fecha: "13-02-2022",
     categoria: "Mushing",
     miniatura: "img/2022/cartelvillamanta2022.jpg",
-    clasificaciones:
+    botones:
       [
         {
           titulo: "Clasif Sprint Manga 1",
@@ -84,7 +91,7 @@ carreras = [
     fecha: "18-12-2021",
     categoria: "Mushing",
     miniatura: "img/2021/cartelmushinglerma2021.jpg",
-    clasificaciones:
+    botones:
       [
         {
           titulo: "Reglamento",
@@ -109,7 +116,7 @@ carreras = [
     fecha: "25-01-2020",
     categoria: "Atletismo",
     miniatura: "img/2020/carteldesafiohelios2020.jpg",
-    clasificaciones:
+    botones:
       [
         {
           titulo: "Reglamento",

@@ -7,7 +7,7 @@ proximos = [
     fecha: "20-02-2022",
     categoria: "Ciclismo",
     miniatura: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fe00-marca.uecdn.es%2Fassets%2Fmultimedia%2Fimagenes%2F2020%2F01%2F18%2F15793615967979.jpg&f=1&nofb=1",
-    clasificaciones:
+    botones:
       [
         {
           titulo: "Clasif prueba",
@@ -34,11 +34,11 @@ proximos = [
 
   //INICIO CARRERA
   {
-    titulo: "proximo evento VII Maratón de Montaña OGRO 2022",
+    titulo: "proximo evento VII Maratón",
     fecha: "20-02-2022",
     categoria: "Atletismo",
     miniatura: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcorprensa-la-prensa-prod.cdn.arcpublishing.com%2Fresizer%2FqjhblvDNdyntbZC9p50HcQbfc1I%3D%2Ffit-in%2F1000x1000%2Fsmart%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fcorprensa%2FRICEP7PGL5AC7BSRVXCEMEWTAM.jpeg&f=1&nofb=1",
-    clasificaciones:
+    botones:
       [
         {
           titulo: "Clasif Ogro",
@@ -59,11 +59,11 @@ proximos = [
 
   //INICIO CARRERA
   {
-    titulo: "proximo Copa de España Mushing Villamanta",
+    titulo: "proximo Copa de España",
     fecha: "13-02-2022",
     categoria: "Mushing",
     miniatura: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthorcanes.es%2Fwp-content%2Fuploads%2F2020%2F04%2FIMG_20200417_172446_769.jpg&f=1&nofb=1",
-    clasificaciones:
+    botones:
       [
         {
           titulo: "Clasif Sprint Manga 1",
@@ -80,11 +80,11 @@ proximos = [
 
   //INICIO CARRERA
   {
-    titulo: "proximo I Mushing Villa de Lerma 2021",
+    titulo: "proximo I Mushing Villa ",
     fecha: "18-12-2021",
     categoria: "Mushing",
     miniatura: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.nordicexperience.co.uk%2Fsites%2Fnordicexperience.co.uk%2Ffiles%2Fimages%2Ftour%2Fiso-syote_hundeslaede_033.jpg%3F1347539179&f=1&nofb=1",
-    clasificaciones:
+    botones:
       [
         {
           titulo: "Reglamento",
@@ -105,11 +105,11 @@ proximos = [
 
   //INICIO CARRERA
   {
-    titulo: "Desafío de Helios 2020",
+    titulo: "Proximo Desafío de Helios 2020",
     fecha: "25-01-2020",
     categoria: "Atletismo",
     miniatura: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flaservet.es%2Fwp-content%2Fuploads%2F2015%2F09%2Fmushing-300x200.jpg&f=1&nofb=1",
-    clasificaciones:
+    botones:
       [
         {
           titulo: "Reglamento",

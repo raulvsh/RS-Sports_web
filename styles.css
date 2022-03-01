@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat.ttf");
+}
+
 /*ATRIBUTOS GENERALES*/
 body {
 
@@ -8,10 +13,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
+  /*background: url('img/assets/crono.png');
+  background-repeat: no-repeat;*/
+  /*background-size: cover;
+  min-height: 900px;*/
+  background-color: aliceblue;
+
+
 }
 
 * {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 button {
@@ -30,6 +42,7 @@ button {
   padding: 0 8px 0 8px;
   font-weight: bold;
   min-width: 150px;
+
 }
 
 button:hover {
@@ -85,7 +98,11 @@ div.cabecera {
 }
 
 div.movie {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+
+
+  border-radius: 5px;
   /*flex-direction: column;
   flex-wrap: wrap;*/
   /*flex: 1;*/
@@ -96,7 +113,8 @@ div.movie {
   /*background-color: var(--primary);*/
   padding: 10px;
   /*align-content: center;*/
-  /*background-color: #ccc;*/
+  background-color: white;
+
 }
 
 div.movie:hover div.title {
@@ -120,22 +138,38 @@ div.movie div.movie-img {
 
 div.movie div.movie-img img {
   width: 100%;
+  border-radius: 5px;
+
   height: 16em;
 
 }
 
 div.movie div.title {
-  text-align: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /*display: block;*/
+
+  /*overflow: hidden;*/
   color: black;
   font-weight: bold;
   font-size: larger;
   cursor: pointer;
-  margin-top: 10px;
+
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /*margin-top: 10px;*/
+  /*padding: 30px 5px 30px 0px;*/
+  /*background-color: pink;*/
+  padding: 10px 0px;
+
+  /*background-color: red;*/
 
 
-  height: 65px;
+  /*height: 70px;
+  text-align: center;*/
+
 }
 
 div.movie div.subtitle {
@@ -153,49 +187,104 @@ div.movie div.subtitle {
   font-size: 20px;
   margin: 15px 0;
   padding: 15px;
+  border-radius: 5px;
+
 }
 
 .contenedorDetalle {
   box-shadow: 2px 2px 7px grey;
+  border-radius: 5px;
+  background-color: white;
 
-  /*background-color: pink;*/
 
   display: grid;
   grid-template-areas:
     /*"title title title title"*/
-    "contentTitle contentDescription contentDescription contentDescription"
-    "contentTitle contentDescription contentDescription contentDescription"
-    "contentTitle contentDescription contentDescription contentDescription"
-    "contentTitle contentDescription contentDescription contentDescription"
-    "actions actions actions actions";
+    "img contentTitle contentDescription contentDescription contentDescription contentDescription"
+    "img contentTitle contentDescription contentDescription contentDescription contentDescription"
+    "img contentTitle contentDescription contentDescription contentDescription contentDescription"
+    "img contentTitle contentDescription contentDescription contentDescription contentDescription"
+    "actions actions actions actions actions actions";
 }
-
-.contenedorDetalleServicios{
-  box-shadow: 2px 2px 7px grey;
-
-  /*background-color: pink;*/
-
-  display: grid;
-  grid-template-areas:
-    /*"title title title title"*/
-    "contentTitle contentDescription contentDescription contentDescription"
-    "contentTitle contentDescription contentDescription contentDescription"
-    "contentTitle contentDescription contentDescription contentDescription"
-    "contentTitle contentDescription contentDescription contentDescription"
-    "actions actions actions actions";
-
-
-}
-
-
-
 #miniaturaShow {
+  grid-area: img;
   /*width: 20em;*/
   width: 200px;
   height: auto;
   min-height: 200px;
   padding: 10px;
 }
+div .contenedorDetalle .contentTitle {
+  /*padding: 0 15px 15px 15px;*/
+  padding: 40px 0px 40px 20px;
+  grid-area: contentTitle;
+
+
+  /*background-color: pink;*/
+  /*font-weight: bold;*/
+
+}
+
+div.elementoTitulo {
+  padding: 12px;
+  font-weight: bold;
+  font-size: large;
+
+}
+
+div.contenedorDetalle div.contentDescription {
+  padding: 40px 0px 40px 20px;
+  grid-area: contentDescription;
+
+
+  /*background-color: yellow;*/
+}
+
+div.elementoDescription {
+  padding: 12px 0px;
+  font-size: large;
+
+}
+
+
+.contenedorDetalleServicios {
+  box-shadow: 2px 2px 7px grey;
+  border-radius: 5px;
+
+
+  background-color: white;
+
+  display: grid;
+  grid-template-areas:
+  /*"title title title title"*/
+    "img img contentDescription contentDescription contentDescription"
+    "img img contentDescription contentDescription contentDescription"
+    "img img contentDescription contentDescription contentDescription"
+    "img img contentDescription contentDescription contentDescription"
+    /*"actions actions actions actions actions";*/
+}
+#miniaturaShowServicios {
+  grid-area: img;
+  /*width: 20em;*/
+  width: 400px;
+  height: auto;
+  min-height: 200px;
+  padding: 10px;
+  /*background-color: rebeccapurple;*/
+  
+}
+.descServicios {
+  grid-area: contentDescription;
+  /*background-color: pink;*/
+  font-size: larger;
+  text-align: justify;
+  padding: 40px 20px;
+  
+}
+
+
+
+
 
 
 /*div.contenedor {
@@ -211,31 +300,8 @@ div.movie div.subtitle {
   /*padding: 5px;
 }*/
 
-div.contenedor div.contentTitle {
-  /*padding: 0 15px 15px 15px;*/
-  padding: 15px 50px;
-  grid-area: contentTitle;
-
-  /*background-color: pink;*/
-  font-weight: bold;
-
-}
-
-div.elementoTitulo {
-  padding: 7px;
-}
-
-div.elementoDescription {
-  padding: 7px;
-}
-
-div.contenedor div.contentDescription {
-  padding: 15px;
-  grid-area: contentDescription;
 
 
-  /*background-color: yellow;*/
-}
 
 
 div.actions {
@@ -264,16 +330,17 @@ div.actions {
   margin: 10px;
   /*padding: 0.5em;
 }*/
-#navegador ul{
+#navegador ul {
   padding: 0;
   margin-left: 12px;
 }
+
 #navegador li {
   /*margin: 0px 5px;*/
   /*background-color: #9933cc;*/
   /*width: 12%;*/
   min-width: 150px;
-  
+
 
   /*list-style-type: none;*/
   position: relative;
@@ -296,8 +363,9 @@ div.actions {
   padding: 0 0 14px;
   margin: 2px;
 
-  
+
 }
+
 #navegador li:hover, #navegador li:active {
   color: white;
   text-decoration: none;

@@ -59,7 +59,7 @@ const indexView = (carreras, seccion) => {
           </div>
           <div class="subtitle">
             <div class="${show}" data-my-id="${i}">
-            ${carreras[i].fecha || "<em>Sin título</em>"}
+            ${carreras[i].fecha || ""}
             </div>
           </div>
           </div>\n
@@ -111,30 +111,24 @@ const showView = (carrera) => {
              <div class="elementoTitulo">Fecha:</div>
              <div class="elementoTitulo">Categoría:</div>
              <div class="elementoTitulo">Hora: </div>
-             <div class="elementoTitulo">Inscripciones: </div>
-             <div class="elementoTitulo">Precio: </div>
-             <div class="elementoTitulo">Distancia: </div>
+             <div class="elementoTitulo">Distancia: </div>             
              <div class="elementoTitulo">Organizador: </div>
-             <div class="elementoTitulo">Página web: </div>
-             <div class="elementoTitulo">Recorrido: </div>
+             
     </div>
 
     <div class="contentDescription">
-      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
-      <div class="elementoDescription">${carrera.categoria || "<em>Sin título</em>"}</div>
-      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
-      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
-      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
-      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
-      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
-      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
-      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha)) || "<em>Sin título</em>"}</div>
+      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha))}</div>
+      <div class="elementoDescription">${carrera.categoria}</div>
+      <div class="elementoDescription">${carrera.hora}</div>
+      <div class="elementoDescription">${carrera.distancia}</div>
+      <div class="elementoDescription">${carrera.organizador}</div>
+      
     </div>
     <div class="actions">`
 
 
-  for (let j = 0; j < carrera.clasificaciones.length; j++) {
-    view += `<a href=${carrera.clasificaciones[j].archivo} target=_blank><button>${carrera.clasificaciones[j].titulo}</button></a> `;
+  for (let j = 0; j < carrera.botones.length; j++) {
+    view += `<a href=${carrera.botones[j].archivo} target=_blank><button>${carrera.botones[j].titulo}</button></a> `;
     //view += `<button href=${carrera.clasificaciones[j].archivo} target=_blank>${carrera.clasificaciones[j].titulo}</button> `;
 
   }
@@ -154,14 +148,16 @@ const showServiciosView = (carrera) => {
   view = `
   <div class="tituloDetalle">${carrera.titulo}</div>
   <div class="contenedorDetalleServicios">
-  <img id="miniaturaShow" src=${carrera.miniatura}></img>
-  <div class="contentTitle">
+  <img id="miniaturaShowServicios" src=${carrera.miniatura}></img>
+  <div class="descServicios">
 
-    <h2>Descripcion 1</h2>
+    <!--<h2>Descripcion 1</h2>
 
     <h2>Descripcion 2</h2>
     <p></p>
     <p>Introducir descripción en campo de servicios.js</p>
+    <p>Contenido de archivo a continuación</p>-->
+    ${carrera.descripcion}
   </div>`
     //view+=`<div class="actions">`
 
@@ -174,7 +170,7 @@ const showServiciosView = (carrera) => {
 
  // view +=`</div></div></div>`
   /*view+=`<div class="actions">
-     <button class="index">Volver</button>
+     <button class="servicios">Volver</button>
   </div>`*/
   //Fin de clase actions, contenedor 
   //view += `</div></div>\n`;
