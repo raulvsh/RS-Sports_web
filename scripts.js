@@ -47,7 +47,7 @@ const indexView = (carreras, seccion) => {
   while (i < carreras.length) {
 
     view += `
-        <div class="movie" class="${show}" data-my-id="${i}">
+        <div class="${show} movie "  data-my-id="${i}">
         
           <div class="movie-img">
                <img data-my-id="${i}" src="${carreras[i].miniatura}" onerror="this.src='assets/placeholder.png'" class="${show}"/>

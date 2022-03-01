@@ -5,7 +5,6 @@
 
 /*ATRIBUTOS GENERALES*/
 body {
-
   --primary: #01b7ff;
   --secondary: #01b7ff;
   margin: 0px;
@@ -13,13 +12,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
-  /*background: url('img/assets/crono.png');
-  background-repeat: no-repeat;*/
-  /*background-size: cover;
-  min-height: 900px;*/
   background-color: aliceblue;
-
-
 }
 
 * {
@@ -31,7 +24,6 @@ button {
   display: inline-block;
   text-decoration: none;
   margin: 2px;
-  /*color: var(--primary);*/
   background: white;
   border: 1px solid var(--primary);
   height: 28px;
@@ -42,12 +34,13 @@ button {
   padding: 0 8px 0 8px;
   font-weight: bold;
   min-width: 150px;
-
+  border-radius: 3px;
 }
 
 button:hover {
   background: var(--primary);
   color: white;
+  box-shadow: 2px 2px 7px grey;
 
 }
 
@@ -55,34 +48,9 @@ div#main {
   padding: 10px;
 }
 
-/*input {
-  margin-bottom: 5px;
-  margin-top: 2px;
-  padding: 4px;
-  font-size: 12px;
-}*/
-
-h1 {
-  background: var(--primary);
-  color: white;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 20px;
-  margin: 0px;
-  padding: 15px;
-}
-
-h2 {
-  margin-block-start: 0px;
-  margin-block-end: 10px;
-  font-size: 20px;
-  color: var(--primary);
-}
-
 a {
   text-decoration: none;
   color: black;
-
 }
 
 a:hover {
@@ -94,44 +62,36 @@ div.cabecera {
   display: inline-block;
   /*background-color: red;*/
   justify-content: center;
-
 }
 
 div.movie {
   display: inline-flex;
   flex-direction: column;
-
-
   border-radius: 5px;
-  /*flex-direction: column;
-  flex-wrap: wrap;*/
-  /*flex: 1;*/
   width: 200px;
-  box-shadow: 2px 2px 7px grey;
   margin: 5px;
-  /*grid-gap: 10px;*/
-  /*background-color: var(--primary);*/
   padding: 10px;
-  /*align-content: center;*/
   background-color: white;
-
+  box-shadow: 2px 2px 7px lightgrey;
+  cursor: pointer;
 }
 
+div.movie:hover{
+  box-shadow: 2px 2px 7px grey;
+
+}
 div.movie:hover div.title {
   transition: ease-in 0.2s all;
   color: var(--primary);
+
 }
 
 
 div.movie div.movie-img {
-  /*grid-area: img;*/
-
   width: 200px;
   height: auto;
   min-height: 200px;
   cursor: pointer;
-
-  /* background-color: green;*/
 }
 
 
@@ -139,37 +99,20 @@ div.movie div.movie-img {
 div.movie div.movie-img img {
   width: 100%;
   border-radius: 5px;
-
   height: 16em;
-
 }
 
 div.movie div.title {
-  /*display: block;*/
-
-  /*overflow: hidden;*/
   color: black;
   font-weight: bold;
   font-size: larger;
   cursor: pointer;
-
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-
-  /*margin-top: 10px;*/
-  /*padding: 30px 5px 30px 0px;*/
-  /*background-color: pink;*/
   padding: 10px 0px;
-
-  /*background-color: red;*/
-
-
-  /*height: 70px;
-  text-align: center;*/
-
 }
 
 div.movie div.subtitle {
@@ -182,30 +125,26 @@ div.movie div.subtitle {
 .tituloDetalle {
   background: var(--primary);
   color: white;
-
   text-transform: uppercase;
   font-size: 20px;
   margin: 15px 0;
   padding: 15px;
   border-radius: 5px;
-
 }
 
 .contenedorDetalle {
   box-shadow: 2px 2px 7px grey;
   border-radius: 5px;
   background-color: white;
-
-
   display: grid;
   grid-template-areas:
-    /*"title title title title"*/
     "img contentTitle contentDescription contentDescription contentDescription contentDescription"
     "img contentTitle contentDescription contentDescription contentDescription contentDescription"
     "img contentTitle contentDescription contentDescription contentDescription contentDescription"
     "img contentTitle contentDescription contentDescription contentDescription contentDescription"
     "actions actions actions actions actions actions";
 }
+
 #miniaturaShow {
   grid-area: img;
   /*width: 20em;*/
@@ -214,15 +153,11 @@ div.movie div.subtitle {
   min-height: 200px;
   padding: 10px;
 }
+
 div .contenedorDetalle .contentTitle {
-  /*padding: 0 15px 15px 15px;*/
   padding: 40px 0px 40px 20px;
   grid-area: contentTitle;
-
-
   /*background-color: pink;*/
-  /*font-weight: bold;*/
-
 }
 
 div.elementoTitulo {
@@ -235,8 +170,6 @@ div.elementoTitulo {
 div.contenedorDetalle div.contentDescription {
   padding: 40px 0px 40px 20px;
   grid-area: contentDescription;
-
-
   /*background-color: yellow;*/
 }
 
@@ -246,109 +179,52 @@ div.elementoDescription {
 
 }
 
-
 .contenedorDetalleServicios {
   box-shadow: 2px 2px 7px grey;
   border-radius: 5px;
-
-
   background-color: white;
-
   display: grid;
   grid-template-areas:
-  /*"title title title title"*/
     "img img contentDescription contentDescription contentDescription"
     "img img contentDescription contentDescription contentDescription"
     "img img contentDescription contentDescription contentDescription"
     "img img contentDescription contentDescription contentDescription"
-    /*"actions actions actions actions actions";*/
 }
+
 #miniaturaShowServicios {
   grid-area: img;
-  /*width: 20em;*/
   width: 400px;
   height: auto;
   min-height: 200px;
   padding: 10px;
   /*background-color: rebeccapurple;*/
-  
 }
+
 .descServicios {
   grid-area: contentDescription;
   /*background-color: pink;*/
   font-size: larger;
   text-align: justify;
   padding: 40px 20px;
-  
+
 }
-
-
-
-
-
-
-/*div.contenedor {
-  display: grid;
-  background-color: red;
-  grid-template-areas:
-    "title title title title"
-    "contentTitle contentDescription contentDescription contentDescription"
-    "contentTitle contentDescription contentDescription contentDescription"
-    "contentTitle contentDescription contentDescription contentDescription"
-    "contentTitle contentDescription contentDescription contentDescription"
-    "actions actions actions actions";
-  /*padding: 5px;
-}*/
-
-
-
-
 
 div.actions {
   grid-area: actions;
   padding: 10px;
-
-
-  /*margin-left: auto;
-  margin-right: auto;*/
 }
 
-
-
-/*div.field {
-  color: var(--primary);
-  text-transform: uppercase;
-  font-size: 12px;
-}*/
-
-
 /*MENÚS DESPLEGABLES*/
-
-/*#navegador {
-  /*background-color: var(--primary);
-  padding: 0px 0 0px 0;
-  margin: 10px;
-  /*padding: 0.5em;
-}*/
 #navegador ul {
   padding: 0;
   margin-left: 12px;
 }
 
 #navegador li {
-  /*margin: 0px 5px;*/
-  /*background-color: #9933cc;*/
-  /*width: 12%;*/
   min-width: 150px;
-
-
-  /*list-style-type: none;*/
+  border-radius: 3px;
   position: relative;
-
-  /*-webkit-font-smoothing: antialiased;*/
   display: inline-block;
-  /*text-decoration: none;*/
-  /*color: var(--primary);*/
   background: white;
   border: 1px solid var(--primary);
   height: 28px;
@@ -362,36 +238,23 @@ div.actions {
   text-align: center;
   padding: 0 0 14px;
   margin: 2px;
-
-
 }
 
 #navegador li:hover, #navegador li:active {
   color: white;
   text-decoration: none;
   background-color: var(--primary);
+  box-shadow: 2px 2px 7px grey;
+
 }
 
 #subseccion1, #subseccion2 {
   position: absolute;
   top: 100%;
   left: 0px;
-  /*background-color: #41338b;*/
-  /*font: normal 0.8em arial;*/
   padding: 0.2em 0.5em;
   display: none;
 }
-
-/*#navegador li:hover {
-  background-color: #990033;
-}*/
-
-/*#navegador li a:link, #navegador li a:visited {
-  /*color: #feffe4;
-  /*text-decoration: none;
-}*/
-
-
 
 .borrar {
   clear: both;
