@@ -1,5 +1,5 @@
 
-const categorias = ["Atletismo", "Ciclismo", "Mushing",];
+const categorias = ["Atletismo", "Ciclismo", "BTT", "Mushing",];
 
 /*localStorage.mis_carreras =
   localStorage.mis_carreras || JSON.stringify(carreras);*/
@@ -227,9 +227,10 @@ const menuView = () => {
             <li onmouseover="ver(2)" onmouseout="ocultar(2)">
               <p>Categoría</p>
               <div id="subseccion2">
-              <button class="searchCat" data-my-id="${0}">atletismo</button>
+              <button class="searchCat" data-my-id="${0}">Carreras a pie</button>
               <button class="searchCat" data-my-id="${1}">ciclismo</button>
-              <button class="searchCat" data-my-id="${2}">mushing</button>
+              <button class="searchCat" data-my-id="${2}">BTT</button>
+              <button class="searchCat" data-my-id="${3}">mushing</button>
               </div>			
             </li>
             <li class="contacto">

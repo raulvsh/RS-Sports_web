@@ -143,4 +143,37 @@ carreras = [
   },
   //FIN CARRERA
 
+  //INICIO CARRERA
+  {
+    titulo: "Desafío btt bici montaña",
+    fecha: "25-01-2020",
+    categoria: "BTT",
+    miniatura: "https://cdn.brujulabike.com/uploads/images/emtb_bicicleta_electrina_montana.jpg",
+    botones:
+      [
+        {
+          titulo: "Reglamento",
+          archivo: "pdf/2020/40-reglamento-desafio-helios-2020.pdf"
+        },
+        {
+          titulo: "Clasificaciones BTT",
+          archivo: "pdf/2020/ClasificacionesBTTDesafioHelios2020.pdf"
+        },
+        {
+          titulo: "Clasificaciones Duatlon",
+          archivo: "pdf/2020/ClasificacionesDuatlonDesafioHelios2020.pdf"
+        },
+        {
+          titulo: "Clasificaciones equipos",
+          archivo: "pdf/2020/ClasificacionesEquiposDesafioHelios2020.pdf"
+        },
+        {
+          titulo: "Clasificaciones ultra",
+          archivo: "pdf/2020/ClasificacionesUltraDesafioHelios2020.pdf"
+        }
+
+      ],
+  },
+  //FIN CARRERA
+
 ];
