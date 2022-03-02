@@ -22,6 +22,49 @@ carreras = [
 		],
 },
 
+{
+	titulo: "Coches Teledirigidos Vizcaya",
+	fecha: "02/03/2022",
+	categoria: "Ciclismo",
+	hora: "08:12",
+	distancia: "22km",
+	organizador: "Raul",
+	miniatura: "img/2022/Coche-teledirigido-2.jpg.jpg",
+	botones:
+		[
+			{
+				titulo: "Marca",
+				archivo: "http://www.marca.com",
+			},
+			{
+				titulo: "Elpais",
+				archivo: "http://www.elpais.com",
+			},
+
+		],
+},
+
+{
+	titulo: "Coches Teledirigidos Vizcaya",
+	fecha: "02/03/2022",
+	categoria: "Ciclismo",
+	hora: "08:12",
+	distancia: "22km",
+	organizador: "Raul",
+	miniatura: "img/2022/Coche-teledirigido-2.jpg",
+	botones:
+		[
+			{
+				titulo: "Marca",
+				archivo: "http://www.marca.com",
+			},
+			{
+				titulo: "Elpais",
+				archivo: "http://www.elpais.com",
+			},
+
+		],
+},
 
 {
 	titulo: "carrera de perro",
@@ -36,6 +79,64 @@ carreras = [
 			{
 				titulo: "marca",
 				archivo: "http://www.marca.com",
+			},
+
+		],
+},
+
+{
+	titulo: "VIII Mushing Villamanta Madrid",
+	fecha: "12/12/2021",
+	categoria: "Mushing",
+	hora: "08:32",
+	distancia: "23km",
+	organizador: "villamanta",
+	miniatura: "img/2021/2.jpg",
+	botones:
+		[
+			{
+				titulo: "Marca",
+				archivo: "http://www.marca.com",
+			},
+
+		],
+},
+
+{
+	titulo: "Carrera de motos",
+	fecha: "10/10/2021",
+	categoria: "Mushing",
+	hora: "09:00",
+	distancia: "100km",
+	organizador: "MotoGP",
+	miniatura: "img/2021/2.jpg",
+	botones:
+		[
+			{
+				titulo: "Marca",
+				archivo: "http://www.marca.com",
+			},
+
+		],
+},
+
+{
+	titulo: "tit btt",
+	fecha: "12/12/2020",
+	categoria: "BTT",
+	hora: "9:00",
+	distancia: "22k",
+	organizador: "autol2",
+	miniatura: "img/2020/1.jpg",
+	botones:
+		[
+			{
+				titulo: "Marca",
+				archivo: "http://www.marca.com",
+			},
+			{
+				titulo: "elpais",
+				archivo: "http://www.elpais.com",
 			},
 
 		],

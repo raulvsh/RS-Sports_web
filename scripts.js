@@ -434,7 +434,9 @@ const formatDate = (current_datetime) => {
 }
 
 function parseDate(str) {
-  var m = str.match(/^(\d{1,2})-(\d{1,2})-(\d{4})$/);
+  //var m = str.match(/^(\d{1,2})-(\d{1,2})-(\d{4})$/);
+  //Formato dd/mm/aaaa o dd-mm-aaaa
+  var m = str.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);
   return (m) ? new Date(m[3], m[2] - 1, m[1]) : null;
 }
 
