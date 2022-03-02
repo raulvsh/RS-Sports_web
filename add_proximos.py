@@ -18,21 +18,8 @@ titulos = ['Categoría', 'Título', 'Fecha', 'Hora', 'Distancia', 'Organizador',
 
 root = tk.Tk()
 root.geometry("800x600")  # Tamaño por defecto
-root.title("Añadir-Carreras RS-Sport")  # Titulo de ventana
+root.title("Añadir-Próximos Eventos RS-Sport")  # Titulo de ventana
 root.config(background="aliceblue")
-"""entry = Entry()
-entry.place(x=50, y=50)"""
-# Esta segunda caja de texto no puede recibir el foco
-# vía la tecla Tab.
-"""entry2 = Entry(takefocus=False)
-entry2.place(x=50, y=150)"""
-
-
-"""print(entry.get())
-entry.insert(0, "Hola mundo!")
-entry.place(x=50, y=50)
-button = Button(text="Obtener texto", command=lambda: print(entry.get()))
-button.place(x=50, y=100)"""
 
 entries = []
 i = 0
@@ -42,10 +29,6 @@ categoriaResultado = StringVar()
 
 def draw_categories():
     for i, titulo in enumerate(titulos):
-        """entry = Entry()
-        entry.place(x=50, y=50)
-        button = Button(text="Obtener texto", command=print(entry.get()))"""
-
         label = Label(root, text=titulos[i])
         label.grid(column=0, row=i+2)
         if(titulo != "Categoría"):
@@ -63,8 +46,6 @@ def draw_categories():
 
 
 def draw_buttons(num):
-    # label=Label(root)
-    # label.grid(column=2,row=i+2)
     for j in range(int(num)):
         label1 = Label(root, text="Título botón " + str(j+1))
         label1.grid(column=0, row=2*j+9)
@@ -108,7 +89,6 @@ def start_app():
 
 def lectura_escritura():
     print_all(entries)
-    #print("lectura y escritura")
     mensaje = leer_archivo()
     mensaje = add_race(mensaje)
     guardar_archivo(mensaje)
@@ -117,7 +97,6 @@ def lectura_escritura():
 
 def copiar_pdf():
     year = parse_date(entries[2].get())
-    #descomentar para mover
     shutil.move(entries[6].get(), "img/"+year+"/"+entries[6].get())
     #print("año" + parse_date(entries[1].get()))
 
@@ -126,15 +105,9 @@ def parse_date(date):
     date_string = ""
     date_string = datetime.strptime(date, "%d/%m/%Y")
     return str(date_string.year)
-    """m = str.find(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);
-    alert("año " + m[3] + " mes (resto uno) " + (m[2] - 1) + " dia " +m[1] )
-    alert("m completo " + m)
-    alert ("fecha " +  Date(m[3], m[2] - 1, m[1]))
-    return (m) ? new Date(m[3], m[2] - 1, m[1]) : null;"""
-
 
 def leer_archivo():
-    fichero = open('carreras.js', 'r')
+    fichero = open('proximos.js', 'r')
     mensaje = ""
     i = 0
     for i, line in enumerate(fichero):
@@ -142,22 +115,14 @@ def leer_archivo():
         if(i >= 1):
             mensaje += line
     fichero.close()
-    # print(mensaje)
     return mensaje
 
 
 def add_race(mensaje):
     year = parse_date(entries[2].get())
 
-    #print("añadir carrera " + tituloResultado.get())
-    #print("carreras = [\n\n" + "{\n\ttitulo: " + "\"" + tituloResultado.get() + "\"" + "}\n"+ mensaje)
-    # return ("carreras = [\n\n" + "{\ntitulo: " + '"{tituloResultado.get()}"' + "}\n"+ mensaje)
     textoCompleto = ""
-    textoCompleto += "carreras = [\n\n" + "{\n"
-    """textoCompleto += "\ttitulo: " + "\"" + entries[0].get() + "\",\n"
-    textoCompleto += "\tfecha: " + "\"" + entries[1].get() + "\",\n"
-    textoCompleto += "\tcategoria: " + "\"" + entries[2].get() + "\",\n"
-    textoCompleto += "\tminiatura: " + "\"img/" +year+"/" + entries[3].get() + "\",\n"""
+    textoCompleto += "proximos = [\n\n" + "{\n"
     textoCompleto += "\ttitulo: " + "\"" + entries[1].get() + "\",\n"
     textoCompleto += "\tfecha: " + "\"" + entries[2].get() + "\",\n"
     textoCompleto += "\tcategoria: " + "\"" + entries[0].get() + "\",\n"
@@ -174,18 +139,6 @@ def add_race(mensaje):
         textoCompleto += "\t\t\t\tarchivo: \"" + entries[2*j+8].get() + "\",\n"
 
         textoCompleto += "\t\t\t},\n"
-
-        """label1=Label(root, text="Título botón " + str(j+1))
-        label1.grid(column=0,row=2*j+6)
-        entry1 = Entry(root, width=50)
-        entry1.grid(column=1,row=2*j+6)
-        entries.append(entry1)
-
-        label2=Label(root, text="Link botón " + str(j+1))
-        label2.grid(column=0,row=2*j+7)
-        entry2 = Entry(root, width=50)
-        entry2.grid(column=1,row=2*j+7)
-        entries.append(entry2) """
     textoCompleto += "\n\t\t],"
 
     #textoCompleto+="\tbotones: " + "\"" + botonesResultado.get() + "\",\n"
@@ -198,7 +151,7 @@ def add_race(mensaje):
 
 
 def guardar_archivo(mensaje):
-    fichero = open('carreras.js', 'w')
+    fichero = open('proximos.js', 'w')
     fichero.write(mensaje)
 
 
@@ -208,12 +161,7 @@ labelNumBotones.grid(column=0, row=0)
 entradaNumBotones = Entry()
 entradaNumBotones.grid(column=1, row=0)
 
-#button = Button(text="Aceptar", command=lambda: draw_categories(entradaNumBotones.get()))
 button = Button(text="Aceptar", command=lambda: start_app())
 button.grid(column=2, row=0)
-
-
-#button.place(x=50, y=100)
-
 
 root.mainloop()

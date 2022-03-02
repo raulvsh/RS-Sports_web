@@ -1,22 +1,4 @@
-proximos = [
-
-{
-	titulo: "Tractor azul",
-	fecha: "10/10/2020",
-	categoria: "Ciclismo",
-	hora: "06:00",
-	distancia: "111km",
-	organizador: "Tractorland",
-	miniatura: "img/2020/descarga.jfif",
-	botones:
-		[
-			{
-				titulo: "Marca",
-				archivo: "http://www.marca.com",
-			},
-
-		],
-},
+carreras = [
 
 {
 	titulo: "Tractor Race",
