@@ -7,7 +7,7 @@ servicios = [
     miniatura: "img/assets/raul.jpeg",
     descripcion: "prueba de descripcion crono prueba de descripcion cronoprueba de descripcion cronoprueba de descripcion cronoprueba de descripcion cronoprueba de descripcion cronoprueba de descripcion cronoprueba de descripcion crono",
   },
-    
+
   //FIN CARRERA
 
   //INICIO CARRERA

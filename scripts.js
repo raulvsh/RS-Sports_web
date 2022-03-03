@@ -1,12 +1,5 @@
-
 const categorias = ["Atletismo", "Ciclismo", "BTT", "Mushing",];
 
-/*localStorage.mis_carreras =
-  localStorage.mis_carreras || JSON.stringify(carreras);*/
-/*localStorage.mis_carreras =
-localStorage.mis_carreras || carreras;*/
-
-//let carreras_local = JSON.stringify(carreras);
 let carreras_local;
 let resultados_busqueda;
 
@@ -15,37 +8,9 @@ const indexView = (carreras, seccion) => {
 
   let i = 0;
   let view = "";
-  //Añadir botones reset y búsquedas
-  /*view += `<div class="actions">
-                <button class="reset">inicio</button>
-                <button class="searchDate" data-my-id="${2022}">buscar 2022</button>
-                <button class="searchDate" data-my-id="${2021}">buscar 2021</button>
-                <button class="searchDate" data-my-id="${2020}">buscar 2020</button>
-            </div>`;
-
-  view += `<div class="actions">
-            <!--<button class="reset" >inicio</button>-->
-            <button class="searchCat" data-my-id="${0}">buscar atletismo</button>
-            <button class="searchCat" data-my-id="${1}">buscar ciclismo</button>
-            <button class="searchCat" data-my-id="${2}">buscar mushing</button>
-          </div>`;*/
-
-  //view+=`<div class="grid">`        
-
-  //discriminar tipo para hacer el show individual
-  //let show;
-  /*if(seccion=="servicios"){
-    show="showServicios";
-  }else{
-    show="show"
-  }*/
-
   //Discrimino entre servicios y el resto, si hubiese que hacer más categorías separar en if / else if
   let show = seccion == "servicios" ? "showServicios" : "show";
-  //alert("Show " + show)
-
   while (i < carreras.length) {
-
     view += `
         <div class="${show} movie "  data-my-id="${i}">
         
@@ -64,10 +29,8 @@ const indexView = (carreras, seccion) => {
           </div>
           </div>\n
           `
-
     i = i + 1;
   }
-
   return view;
 };
 
@@ -158,22 +121,9 @@ const showServiciosView = (carrera) => {
     <p>Introducir descripción en campo de servicios.js</p>
     <p>Contenido de archivo a continuación</p>-->
     ${carrera.descripcion}
-  </div>`
-    //view+=`<div class="actions">`
+  </div></div>`
 
-
-  /*for (let j = 0; j < carrera.clasificaciones.length; j++) {
-    view += `<a href=${carrera.clasificaciones[j].archivo} target=_blank><button>${carrera.clasificaciones[j].titulo}</button></a> `;
-  }*/
-  
-  view +=`</div>`
-
- // view +=`</div></div></div>`
-  /*view+=`<div class="actions">
-     <button class="servicios">Volver</button>
-  </div>`*/
-  //Fin de clase actions, contenedor 
-  //view += `</div></div>\n`;
+  //view += `</div>`
   return view;
 };
 
@@ -189,11 +139,6 @@ const showServiciosView = (carrera) => {
   //          Introducir fecha:<input type="text" id="fecha"> <br>
 
 };*/
-
-/*const searchView = (carreras) => {
-  return '<h2>resultado búsqueda</h2>'
-
-}*/
 
 const menuView = () => {
   view = "";
@@ -242,14 +187,18 @@ const menuView = () => {
   return view;
 }
 
+const contactoView = () => {
+  view = "";
+
+  view += `<h1>Formulario de contacto</h1>`
+
+  return view;
+}
+
+
 // CONTROLADORES
 const indexContr = () => {
-  //let mis_carreras = JSON.parse(localStorage.mis_carreras);
-  //let mis_carreras = carreras;
-
-  //reset
   carreras_local = carreras;
-  //document.getElementById("main").innerHTML = indexView(carreras_local);
   resetContr(carreras_local);
 };
 
@@ -264,23 +213,13 @@ const proximosContr = () => {
 };
 
 const serviciosContr = () => {
-  //let mis_carreras = JSON.parse(localStorage.mis_carreras);
-  //let mis_carreras = carreras;
-
-  //reset
-  //carreras_local = servicios;
-  //document.getElementById("main").innerHTML = indexView(carreras_local);
+  
   resultados_busqueda = servicios;
-
-
   document.getElementById("main").innerHTML = indexView(servicios, "servicios");
 };
 
 const showContr = (i) => {
-  // let carrera = JSON.parse(localStorage.mis_carreras)[i];
-  //let carrera = carreras[i];
   let carrera = resultados_busqueda[i];
-
   document.getElementById("main").innerHTML = showView(carrera);
 };
 
@@ -292,6 +231,47 @@ const showServiciosContr = (i) => {
   document.getElementById("main").innerHTML = showServiciosView(carrera);
 };
 
+const resetContr = (carreras) => {
+  resultados_busqueda = carreras;
+  document.getElementById("main").innerHTML = indexView(resultados_busqueda, "clasificaciones");
+};
+
+const searchDateContr = (year) => {
+  let resultado = [];
+
+  for (i = 0; i < carreras.length; i++) {
+    if (parseDate(carreras[i].fecha).getFullYear() == year) {
+      //Encontrado
+      resultado.push(carreras[i]);
+    }
+  }
+  resultados_busqueda = resultado;
+
+  document.getElementById("main").innerHTML = indexView(resultado, "clasifDate");
+}
+
+const searchCatContr = (cat) => {
+  let resultado = [];
+  for (i = 0; i < carreras.length; i++) {
+    if (carreras[i].categoria == categorias[cat]) {
+      //Encontrado
+      resultado.push(carreras[i]);
+    }
+  }
+  resultados_busqueda = resultado;
+  document.getElementById("main").innerHTML = indexView(resultado, "clasifCat");
+}
+
+const menuContr = () => {
+  document.getElementById("navegador").innerHTML = menuView();
+}
+
+const contactoContr = () => {
+  document.getElementById("main").innerHTML = contactoView();
+}
+
+
+//CONTROLADORES SIN USAR
 /*const newContr = () => {
   document.getElementById("main").innerHTML = newView();
 };*/
@@ -339,63 +319,11 @@ const showServiciosContr = (i) => {
 
 };*/
 
-const resetContr = (carreras) => {
-  //let mis_carreras = JSON.parse(localStorage.mis_carreras);
-  //carreras_local = carreras;
-  /*if (
-    confirm(
-      `¿Está seguro de que desea resetear la lista de carreras?`
-    )
-  ) {*/
-  //carreras_local = carreras;
-  //localStorage.mis_carreras = JSON.stringify(carreras_local);
-  //}
-  resultados_busqueda = carreras;
 
-  document.getElementById("main").innerHTML = indexView(resultados_busqueda, "clasificaciones");
-  //indexContr(resultados_busqueda);
-};
-
-
-
-const searchDateContr = (year) => {
-  let resultado = [];
-
-  for (i = 0; i < carreras.length; i++) {
-    if (parseDate(carreras[i].fecha).getFullYear() == year) {
-      //Encontrado
-      resultado.push(carreras[i]);
-    }
-  }
-  resultados_busqueda = resultado;
-
-  document.getElementById("main").innerHTML = indexView(resultado, "clasifDate");
-}
-
-const searchCatContr = (cat) => {
-  let resultado = [];
-  for (i = 0; i < carreras.length; i++) {
-    if (carreras[i].categoria == categorias[cat]) {
-      //Encontrado
-      resultado.push(carreras[i]);
-    }
-  }
-  resultados_busqueda = resultado;
-  document.getElementById("main").innerHTML = indexView(resultado, "clasifCat");
-}
-
-const menuContr = () => {
-
-  document.getElementById("navegador").innerHTML = menuView();
-
-}
 
 // Inicialización
 document.addEventListener("DOMContentLoaded", proximosContr);
 document.addEventListener("DOMContentLoaded", menuContr);
-
-
-
 
 // ROUTER de eventos
 const matchEvent = (ev, sel) => ev.target.matches(sel);
@@ -403,28 +331,23 @@ const myId = (ev) => Number(ev.target.dataset.myId);
 
 document.addEventListener("click", (ev) => {
   //Añadir nueva clase de boton para las de inicio (próximos)
-  if (matchEvent(ev, ".index")) indexContr();
-  if (matchEvent(ev, ".proximos")) proximosContr();
-  if (matchEvent(ev, ".servicios")) serviciosContr();
-
-  //else if (matchEvent(ev, ".edit")) editContr(myId(ev));
-  //else if (matchEvent(ev, ".update")) updateContr(myId(ev));
+  if (matchEvent(ev, ".reset")) resetContr(carreras);
+  else if (matchEvent(ev, ".proximos")) proximosContr();
+  else if (matchEvent(ev, ".servicios")) serviciosContr();
   else if (matchEvent(ev, ".show")) showContr(myId(ev));
   else if (matchEvent(ev, ".showServicios")) showServiciosContr(myId(ev));
+  else if (matchEvent(ev, ".searchDate")) searchDateContr(myId(ev));
+  else if (matchEvent(ev, ".searchCat")) searchCatContr(myId(ev));
+  else if (matchEvent(ev, ".contacto")) contactoContr(myId(ev));
 
-  //else if (matchEvent(ev, ".title")) showContr(myId(ev));
-
+  //Controladores no usados en esta versión
+  //if (matchEvent(ev, ".index")) indexContr();
   //else if (matchEvent(ev, ".new")) newContr();
   //else if (matchEvent(ev, ".create")) createContr();
   //else if (matchEvent(ev, ".delete")) deleteContr(myId(ev));
-  else if (matchEvent(ev, ".reset")) resetContr(carreras);
-  else if (matchEvent(ev, ".searchDate")) searchDateContr(myId(ev));
-  else if (matchEvent(ev, ".searchCat")) searchCatContr(myId(ev));
-
-
+  //else if (matchEvent(ev, ".edit")) editContr(myId(ev));
+  //else if (matchEvent(ev, ".update")) updateContr(myId(ev));
 });
-
-
 
 //Formateo de fechas
 const formatDate = (current_datetime) => {
@@ -439,9 +362,6 @@ function parseDate(str) {
   var m = str.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);
   return (m) ? new Date(m[3], m[2] - 1, m[1]) : null;
 }
-
-//OBTENER AÑO, ÚTIL PARA HACER BÚSQUEDAS
-//let year = parseDate(carreras[i].fecha).getFullYear();
 
 //Funciones menú desplegable
 function ver(n) {
