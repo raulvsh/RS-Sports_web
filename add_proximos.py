@@ -8,13 +8,13 @@ from tkinter.ttk import Style
 
 
 OptionList = [
-    "Atletismo",
+    "Carreras a pie",
     "Ciclismo",
     "BTT",
     "Mushing"
 ]
 
-titulos = ['Categoría', 'Título', 'Fecha', 'Hora', 'Distancia', 'Organizador', 'Miniatura']
+titulos = ['Categoría', 'Título', 'Fecha', 'Hora', 'Distancia', 'Organizador', 'Miniatura', 'Inscripciones']
 
 
 root = tk.Tk()
@@ -50,17 +50,17 @@ def draw_categories():
 def draw_buttons(num):
     for j in range(int(num)):
         label1 = Label(root, text="Título botón " + str(j+1))
-        label1.grid(column=0, row=2*j+9)
+        label1.grid(column=0, row=2*j+10)
         label1.config(background="aliceblue")
         entry1 = Entry(root, width=50)
-        entry1.grid(column=1, row=2*j+9)
+        entry1.grid(column=1, row=2*j+10)
         entries.append(entry1)
 
         label2 = Label(root, text="Link botón " + str(j+1))
         label2.config(background="aliceblue")
-        label2.grid(column=0, row=2*j+10)
+        label2.grid(column=0, row=2*j+11)
         entry2 = Entry(root, width=50)
-        entry2.grid(column=1, row=2*j+10)
+        entry2.grid(column=1, row=2*j+11)
         entries.append(entry2)
 
 
@@ -83,6 +83,10 @@ def draw_instructions():
     label.config(background="aliceblue")
     label = Label(
         root, text="Link: poner link completo, sea de PDF o web.\n Por ejemplo: pdf/2022/ogro.pdf, http://www.ogromaraton.com", justify=LEFT)
+    label.grid(column=0, row=24, columnspan=2)
+    label.config(background="aliceblue")
+    label = Label(
+        root, text="Inscripciones: Guardar archivo en detalles-evento y listado-participantes.\nPoner solo el nombre de archivo: 6-II-dia-patin.html", justify=LEFT)
     label.grid(column=0, row=24, columnspan=2)
     label.config(background="aliceblue")
 
@@ -147,11 +151,14 @@ def add_race(mensaje):
 
     for j in range(int(entradaNumBotones.get())):
         textoCompleto += "\t\t\t{\n"
-        textoCompleto += "\t\t\t\ttitulo: \"" + entries[2*j+7].get() + "\",\n"
-        textoCompleto += "\t\t\t\tarchivo: \"" + entries[2*j+8].get() + "\",\n"
+        textoCompleto += "\t\t\t\ttitulo: \"" + entries[2*j+8].get() + "\",\n"
+        textoCompleto += "\t\t\t\tarchivo: \"" + entries[2*j+9].get() + "\",\n"
 
         textoCompleto += "\t\t\t},\n"
-    textoCompleto += "\n\t\t],"
+    
+    textoCompleto += "\n\t\t],\n"
+    if(entries[7].get()!=""):
+        textoCompleto += "\tinscripciones: " + "\"inscripciones/detalles-evento/evento/" + entries[7].get() + "\",\n"
 
     #textoCompleto+="\tbotones: " + "\"" + botonesResultado.get() + "\",\n"
 

@@ -1,7 +1,8 @@
-const categorias = ["Atletismo", "Ciclismo", "BTT", "Mushing",];
+const categorias = ["Carreras a pie", "Ciclismo", "BTT", "Mushing",];
 
 let carreras_local;
 let resultados_busqueda;
+let enlace_inscripciones;
 
 // VISTAS
 const indexView = (carreras, seccion) => {
@@ -68,7 +69,7 @@ const showView = (carrera) => {
   view = `
   <div class="tituloDetalle">${carrera.titulo}</div>
   <div class="contenedorDetalle">
-  <img id="miniaturaShow" src=${carrera.miniatura}></img>
+    <img id="miniaturaShow" src=${carrera.miniatura}></img>
 
     <div class="contentTitle">
              <div class="elementoTitulo">Fecha:</div>
@@ -89,15 +90,27 @@ const showView = (carrera) => {
     </div>
     <div class="actions">`
 
-
+    if (carrera.inscripciones != undefined) {
+      //view+=`<p>hola</p>`
+      //view+=`${carrera.inscripciones}`
+      enlace_inscripciones=carrera.inscripciones;
+      //view += `<div class="actions">`
+      //view += `<a class = "new" href=${carrera.inscripciones} target=_blank><button class="new">Inscripciones</button></a> `;
+      view += `<button class="inscripciones">Inscripciones</button>`;/*${carrera.inscripciones}*/
+  
+      //view += `</div>`
+  
+    }
   for (let j = 0; j < carrera.botones.length; j++) {
     view += `<a href=${carrera.botones[j].archivo} target=_blank><button>${carrera.botones[j].titulo}</button></a> `;
     //view += `<button href=${carrera.clasificaciones[j].archivo} target=_blank>${carrera.clasificaciones[j].titulo}</button> `;
-
+    //view+=`${carrera.inscripciones}`;
   }
 
-  view +=
-    `</div></div>`
+
+  view += `</div>` //Cierre actions
+
+  view += `</div>` //Cierre contenedorDetalle
   /*view+=`<div class="actions">
      <button class="index">Volver</button>
   </div>`*/
@@ -127,25 +140,29 @@ const showServiciosView = (carrera) => {
   return view;
 };
 
-/*const newView = () => {
-  return `<h2>Crear Película</h2>
+const inscripcionesView = (web) => {
+  alert(web);
+  view = "";
+  view += `<h2><Inscripciones></h2>
           Introducir  título: <input type="text" id="titulo"> <br>
           Introducir url de la miniatura:<input type="text" id="miniatura"> <br>
           <div class="actions">
             <button class="create">Crear</button>
             <button class="index">Volver</button>
           </div>`;
+          view+=`${web}`;
+  return view;
 
   //          Introducir fecha:<input type="text" id="fecha"> <br>
 
-};*/
+};
 
 const menuView = () => {
   view = "";
 
   view += `<ul>
             <li class="proximos">
-              <p class="proximos">inscripciones</p>
+              <p class="proximos">próximos eventos </p>
             </li>
 
             <li class="servicios">
@@ -190,7 +207,21 @@ const menuView = () => {
 const contactoView = () => {
   view = "";
 
-  view += `<h1>Formulario de contacto</h1>`
+  view += `<h1>Formulario de contacto</h1>
+  
+  <p>Si quiere ponerse en contacto con nosotros hágalo a través, cualquiera de estos medios:
+  teléfono, e-mail o rellene el formulario que tiene a continuación.</p>
+
+  <h3>Rubén: 666666666</h3>
+  <h3>Samuel: 666666666</h3>
+  <h3>email: rssports@666666666</h3>
+
+
+
+
+
+  
+  `
 
   return view;
 }
@@ -213,7 +244,7 @@ const proximosContr = () => {
 };
 
 const serviciosContr = () => {
-  
+
   resultados_busqueda = servicios;
   document.getElementById("main").innerHTML = indexView(servicios, "servicios");
 };
@@ -272,9 +303,23 @@ const contactoContr = () => {
 
 
 //CONTROLADORES SIN USAR
-/*const newContr = () => {
-  document.getElementById("main").innerHTML = newView();
-};*/
+const inscripcionesContr = () => {
+  //document.getElementById("main") = fetch("/inscripciones/detalles-evento/evento/1-prueba(copiar%20de%20aqui).html")//'/inscripciones/detalles-evento/evento/1-prueba(copiar%20de%20aqui).html';//inscripcionesView(web);
+  //document.getu
+  //document.getElementById("main").innerHTML = "";inscripcionesView(web);
+  /*fetch("/inscripciones/detalles-evento/evento/1-prueba(copiar%20de%20aqui).html").then(response=>{
+    return response.text()
+  }).then(data=>{
+    document.getElementById("main").innerHTML=data;
+  })*/
+  //alert(enlace_inscripciones)
+  //document.getElementById("main").innerHTML='<object type="text/html" data="/inscripciones/detalles-evento/evento/1-prueba(copiar%20de%20aqui).html" ></object>';
+  document.getElementById("main").innerHTML=`<object class="htmlinscripciones" type="text/html" data="${enlace_inscripciones}" ></object>`;
+
+  //document.getElementById("main").innerHTML=`<div w3-include-html="/inscripciones/detalles-evento/evento/1-prueba(copiar%20de%20aqui).html"></div>`
+
+
+};
 
 /*const createContr = () => {
   let mis_carreras = JSON.parse(localStorage.mis_carreras);
@@ -338,11 +383,11 @@ document.addEventListener("click", (ev) => {
   else if (matchEvent(ev, ".showServicios")) showServiciosContr(myId(ev));
   else if (matchEvent(ev, ".searchDate")) searchDateContr(myId(ev));
   else if (matchEvent(ev, ".searchCat")) searchCatContr(myId(ev));
-  else if (matchEvent(ev, ".contacto")) contactoContr(myId(ev));
+  else if (matchEvent(ev, ".contacto")) contactoContr();
 
   //Controladores no usados en esta versión
   //if (matchEvent(ev, ".index")) indexContr();
-  //else if (matchEvent(ev, ".new")) newContr();
+  else if (matchEvent(ev, ".inscripciones")) inscripcionesContr();
   //else if (matchEvent(ev, ".create")) createContr();
   //else if (matchEvent(ev, ".delete")) deleteContr(myId(ev));
   //else if (matchEvent(ev, ".edit")) editContr(myId(ev));

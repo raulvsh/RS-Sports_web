@@ -7,7 +7,7 @@ import shutil
 
 
 OptionList = [
-    "Atletismo",
+    "Carreras a pie",
     "Ciclismo",
     "BTT",
     "Mushing"
