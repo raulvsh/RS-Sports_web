@@ -1,6 +1,24 @@
 carreras = [
 
 {
+	titulo: "123",
+	fecha: "10/10/2022",
+	categoria: "Atletismo",
+	hora: "5",
+	distancia: "5",
+	organizador: "5",
+	miniatura: "img/2022/carrera_perro.jpg",
+	botones:
+		[
+			{
+				titulo: "asfd",
+				archivo: "asdf",
+			},
+
+		],
+},
+
+{
 	titulo: "coche tele",
 	fecha: "12/12/2022",
 	categoria: "Ciclismo",

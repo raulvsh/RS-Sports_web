@@ -4,6 +4,7 @@ from email.policy import default
 import tkinter as tk
 from tkinter import *
 import shutil
+from tkinter.ttk import Style
 
 
 OptionList = [
@@ -17,8 +18,8 @@ titulos = ['Categoría', 'Título', 'Fecha', 'Hora', 'Distancia', 'Organizador',
 
 
 root = tk.Tk()
-root.geometry("800x600")  # Tamaño por defecto
-root.title("Añadir-Próximos Eventos RS-Sport")  # Titulo de ventana
+root.geometry("800x700")  # Tamaño por defecto
+root.title("Añadir Próximos Eventos RS-Sport")  # Titulo de ventana
 root.config(background="aliceblue")
 
 entries = []
@@ -30,6 +31,7 @@ categoriaResultado = StringVar()
 def draw_categories():
     for i, titulo in enumerate(titulos):
         label = Label(root, text=titulos[i])
+        label.config(background="aliceblue")
         label.grid(column=0, row=i+2)
         if(titulo != "Categoría"):
             entry = Entry(root, width=50)
@@ -49,11 +51,13 @@ def draw_buttons(num):
     for j in range(int(num)):
         label1 = Label(root, text="Título botón " + str(j+1))
         label1.grid(column=0, row=2*j+9)
+        label1.config(background="aliceblue")
         entry1 = Entry(root, width=50)
         entry1.grid(column=1, row=2*j+9)
         entries.append(entry1)
 
         label2 = Label(root, text="Link botón " + str(j+1))
+        label2.config(background="aliceblue")
         label2.grid(column=0, row=2*j+10)
         entry2 = Entry(root, width=50)
         entry2.grid(column=1, row=2*j+10)
@@ -73,11 +77,15 @@ def draw_final_button():
 def draw_instructions():
     label = Label(root, text="\nFecha: dd/mm/aaaa", justify=LEFT)
     label.grid(column=0, row=22, columnspan=1)
-    label = Label(root, text="Miniatura: poner imagen en la carpeta raiz, copiar solo nombre: image.jpg.\nEl programa la guarda automáticamente en su carpeta", justify=LEFT)
+    label.config(background="aliceblue")
+    label = Label(root, text="Miniatura: poner imagen en la carpeta raiz, copiar solo nombre: image.jpg.\nNo usar ñ ni espacios.\nEl programa la guarda automáticamente en su carpeta.", justify=LEFT)
     label.grid(column=0, row=23, columnspan=2)
+    label.config(background="aliceblue")
     label = Label(
         root, text="Link: poner link completo, sea de PDF o web.\n Por ejemplo: pdf/2022/ogro.pdf, http://www.ogromaraton.com", justify=LEFT)
     label.grid(column=0, row=24, columnspan=2)
+    label.config(background="aliceblue")
+
 
 
 def start_app():
@@ -92,12 +100,15 @@ def lectura_escritura():
     mensaje = leer_archivo()
     mensaje = add_race(mensaje)
     guardar_archivo(mensaje)
-    copiar_pdf()
+    copiar_img()
+    label = Label(root, text="\nEvento Añadido", justify=LEFT)
+    label.grid(column=3, row=20, columnspan=1)
 
 
-def copiar_pdf():
+def copiar_img():
     year = parse_date(entries[2].get())
     shutil.move(entries[6].get(), "img/"+year+"/"+entries[6].get())
+    
     #print("año" + parse_date(entries[1].get()))
 
 
@@ -154,14 +165,19 @@ def guardar_archivo(mensaje):
     fichero = open('proximos.js', 'w')
     fichero.write(mensaje)
 
-
+labelProximosEventos = Label(root, text="PRÓXIMOS EVENTOS\n\n\n",font = ('Courier', 15, 'bold') )
+labelProximosEventos.grid(column=0, row=0)
+labelProximosEventos.config(background="aliceblue")
 labelNumBotones = Label(root, text="Introduce el número de botones")
 labelNumBotones.grid(column=0, row=0)
+labelNumBotones.config(background="aliceblue")
 
 entradaNumBotones = Entry()
 entradaNumBotones.grid(column=1, row=0)
 
+
+
 button = Button(text="Aceptar", command=lambda: start_app())
-button.grid(column=2, row=0)
+button.grid(column=3, row=0)
 
 root.mainloop()

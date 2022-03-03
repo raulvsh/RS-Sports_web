@@ -1,6 +1,278 @@
 proximos = [
 
 {
+	titulo: "",
+	fecha: "20/12/2021",
+	categoria: "Atletismo",
+	hora: "",
+	distancia: "",
+	organizador: "",
+	miniatura: "img/2021/2.jpg",
+	botones:
+		[
+			{
+				titulo: "",
+				archivo: "",
+			},
+			{
+				titulo: "",
+				archivo: "",
+			},
+			{
+				titulo: "",
+				archivo: "",
+			},
+			{
+				titulo: "",
+				archivo: "",
+			},
+			{
+				titulo: "",
+				archivo: "",
+			},
+
+		],
+},
+
+{
+	titulo: "",
+	fecha: "20/12/2020",
+	categoria: "Atletismo",
+	hora: "",
+	distancia: "",
+	organizador: "",
+	miniatura: "img/2020/1.jpg",
+	botones:
+		[
+			{
+				titulo: "",
+				archivo: "",
+			},
+			{
+				titulo: "",
+				archivo: "",
+			},
+			{
+				titulo: "",
+				archivo: "",
+			},
+			{
+				titulo: "",
+				archivo: "",
+			},
+			{
+				titulo: "",
+				archivo: "",
+			},
+
+		],
+},
+
+{
+	titulo: "",
+	fecha: "20/12/2020",
+	categoria: "Atletismo",
+	hora: "",
+	distancia: "",
+	organizador: "",
+	miniatura: "img/2020/",
+	botones:
+		[
+			{
+				titulo: "",
+				archivo: "",
+			},
+			{
+				titulo: "",
+				archivo: "",
+			},
+			{
+				titulo: "",
+				archivo: "",
+			},
+			{
+				titulo: "",
+				archivo: "",
+			},
+			{
+				titulo: "",
+				archivo: "",
+			},
+
+		],
+},
+
+{
+	titulo: "Carrera de coches",
+	fecha: "10/10/2022",
+	categoria: "Ciclismo",
+	hora: "08:50",
+	distancia: "150km",
+	organizador: "Raul Velasco",
+	miniatura: "img/2022/1.jpg",
+	botones:
+		[
+			{
+				titulo: "marca",
+				archivo: "",
+			},
+			{
+				titulo: "elpais",
+				archivo: "http://www.elpais.com",
+			},
+
+		],
+},
+
+{
+	titulo: "Carrera de coches",
+	fecha: "10/10/2022",
+	categoria: "Ciclismo",
+	hora: "08:50",
+	distancia: "150km",
+	organizador: "Raul Velasco",
+	miniatura: "img/2022/coches-más-lujosos-que-puedes-comprar.jpg",
+	botones:
+		[
+			{
+				titulo: "marca",
+				archivo: "http://www.marca.com",
+			},
+			{
+				titulo: "elpais",
+				archivo: "http://www.elpais.com",
+			},
+
+		],
+},
+
+{
+	titulo: "Carrera de coches",
+	fecha: "10/10/2022",
+	categoria: "Ciclismo",
+	hora: "08:50",
+	distancia: "150km",
+	organizador: "Raul Velasco",
+	miniatura: "img/2022/coches-mas-lujosos-que-puedes-comprar.jpg",
+	botones:
+		[
+			{
+				titulo: "marca",
+				archivo: "http://www.marca.com",
+			},
+			{
+				titulo: "elpais",
+				archivo: "http://www.elpais.com",
+			},
+
+		],
+},
+
+{
+	titulo: "titulo",
+	fecha: "12/12/2020",
+	categoria: "Atletismo",
+	hora: "1",
+	distancia: "11",
+	organizador: "1",
+	miniatura: "img/2020/2.JPG",
+	botones:
+		[
+
+		],
+},
+
+{
+	titulo: "a",
+	fecha: "10/10/2020",
+	categoria: "Atletismo",
+	hora: "1",
+	distancia: "1",
+	organizador: "a",
+	miniatura: "img/2020/3.jpg",
+	botones:
+		[
+
+		],
+},
+
+{
+	titulo: "tractor",
+	fecha: "10/10/2020",
+	categoria: "Ciclismo",
+	hora: "10",
+	distancia: "2",
+	organizador: "1",
+	miniatura: "img/2020/2.jpg",
+	botones:
+		[
+			{
+				titulo: "mar",
+				archivo: "http://www.marca.com",
+			},
+
+		],
+},
+
+{
+	titulo: "tractor",
+	fecha: "10/10/2020",
+	categoria: "Ciclismo",
+	hora: "10",
+	distancia: "2",
+	organizador: "1",
+	miniatura: "img/2020/2.jpg",
+	botones:
+		[
+			{
+				titulo: "mar",
+				archivo: "http://www.marca.com",
+			},
+
+		],
+},
+
+{
+	titulo: "tractor",
+	fecha: "10/10/2020",
+	categoria: "Ciclismo",
+	hora: "10",
+	distancia: "2",
+	organizador: "1",
+	miniatura: "img/2020/2.jpg",
+	botones:
+		[
+			{
+				titulo: "mar",
+				archivo: "http://www.marca.com",
+			},
+
+		],
+},
+
+{
+	titulo: "Tractor Race",
+	fecha: "10/10/2020",
+	categoria: "BTT",
+	hora: "07:20",
+	distancia: "150km",
+	organizador: "John Deere",
+	miniatura: "img/2020/John-Deere-SESAM-electric-tractor.jpg",
+	botones:
+		[
+			{
+				titulo: "Marca",
+				archivo: "http://www.marca.com",
+			},
+			{
+				titulo: "ElPais",
+				archivo: "http://www.elpais.com",
+			},
+
+		],
+},
+
+{
 	titulo: "Tractor azul",
 	fecha: "10/10/2020",
 	categoria: "Ciclismo",

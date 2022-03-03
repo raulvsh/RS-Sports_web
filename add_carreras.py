@@ -17,9 +17,9 @@ titulos = ['Categoría', 'Título', 'Fecha', 'Hora', 'Distancia', 'Organizador',
 
 
 root = tk.Tk()
-root.geometry("800x600")  # Tamaño por defecto
-root.title("Añadir-Carreras RS-Sport")  # Titulo de ventana
-root.config(background="aliceblue")
+root.geometry("800x700")  # Tamaño por defecto
+root.title("Añadir Clasificaciones RS-Sport")  # Titulo de ventana
+#root.config(background="aliceblue")
 """entry = Entry()
 entry.place(x=50, y=50)"""
 # Esta segunda caja de texto no puede recibir el foco
@@ -92,7 +92,7 @@ def draw_final_button():
 def draw_instructions():
     label = Label(root, text="\nFecha: dd/mm/aaaa", justify=LEFT)
     label.grid(column=0, row=22, columnspan=1)
-    label = Label(root, text="Miniatura: poner imagen en la carpeta raiz, copiar solo nombre: image.jpg.\nEl programa la guarda automáticamente en su carpeta", justify=LEFT)
+    label = Label(root, text="Miniatura: poner imagen en la carpeta raiz, copiar solo nombre: image.jpg.\nNo usar ñ ni espacios.\nEl programa la guarda automáticamente en su carpeta.", justify=LEFT)
     label.grid(column=0, row=23, columnspan=2)
     label = Label(
         root, text="Link: poner link completo, sea de PDF o web.\n Por ejemplo: pdf/2022/ogro.pdf, http://www.ogromaraton.com", justify=LEFT)
@@ -112,10 +112,12 @@ def lectura_escritura():
     mensaje = leer_archivo()
     mensaje = add_race(mensaje)
     guardar_archivo(mensaje)
-    copiar_pdf()
+    copiar_img()
+    label = Label(root, text="\nEvento Añadido", justify=LEFT)
+    label.grid(column=3, row=20, columnspan=1)
 
 
-def copiar_pdf():
+def copiar_img():
     year = parse_date(entries[2].get())
     #descomentar para mover
     shutil.move(entries[6].get(), "img/"+year+"/"+entries[6].get())
@@ -202,6 +204,8 @@ def guardar_archivo(mensaje):
     fichero.write(mensaje)
 
 
+labelCarreras = Label(root, text="CLASIFICACIONES\n\n\n",font = ('courier', 15, 'bold') )
+labelCarreras.grid(column=0, row=0)
 labelNumBotones = Label(root, text="Introduce el número de botones")
 labelNumBotones.grid(column=0, row=0)
 
