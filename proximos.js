@@ -1,5 +1,49 @@
 proximos = [
 
+{
+	titulo: "as",
+	fecha: "10/10/2020",
+	categoria: "Atletismo",
+	hora: "1",
+	distancia: "1",
+	organizador: "1",
+	miniatura: "img/2020/1.jpg",
+	botones:
+		[
+			{
+				titulo: "Marca",
+				archivo: "http://www.marca.com",
+			},
+			{
+				titulo: "",
+				archivo: "",
+			},
+
+		],
+},
+
+{
+	titulo: "Tractor Race",
+	fecha: "03/03/2022",
+	categoria: "BTT",
+	hora: "07:52",
+	distancia: "150km",
+	organizador: "John Deere",
+	miniatura: "img/2022/John-Deere-SESAM-electric-tractor.jpg",
+	botones:
+		[
+			{
+				titulo: "John Deere",
+				archivo: "https://www.deere.es",
+			},
+			{
+				titulo: "Top Maquinaria",
+				archivo: "https://www.topmaquinaria.com/agricola/tractores",
+			},
+
+		],
+},
+
 	{
 		titulo: "",
 		fecha: "20/12/2021",

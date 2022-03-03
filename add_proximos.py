@@ -103,6 +103,7 @@ def lectura_escritura():
     copiar_img()
     label = Label(root, text="\nEvento Añadido", justify=LEFT)
     label.grid(column=3, row=20, columnspan=1)
+    label.config(background="aliceblue")
 
 
 def copiar_img():
