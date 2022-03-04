@@ -1460,6 +1460,1730 @@ carreras = [
             },
         ],
     },
+
+    {
+        titulo:"IV TRAVESÍA NOCTURNA CASTILLO DE ISAR 2019",
+        fecha: "17/08/2019",
+        categoria: "Carreras a pie",
+        hora: "21:30",
+        distancia: "",
+        organizador: "Ayto. de Isar",
+        miniatura:"img/2019/cartelNocturnaIsar2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.carreranocturnaisar.es/",
+            },
+            {
+                titulo: "Reglamento",
+                archivo: "http://www.carreranocturnaisar.es/pages/normativa.html",
+            },
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaCastilloIsar17082019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"I XCO MONASTERIO DE RODILLA 2019",
+        fecha: "17/08/2019",
+        categoria: "Carreras a pie",
+        hora: "16:30",
+        distancia: "",
+        organizador: "",
+        miniatura:"img/2019/cartelXCOMonasterioRodilla2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.facebook.com/Xco-Monasterio-de-Rodilla-404008356882606/",
+            },
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesXCOMonasterioRodilla17082019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"VII TRAVESÍA NOCTURNA \"SENDERO DE LAS FORTIFICACIONES\" 2019",
+        fecha: "16/08/2019",
+        categoria: "Carreras a pie",
+        hora: "22:00",
+        distancia: "",
+        organizador: "",
+        miniatura:"img/2019/cartelNocturnaFuentecen2019.jpg",
+        botones: [
+            {
+                titulo: "Wikiloc",
+                archivo: "http://es.wikiloc.com/wikiloc/view.do?id=4712393",
+            },
+            {
+                titulo: "Clasif. Carrera",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesFuentecenCarrera16082019.pdf",
+            },
+            {
+                titulo: "Clasif. Senderismo",
+                archivo: "https://www.avaibooksports.com/inscripcion/index.php?id=9368",
+            },
+        ],
+    },
+
+    {
+        titulo:"XI Subida al Pico de Navas 2019",
+        fecha: "13/08/2018",
+        categoria: "Carreras a pie",
+        hora: "19:30",
+        distancia: "3,6 km",
+        organizador: "Ayto. de Navas del Pinar - C.D. Navas del Pinar",
+        miniatura:"img/2019/cartelPicoNavas2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.navasdelpinar.es",
+            },
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesPicoNavas13082019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"V TROFEO DE VELOCIDAD VILLA DE BELORADO 2019",
+        fecha: "11/08/2019",
+        categoria: "Carreras a pie",
+        hora: "11:30",
+        distancia: "12Km / 21 Km",
+        organizador: "Ayto de Belorado",
+        miniatura:"img/2019/cartelPatinesBelorado2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "https://www.facebook.com/events/1779282468952437/",
+            },
+            {
+                titulo: "Clasif. 21km",
+                archivo: "http://rs-sport.es/Clasificaciones/Clasificaciones21kmPatines11082019.pdf",
+            },
+            {
+                titulo: "Clasif. 12km",
+                archivo: "http://rs-sport.es/Clasificaciones/Clasificaciones12kmPatines11082019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"XI Carrera Popular 10km Ciudad de Briviesca 2019",
+        fecha: "3/08/2019",
+        categoria: "Carreras a pie",
+        hora: "20:00",
+        distancia: "",
+        organizador: "",
+        miniatura:"img/2019/cartel10kmBriviesca2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://deportes.briviesca.es",
+            },
+            {
+                titulo: "Clasificaciones 5km",
+                archivo: "http://rs-sport.es/Clasificaciones/Clasificacion5kmBriviesca03082019.pdf",
+            },
+            {
+                titulo: "Clasificaciones 10km",
+                archivo: "http://rs-sport.es/Clasificaciones/Clasificacion10kmBriviesca03082019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"COLINA TRISTE 2019",    
+        fecha: "25/07/2019",
+        categoria: "BTT",
+        hora: "09:00",
+        distancia: "",
+        organizador: "Silos C.D",
+        miniatura:"img/2019/cartelColinaTriste2019.jpg",
+        botones: [
+            {
+                titulo: "General",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeGeneral28072019",
+            },
+            {
+                titulo: "Etapa 1",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEtapa125072019.pdf",
+            },
+            {
+                titulo: "Etapa 2",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEtapa226072019.pdf",
+            },
+            {
+                titulo: "Etapa 3",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEtapa327072019.pdf",
+            },
+            {
+                titulo: "Etapa 4",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEtapa428072019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"HALF COLINA TRISTE 2019",    
+        fecha: "27/07/2019",
+        categoria: "BTT",
+        hora: "09:15",
+        distancia: "",
+        organizador: "Silos C.D",
+        miniatura:"img/2019/cartelColinaTriste2019.jpg",
+        botones: [
+            {
+                titulo: "General",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeHalfGeneral28072019.pdf",
+            },
+            {
+                titulo: "Etapa 1",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeHalfEtapa127072019.pdf",
+            },
+            {
+                titulo: "Etapa 2",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeHalfEtapa228072019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"STAGE COLINA TRISTE 2019",    
+        fecha: "28/07/2019",
+        categoria: "Carreras a pie",
+        hora: "09:15",
+        distancia: "",
+        organizador: "Silos C.D",
+        miniatura:"img/2019/cartelColinaTriste2019.jpg",
+        botones: [
+            {
+                titulo: "Clasificación",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeStage28072019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"5ª Nocturna Ruta del Boletus 2019",
+        fecha: "27/07/2019",
+        categoria: "Carreras a pie",
+        hora: "22:00",
+        distancia: "10,85 km",
+        organizador: "Ayto. de Rabanera del Pinar",
+        miniatura:"img/2019/cartelBoletus2019.jpg",
+        botones: [
+            {
+                titulo: "Clasificaciones Carrera",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesBoletusCarrera27072019.pdf",
+            },
+            {
+                titulo: "Clasificaciones Senderismo",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesBoletusSenderismo27072019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"23 Marcha cicloturista Lagunas de Neila 2019",
+        fecha: "21/07/2019",
+        categoria: "Ciclismo",
+        hora: "08:30",
+        distancia: "160 km",
+        organizador: "U.C. Burgalesa",
+        miniatura:"img/2019/cartelLagunasNeila2019.jpg",
+        botones: [
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesCicloturistaNeila21072019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"CRONOESCALADA AL ARGALARIO 2019",    
+        fecha: "21/07/2018",
+        categoria: "Carreras a pie",
+        hora: "11:00",
+        distancia: "4,7 km",
+        organizador: "Barakaldesa, S.C.",
+        miniatura:"img/2019/cartelCronoescaladaArgalario2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.barakaldesa.com",
+            },
+            {
+                titulo: "Clasif. Ciclistas",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesArgalarioCiclistas21072019.pdf",
+            },
+            {
+                titulo: "Clasif. Runners",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesArgalarioRunners21072019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"IV MEDIA MARATÓN HAZLA DEL TIRÓN 2019",    
+        fecha: "21/07/2018",
+        categoria: "Carreras a pie",
+        hora: "09:00",
+        distancia: "21 km / 12 km",
+        organizador: "",
+        miniatura:"img/2019/cartelMediaMaratonHazlaDelTiron2019.jpg",
+        botones: [
+            {
+                titulo: "Clasif. Corredores",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesMediaHazlaTironCorredores21072019.pdf",
+            },
+            {
+                titulo: "Clasif. Patines",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesMediaHazlaTironPatines21072019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"IV NOCTURNA TERRORIFICA 2019",    
+        fecha: "20/07/2018",
+        categoria: "Carreras a pie",
+        hora: "22:30",
+        distancia: "",
+        organizador: "Ayto. Villarcayo",
+        miniatura:"img/2019/cartelNocturnaVillarcayo2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "https://www.facebook.com/NocturnaVillarcayoMCV/",
+            },
+            {
+                titulo: "Clasif. Carrera ",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaTerrorificaCarrera20072019.pdf",
+            },
+            {
+                titulo: "Clasif. Senderismo",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaTerrorificaSenderismo20072019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"VIII LOS 10 DE IBEAS 2019",    
+        fecha: "14/07/2019",
+        categoria: "Carreras a pie",
+        hora: "09:30",
+        distancia: "10km",
+        organizador: "ACAHIA",
+        miniatura:"img/2019/cartelIbeas2019.jpg",
+        botones: [
+            {
+                titulo: "Clasif. Carrera",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesLos10deIbeas14072019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"V TRAVESÍA NOCTURNA MINERA 2019",   
+        fecha: "14/07/2018",
+        categoria: "Carreras a pie",
+        hora: "22:30",
+        distancia: "",
+        organizador: "",
+        miniatura:"img/2019/cartelNocturnaBelorado2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "https://www.facebook.com/nocturnaminera/",
+            },
+            {
+                titulo: "Recorrido",
+                archivo: "https://es.wikiloc.com/rutas-carrera-por-montana/travesia-nocturna-minera-25205239",
+            },
+            {
+                titulo: "Clasificaciones Carrera",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaMinera13072019.pdf",
+            },
+            {
+                titulo: "Clasificaciones Senderismo",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaMineraSenderismo13072019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"XXIII LA MEDIA DE BURGOS 2019",    
+        fecha: "22/06/2019",
+        categoria: "Carreras a pie",
+        hora: "09:30",
+        distancia: "21,097 Km",
+        organizador: "ABAVE",
+        miniatura:"img/2019/cartellamediadeburgos2018.jpg",
+        botones: [
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesMMCB23062019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo: "III DIA DEL PATÍN 2019",    
+        fecha: "16/06/2019",
+        categoria: "Carreras a pie",
+        hora: "10:00",
+        distancia: "21,097Km",
+        organizador: "C.D Roller Burgos",
+        miniatura:"img/2019/carteldiadelpatin2017.jpg",
+        botones: [
+            {
+                titulo: "Clasif Media Maratón",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesDiaPatinMedia16062019.pdf",
+            },
+            {
+                titulo: "Clasif. Infantiles",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesDiaPatinInfantiles16062019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"VII LA NOCHE MAS DEPORTIVA 2019",    
+        fecha: "14/06/2019",
+        categoria: "Carreras a pie",
+        hora: "21:00",
+        distancia: "5 Km",
+        organizador: "Logroño Deporte",
+        miniatura:"img/2019/cartelnochemasdeportiva2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.logronodeporte.es/",
+            },
+            {
+                titulo: "Reglamento",
+                archivo: "http://www.rs-sport.es/inscripciones/reglamentos_competiciones/18-reglamento-carrera-noche-mas-deportiva-2018.pdf",
+            },
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasifLaNocheMasDeportiva2019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"PICON CASTRO 2019",    
+        fecha: "8/06/2019",
+        categoria: "Carreras a pie",
+        hora: "09:00",
+        distancia: "",
+        organizador: "",
+        miniatura:"img/2019/cartelpiconcastro2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.lapiconcastro.com/",
+            },
+            {
+                titulo: "Clasif. Ultra",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesPiconCastroUltra08062019.pdf",
+            },
+            {
+                titulo: "Clasif. Trail",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesPiconCastroCorta08062019.pdf",
+            },
+            {
+                titulo: "Clasif. Marcha",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesPiconCastroSenderismo08062019.pdf",
+            },
+            {
+                titulo: "Clasif. Picon Castro Vertical",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesPiconCastroVertical09062019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"VI TRAVESIA NOCTURNA LIBERANOS DOMINE 2019",    
+        fecha: "8/06/2019",
+        categoria: "Carreras a pie",
+        hora: "22:15",
+        distancia: "10Km",
+        organizador: "Ayto. de Rabe de las Calzadas y Ayto. de Tardajos",
+        miniatura:"img/2019/cartelcnocturnatardajos2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.liberanosdomine.es/",
+            },
+            {
+                titulo: "Recorrido",
+                archivo: "http://www.liberanosdomine.es/recorrido/",
+            },
+            {
+                titulo: "Reglamento",
+                archivo: "http://www.liberanosdomine.es/reglamento-1/",
+            },
+            {
+                titulo: "Clasif. Carrera",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesLiberanosDomineCarrera08062019.pdf",
+            },
+            {
+                titulo: "Clasif. Senderismo",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesLiberanosDomineSenderismo08062019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"GRAN FONDO BIBE TRANSBIZKAIA",    
+        fecha: "2/06/2019",
+        categoria: "Ciclismo",
+        hora: "08:00",
+        distancia: "178Km",
+        organizador: "Jotamas Eventos",
+        miniatura:"img/2019/cartelBIBE2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "https://www.granfondobibetransbizkaia.com/",
+            },
+            {
+                titulo: "Recorrido",
+                archivo: "https://www.granfondobibetransbizkaia.com/es/recorrido-granfondo/",
+            },
+            {
+                titulo: "Reglamento",
+                archivo: "https://www.granfondobibetransbizkaia.com/es/reglamento/",
+            },
+        ],
+    },
+
+    {
+        titulo:"XII CROSS SUBIDA A SANTA CASILDA 2019",
+        fecha: "2/06/2019",
+        categoria: "Carreras a pie",
+        hora: "11:30",
+        distancia: "9 km",
+        organizador: "Ayuntamiento de Briviersca",
+        miniatura:"img/2019/cartelsantacasilda2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://deporte.briviesca.es/cross-subida-a-santa-casilda-0",
+            },
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/CarreraSantaCasilda02062019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"XIV MARCHA IÑIGO CUESTA 2019",    
+        fecha: "25/05/2019",
+        categoria: "Ciclismo",
+        hora: "08:30",
+        distancia: "150Km",
+        organizador: "Club Ciclista Villarcayo",
+        miniatura:"img/2019/cartelicuesta2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://laicuesta.com/",
+            },
+            {
+                titulo: "Clasificaciones Kom Lunada",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesICuesta25052019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"VIII 1/2 MARATON \"CAÑÓN DEL RÍO LOBOS\"",    
+        fecha: "19/05/2019",
+        categoria: "Carreras a pie",
+        hora: "10:30",
+        distancia: "12,4km / 21Km",
+        organizador: "Ayto. de Hontoria del Pinar",
+        miniatura:"img/2019/cartelMediaRioLobos2019.jpg",
+        botones: [
+            {
+                titulo: "Recorrido",
+                archivo: "https://www.google.com/maps/d/u/0/viewer?mid=1rx_2cDByyxvpXaa9L23iHr_k-01Zwsdz&ll=41.84021711521787%2C-3.1659498674927136&z=13",
+            },
+            {
+                titulo: "Clasif. 12km",
+                archivo: "http://rs-sport.es/Clasificaciones/Clasificacion12Hontoria19052019.pdf",
+            },
+            {
+                titulo: "Clasif. Media Maraton",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionMediaHontoria19052019.pdf",
+            },
+            {
+                titulo: "Clasif. Senderismo",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionSenderismoHontoria19052019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"VI HIGUERO RUNNING FESTIVAL 2019",
+        fecha: "18/05/2019",
+        categoria: "Carreras a pie",
+        hora: "18:30",
+        distancia: "5Km / 10Km",
+        organizador: "Higuero Sport",
+        miniatura:"img/2019/cartelHiguero2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://higuerosport.com/",
+            },
+            {
+                titulo: "Circuito",
+                archivo: "http://higuerosport.com/circuito/",
+            },
+            {
+                titulo: "Reglamento",
+                archivo: "http://higuerosport.com/reglamento/",
+            },
+            {
+                titulo: "Clasif. 5km",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesHiguero5km18052019.pdf",
+            },
+            {
+                titulo: "Clasif. 10km",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesHiguero10km18052019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo: "LOS MEANDROS DE BRIONES 2019",    
+        fecha: "12/05/2019",
+        categoria: "Carreras a pie",
+        hora: "11:30",
+        distancia: "7 km / 13 km",
+        organizador: "Peña Zamaca",
+        miniatura:"img/2019/cartellosmeandros2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://meandros-briones.rs-sport.es/",
+            },
+            {
+                titulo: "Ruta Larga",
+                archivo: "https://es.wikiloc.com/rutas-carrera/i-los-meandros-de-briones-corta-11952590",
+            },
+            {
+                titulo: "Clasificación 7km",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesLosMeandrosCorta2019.pdf",
+            },
+            {
+                titulo: "Clasificación 10km",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesLosMeandrosLarga2019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"VIII NOCTURNA DE MODUBAR 2019",    
+        fecha: "11/05/2019",
+        categoria: "Carreras a pie",
+        hora: "22:45",
+        distancia: "13 Km",
+        organizador: "C.D Modubeos",
+        miniatura:"img/2019/cartelnocturnamodubar2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://cmmodubeos.blogspot.com.es/",
+            },
+            {
+                titulo: "Clasif. Carrera",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesNoctModubarCarrera11052019.pdf",
+            },
+            {
+                titulo: "Clasif. Senderismo",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesNoctModubarSenderismo11052019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"CLÁSICA LOS BUITRES 2019",    
+        fecha: "5/05/2018",
+        categoria: "Carreras a pie",
+        hora: "12:00",
+        distancia: "10 km",
+        organizador: "ABAVE",
+        miniatura:"img/2019/cartellosbuitres2019.jpg",
+        botones: [
+            {
+                titulo: "Recorrido",
+                archivo: "https://es.wikiloc.com/rutas-carrera/clasica-de-los-buitres-puentedura-ura-puentedura-23390607",
+            },
+            {
+                titulo: "Clasificación Menores",
+                archivo: "http://rs-sport.es/Clasificaci/ones/ClasificacionesBuitresMenores2019.pdf",
+            },
+            {
+                titulo: "Clasificación 10km",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesBuitres2019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo: "CARRERA CAMPUS UNIVERSIDAD DE LA RIOJA",    
+        fecha: "5/05/2019",
+        categoria: "Carreras a pie",
+        hora: "11:00",
+        distancia: "5 km / 10 km",
+        organizador: "Universidad de La Rioja",
+        miniatura:"img/2019/cartelunirioja2019.jpg",
+        botones: [
+            {
+                titulo: "Clasificación Preuniversitarios",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesUniRioja4km2019",
+            },
+            {
+                titulo: "Clasificación 5km",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesUniRioja5km2019",
+            },
+            {
+                titulo: "Clasificación 10km",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesUniRioja10km2019",
+            },
+        ],
+    },
+
+    {
+        titulo:"MUÑALBA TRAIL XTREM 2019",    
+        fecha: "28/04/2019",
+        categoria: "Carreras a pie",
+        hora: "09:00",
+        distancia: "23Km",
+        organizador: "Ayto. Regumiel de la Sierra",
+        miniatura:"img/2019/cartelmuñalbatrail2019.jpg",
+        botones: [
+            {
+                titulo: "Clasificacion",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesMuñalbaTrailXtrem28042019.pdf",
+            },
+            {
+                titulo: "Video Promocional",
+                archivo: "https://www.youtube.com/watch?v=_RBcZ7AI1Yg",
+            },
+        ],
+    },
+
+    {
+        titulo:"XCO ALDEDOS BURGOS 2019",    
+        fecha: "27/04/2019",
+        categoria: "BTT",
+        hora: "16:00",
+        distancia: "",
+        organizador: "C.D Colina Triste",
+        miniatura:"img/2019/cartelxcoaldedosburgos2019.jpg",
+        botones: [
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesXCOBURGOS2019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"I CARRERA SOLIDARIA DONA MEDULA",    
+        fecha: "14/04/2019",
+        categoria: "Carreras a pie",
+        hora: "09:30",
+        distancia: "10km / 21Km",
+        organizador: "Ayto. de Cardeñadijo",
+        miniatura:"img/2019/carteldonamedula2019.jpg",
+        botones: [
+            {
+                titulo: "Clasif. 10km ",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesDonaMedula10km14042019.pdf",
+            },
+            {
+                titulo: "Clasif. 21km",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesDonaMedula21km14042019.pdf",
+            },
+            {
+                titulo: "Senderismo",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesDonaMedulaSend14042019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"IV \"LA GUERRILLERA\" 2019",   
+        fecha: "7/04/2019",
+        categoria: "Carreras a pie",
+        hora: "10:00",
+        distancia: "15km / 25Km",
+        organizador: "",
+        miniatura:"img/2019/cartellaguerrillera2019.jpg",
+        botones: [
+            {
+                titulo: "Clasif. 15km",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesGuerrillera15km07042019.pdf",
+            },
+            {
+                titulo: "Clasif. 25km",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesGuerrillera25km07042019.pdf",
+            },
+            {
+                titulo: "Video Promocional",
+                archivo: "https://www.facebook.com/Ayto.Lerma/videos/1638375209590125/",
+            },
+        ],
+    },
+
+    {
+        titulo:"JIMENA RUNNING -SOTOPALACIOS- 2019",    
+        fecha: "30/03/2019",
+        categoria: "Carreras a pie",
+        hora: "17:00",
+        distancia: "10Km",
+        organizador: "Ayto. Merindad Rio Ubierna",
+        miniatura:"img/2019/carteljimena2019.jpg",
+        botones: [
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesJIMENA2019.pdf",
+            },
+            {
+                titulo: "Tiempos senderismo",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesSENDERISMOJIMENA2019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo: "IV MUSHING SALAS DE LOS INFANTES 2019",    
+        fecha: "24/03/2019",
+        categoria: "Mushing",
+        hora: "9:30",
+        distancia: "",
+        organizador: "Ayto. Salas de los Infantes",
+        miniatura:"img/2019/cartelcanicrosssalas2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.canicrossburgos.com/",
+            },
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesCaniSalas2019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo: "XXXVIII CARRERA DE SAN JOSE 2019",    
+        fecha: "10/03/2019",
+        categoria: "Carreras a pie",
+        hora: "12:15",
+        distancia: "10 km",
+        organizador: "Diputación de Burgos",
+        miniatura:"img/2019/cartelcarrerasanjose2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.atletismovalledemena.com/san-jose/",
+            },
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesSanJose17032019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"1ª Carrera por el TDAH BRICOMART BURGOS",
+        fecha: "10/03/2019",
+        categoria: "Carreras a pie",
+        hora: "10:00",
+        distancia: "6 / 10 kilometros",
+        organizador: "ABUDAH",
+        miniatura:"img/2019/29-cartel-carrera-tdah-2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "https://carreratdah.wordpress.com/",
+            },
+            {
+                titulo: "Clasif. 10km",
+                archivo: "http://www.rs-sport.es/Clasificaciones/Clasificaciones10kmBricomart10032019.pdf",
+            },
+            {
+                titulo: "Clasif. 6km",
+                archivo: "http://www.rs-sport.es/Clasificaciones/Clasificaciones6kmBricomart10032019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"IX CANICROSS DE COVARRUBIAS 2019",    
+        fecha: "24/02/2019",
+        categoria: "Mushing",
+        hora: "10:00",
+        distancia: "",
+        organizador: "Canicross Burgos",
+        miniatura:"img/2019/cartelcanicrosscovarrubias2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "https://canicrossburgos.com/",
+            },
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesCaniCova2019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"XLI Cross de San Lesmes 2019",
+        fecha: "10/02/2019",
+        categoria: "Carreras a pie",
+        hora: "10:30",
+        distancia: "10 kilometros",
+        organizador: "Asociación Atletas Veteranos Burgos",
+        miniatura:"img/2019/cartel_San_Lesmes_2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "https://www.facebook.com/abave.abave/",
+            },
+            {
+                titulo: "Reglamento",
+                archivo: "http://www.rs-sport.es/inscripciones/reglamentos_competiciones/30-reglamento-xli-cross-popular-san-lesmes.pdf",
+            },
+            {
+                titulo: "Clasif. Absolutas",
+                archivo: "http://www.rs-sport.es/Clasificaciones/ClasificacionesSanLesmes10022019.pdf",
+            },
+            {
+                titulo: "Clasif. Menores",
+                archivo: "http://www.rs-sport.es/Clasificaciones/ClasificacionesSanLesmesMenores10022019.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"EL DESAFIO DE HELIOS 2019",
+        fecha: "26/01/2019",
+        categoria: "BTT",
+        hora: "08:34",
+        distancia: "125km",
+        organizador: "",
+        miniatura:"img/2019/carteldesafiohelios2019.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://eldesafiodehelios.blogspot.com.es/",
+            },
+            {
+                titulo: "Clasif. BTT",
+                archivo: "http://www.rs-sport.es/Clasificaciones/ClasificacionesBTTDesafioHelios2019.pdf",
+            },
+            {
+                titulo: "Clasif. Duatlón",
+                archivo: "http://www.rs-sport.es/Clasificaciones/ClasificacionesDuatlonDesafioHelios2019.pdf",
+            },
+            {
+                titulo: "Clasif. Equipos",
+                archivo: "http://www.rs-sport.es/Clasificaciones/ClasificacionesEquiposDesafioHelios2019.pdf",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+        ],
+    },
+
+    {
+        titulo:"XXIX SAN SILVESTRE CIDIANA 2018",
+        fecha: "31/12/2018",
+        categoria: "Carreras a pie",
+        hora: "19:00",
+        distancia: "5 km",
+        organizador: "C.D. Florentino Díaz Reig",
+        miniatura:"img/2018/cartelSanSivestreCidiana2018.png",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.sansilvestrecidiana.com",
+            },
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://www.rs-sport.es/Clasificaciones/ClasifSanSilvestreCidiana31122018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"SAN SILVESTRE LOGROÑO 2018",
+        fecha: "31/12/2018",
+        categoria: "Carreras a pie",
+        hora: "18:45",
+        distancia: "9km",
+        organizador: "Logroño Deporte",
+        miniatura:"img/2018/cartelSanSilvestreogrono2018.jpg",
+        botones: [
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://www.rs-sport.es/Clasificaciones/ClasificacionesSanSilvestreLogrono2018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"XX SAN SILVESTRE LERMEÑA 2018",
+        fecha: "31/12/2018",
+        categoria: "Carreras a pie",
+        hora: "",
+        distancia: "",
+        organizador: "Ayto. de Lerma",
+        miniatura:"img/2018/cartelSanSivestreLerma2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.ayuntamientodelerma.es",
+            },
+            {
+                titulo: "Clasificaciones Categorias Menores",
+                archivo: "http://www.rs-sport.es/Clasificaciones/ClasificacionesSanSilvestreLermaMenores2018.pdf",
+            },
+            {
+                titulo: "Clasificaciones Carrera Absoluta",
+                archivo: "http://www.rs-sport.es/Clasificaciones/ClasificacionesSanSilvestreLermaAbsoluta2018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"XXXIX CROSS INTERNACIONAL VENTA DE BAÑOS",
+        fecha: "16/12/2018",
+        categoria: "Carreras a pie",
+        hora: "",
+        distancia: "",
+        organizador: "Ayto. Venta de Baños",
+        miniatura:"img/2018/cartelventabanos2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.pmdeportesventadebanos.com/cross_internacional/cross.html",
+            },
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://www.rs-sport.es/Clasificaciones/ClasificacionesCrossIntVentaBanos16122018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"XVI CARRERA POPULAR VENTA DE BAÑOS",
+        fecha: "15/12/2018",
+        categoria: "Carreras a pie",
+        hora: "",
+        distancia: "5km / 10km",
+        organizador: "Ayto. Venta de Baños",
+        miniatura:"img/2018/cartelventabanos2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.pmdeportesventadebanos.com/cross_internacional/cross.html",
+            },
+            {
+                titulo: "Clasif. 5km",
+                archivo: "http://www.rs-sport.es/Clasificaciones/Clasificaciones5kmPopularVentaBanos15122018.pdf",
+            },
+            {
+                titulo: "Clasif. 10km",
+                archivo: "http://www.rs-sport.es/Clasificaciones/Clasificaciones10kmPopularVentaBanos15122018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"III MAMBLAS TRAIL 2018",
+        fecha: "4/11/2018",
+        categoria: "Carreras a pie",
+        hora: "10:00",
+        distancia: "23km - 12km - 8,5km",
+        organizador: "Ayuntamiento de Covarrubias",
+        miniatura:"img/2018/cartelMamblasTrail2017.jpg",
+        botones: [
+            {
+                titulo: "Información",
+                archivo: "http://idj.burgos.es/content/ii-mamblas-trail-de-covarrubias",
+            },
+            {
+                titulo: "perfiles",
+                archivo: "https://idj.burgos.es/sites/default/files/file/evento/perfiles_mamblas_trail2017.pdf",
+            },
+            {
+                titulo: "Clasif. 12km",
+                archivo: "http://rs-sport.es/Clasificaciones/clasificacionesMamblasTrail11km04112018.pdf",
+            },
+            {
+                titulo: "Clasif. 22km",
+                archivo: "http://rs-sport.es/Clasificaciones/clasificacionesMamblasTrail22km04112018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"XIII CANICROSS DE BURGOS 2018",
+        fecha: "3/11/2018",
+        categoria: "Mushing",
+        hora: "",
+        distancia: "",
+        organizador: "Ayuntamiento de San Adrián de Juarros",
+        miniatura:"img/2018/cartelcanicrossburgos2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "https://canicrossburgos.com/",
+            },
+            {
+                titulo: "Clasif. Media Distancia",
+                archivo: "http://www.rs-sport.es/Clasificaciones/ClasificacionesMushingSanAdrianMD04112018.pdf",
+            },
+            {
+                titulo: "Clasif. Sprint",
+                archivo: "http://www.rs-sport.es/Clasificaciones/ClasificacionesMushingSanAdrianSprint04112018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"V CARRERA INTEGRACION 2018",
+        fecha: "4/11/2018",
+        categoria: "Carreras a pie",
+        hora: "11:30",
+        distancia: "3,5km (marcha) / 12km (carrera)",
+        organizador: "Logroño Deporte",
+        miniatura:"img/2018/cartelCarreraIntegracion2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "https://www.logronodeporte.es/carrera-integracion#1-marcha-de-la-integraci%C3%B3n-3-5-kms",
+            },
+            {
+                titulo: "Recorrido",
+                archivo: "https://www.logronodeporte.es/images/carrera-integracion/plano-carrera-integracion.pdf",
+            },
+            {
+                titulo: "Reglamento",
+                archivo: "http://www.rs-sport.es/inscripciones/reglamentos_competiciones/24-reglamento-carrera-marcha-integracion-2018.pdf",
+            },
+            {
+                titulo: "Clasificación",
+                archivo: "http://www.rs-sport.es/Clasificaciones/ClasificacionesCarreraIntegracion2018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"IV MARCHA BTT RAUL GUREKIN 2018",
+        fecha: "28/10/2018",
+        categoria: "BTT",
+        hora: "09:00",
+        distancia: "23km / 40km",
+        organizador: " BTT Miribilla",
+        miniatura:"img/2018/cartelBTTRaulGurekin2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "https://raulgurekin.com/",
+            },
+            {
+                titulo: "Recorrido",
+                archivo: "https://raulgurekin.com/recorrido/",
+            },
+            {
+                titulo: "Clasif. Ruta Larga Hombres",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesMiribillaBTTLargaHombres2018.pdf",
+            },
+            {
+                titulo: "Clasif. Ruta Larga Mujeres",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesMiribillaBTTLargaMujeres2018.pdf",
+            },
+            {
+                titulo: "Clasif. Ruta Corta Hombres",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesMiribillaBTTCortaHombres2018.pdf",
+            },
+            {
+                titulo: "Clasif. Ruta Corta Mujeres",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesMiribillaBTTCortaMujeres2018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"PULMON DE ACERO BTT 2018",
+        fecha: "21/10/2018",
+        categoria: "BTT",
+        hora: "09:00",
+        distancia: "63km - 41km",
+        organizador: "Aire Norte",
+        miniatura:"img/2018/cartelPulmonAcero2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.pulmondeacero.com/",
+            },
+            {
+                titulo: "Crono Media Maraton F",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesPulmonAceroCronoescaladaCortaFem21102018.pdf",
+            },
+            {
+                titulo: "Crono Media Maraton M",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesPulmonAceroCronoescaladaCortaMasc21102018.pdf",
+            },
+            {
+                titulo: "Crono Bike Maraton F",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesPulmonAceroCronoescaladaLargaFem21102018.pdf",
+            },
+            {
+                titulo: "Crono Bike Maraton M",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesPulmonAceroCronoescaladaLargaMasc21102018.pdf",
+            },
+            {
+                titulo: "Tpo.Media Maraton",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesPulmonAceroMarchaCorta21102018.pdf",
+            },
+            {
+                titulo: "Tpo.Maraton",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesPulmonAceroMarchaLarga21102018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"V CARRERA SOLIDARIA SK RUN BURGOS 2018",
+        fecha: "20/10/2018",
+        categoria: "Carreras a pie",
+        hora: "16:30",
+        distancia: "5km - 10km - Marcha",
+        organizador: "Smurfit Kappa, S.A.",
+        miniatura:"img/2018/cartelSmurfitKappa2018.jpg",
+        botones: [
+            {
+                titulo: "Clasificación 5km ",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesSmurfitKappa5km20102018.pdf",
+            },
+            {
+                titulo: "Clasificación 10km ",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesSmurfitKappa10km20102018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"VII MARCHA DEMANDASAURUS 2018",
+        fecha: "14/10/2018",
+        categoria: "BTT",
+        hora: "10:00",
+        distancia: "",
+        organizador: "Excmo. Ayuntamiento de Salas de los Infantes",
+        miniatura:"img/2018/cartelDemandasaurus2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.marchademandasaurus.com",
+            },
+            {
+                titulo: "Clasif. BTT",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesDemandasaurusBTT14102018.pdf",
+            },
+            {
+                titulo: "Clasif. Carreras",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesDemandasaurusCarreras14102018.pdf",
+            },
+            {
+                titulo: "Clasif. Senderismo",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesDemandasaurusSenderismo14102018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"GERNIKA BILBAO 2018",    
+        fecha: "7/10/2018",
+        categoria: "Carreras a pie",
+        hora: "10:00",
+        distancia: "34Km 22km 12km 8km",
+        organizador: "Jotamas Eventos",
+        miniatura:"img/2018/cartelGernikaBilbao2018.jpg",
+        botones: [
+            {
+                titulo: "Clasif ORO",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesGernikaBilbaoOro2018.pdf",
+            },
+            {
+                titulo: "Clasif PLATA",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesGernikaBilbaoPlata2018.pdf",
+            },
+            {
+                titulo: "Clasif BRONCE",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesGernikaBilbaoBronce2018.pdf",
+            },
+            {
+                titulo: "Clasif BLANCO",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesGernikaBilbaoBlanco2018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"V HIGUERO RUNNING FESTIVAL 2018",
+        fecha: "6/10/2018",
+        categoria: "Carreras a pie",
+        hora: "18:15",
+        distancia: "5Km / 10Km",
+        organizador: "Higuero Sport",
+        miniatura:"img/2018/cartelHiguero2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://higuerosport.com/",
+            },
+            {
+                titulo: "Clasif. 5km",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesHiguero5km06102018.pdf",
+            },
+            {
+                titulo: "Clasif. 10km",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesHiguero10km06102018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"I MARCHA CICLOTURSTA LA ESCAPADA 2018",
+        fecha: "15/09/2018",
+        categoria: "Carreras a pie",
+        hora: "09:00",
+        distancia: "",
+        organizador: "U.C Medinesa",
+        miniatura:"img/2018/cartellaescapada2018.jpg",
+        botones: [
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesUCMedinesa15092018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"IV CARRERA SOLIDARIA BRIDGESTONE 2018",
+        fecha: "9/09/2018",
+        categoria: "Carreras a pie",
+        hora: "11:00",
+        distancia: "4km / 10km",
+        organizador: "Bridgestone Hispania",
+        miniatura:"img/2018/cartelsolidariabasauri2018.jpg",
+        botones: [
+            {
+                titulo: "Clasificaciones 4km ",
+                archivo: "http://rs-sport.es/Clasificaciones/clasificacionesbridgestonebasauri4km.pdf",
+            },
+            {
+                titulo: "Clasificaciones 10km ",
+                archivo: "http://rs-sport.es/Clasificaciones/clasificacionesbridgestonebasauri10km.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"XCO ALDEDOS BURGOS 2018",
+        fecha: "2/09/2018",
+        categoria: "BTT",
+        hora: "10:00",
+        distancia: "",
+        organizador: "C.D Colina Triste",
+        miniatura:"img/2018/cartelxcoaldedosburgos2018.jpg",
+        botones: [
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesXCOALDEDOSBURGOS2018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"IV MARCHA BTT ¡HAZLA DEL TIRÓN! 2018",
+        fecha: "1/09/2018",
+        categoria: "BTT",
+        hora: "09:00",
+        distancia: "27Km / 48Km / 59Km",
+        organizador: "Asociación Cultural de Tirgo",
+        miniatura:"img/2018/cartelHazlaDelTiron2018.jpg",
+        botones: [
+            {
+                titulo: "Clasif. Corta",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesHazlaDelTironCorta01102018.pdf",
+            },
+            {
+                titulo: "Clasif. Media",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesHazlaDelTironMedia01102018.pdf",
+            },
+            {
+                titulo: "Clasif. Larga",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesHazlaDelTironLarga01102018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"IV CARRERA POPULAR VILLA DE PINEDA 2018",
+        fecha: "1/09/2018",
+        categoria: "Carreras a pie",
+        hora: "10:00",
+        distancia: "8Km / 21Km",
+        organizador: "Ayuntamiento de Pineda de la Sierra",
+        miniatura:"img/2018/cartelPinedaSierra2018.jpg",
+        botones: [
+            {
+                titulo: "Recorrido 8 km",
+                archivo: "http://www.runmap.net/es/route/3010317-pienda-via-verde-8-km/",
+            },
+            {
+                titulo: "Recorrido 21 km",
+                archivo: "http://www.runmap.net/es/route/3381273-minas-via-verde-21-km/",
+            },
+            {
+                titulo: "Clasif 8km",
+                archivo: "http://rs-sport.es/Clasificaciones/Clasificaciones8kmPineda2018.pdf",
+            },
+            {
+                titulo: "Clasif 21km",
+                archivo: "http://rs-sport.es/Clasificaciones/Clasificaciones21kmPineda2018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"VII TRAVESIA NOCTURNA ME TOMO LAS DE VILLADIEGO",
+        fecha: "25/08/2018",
+        categoria: "Carreras a pie",
+        hora: "22:00",
+        distancia: "12Km / 21,097 Km",
+        organizador: "Ayto. de Villadiego",
+        miniatura:"img/2018/cartelNocturnaVilladiego2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.nocturnavilladiego.es/",
+            },
+            {
+                titulo: "Clasif. Carrera",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesCarreraVilladiego25082018.pdf",
+            },
+            {
+                titulo: "Clasif. Senderismo",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesSenderismoVilladiego25082018.pdf",
+            },
+            {
+                titulo: "Clasif. 1/2 Maraton",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesMediaVilladiego25082018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"IV LEGUA POPULAR BACO RACE 2018",
+        fecha: "25/08/2018",
+        categoria: "Carreras a pie",
+        hora: "19:45",
+        distancia: "5,3 Km",
+        organizador: "Asociación Cultural Dios Baco",
+        miniatura:"img/2018/cartelBacoRace2018.jpg",  
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "https://www.facebook.com/bacorace",
+            },
+            {
+                titulo: "Clasif. Carrera",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesBaco25082018.pdf",
+            },
+            {
+                titulo: "Clasif. Andarines",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesAndarinesBaco25082018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"I Travesía Nocturna \"Castillo de Isar\" 2018",
+        fecha: "18/08/2018",
+        categoria: "Carreras a pie",
+        hora: "21:30",
+        distancia: "11.000 metros",
+        organizador: "Ayto. de Isar",
+        miniatura:"img/2018/cartelNocturnaIsar2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.carreranocturnaisar.es/",
+            },
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaCastilloIsar18082018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"VI Travesía Nocturna \"Sendero de las Fortificaciones\" 2018",
+        fecha: "17/08/2018",
+        categoria: "Carreras a pie",
+        hora: "22:00",
+        distancia: "9.000 metros",
+        organizador: "El pico Taragudo",
+        miniatura:"img/2018/cartelNocturnaSenderoFortificaciones2018.jpg",
+        botones: [
+            {
+                titulo: "Recorrido",
+                archivo: "http://es.wikiloc.com/wikiloc/view.do?id=4712393",
+            },
+            {
+                titulo: "Clasif. Carrera",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesFuentecenCarrera17082018.pdf",
+            },
+            {
+                titulo: "Clasif. Senderismo",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesFuentecenSenderismo17082018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"X Subida al Pico de Navas 2018",
+        fecha: "13/08/2018",
+        categoria: "Carreras a pie",
+        hora: "19:30",
+        distancia: "3,6 km",
+        organizador: "Ayto. de Navas del Pinar - C.D. Navas del Pinar",
+        miniatura:"img/2018/cartelPicoNavas2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.navasdelpinar.es",
+            },
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesPicoNavas13082018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"IV TROFEO DE VELOCIDAD VILLA DE BELORADO 2018",
+        fecha: "12/08/2018",
+        categoria: "Carreras a pie",
+        hora: "11:30",
+        distancia: "12Km / 21 Km",
+        organizador: "Ayto de Belorado",
+        miniatura:"img/2018/cartelTrofeoVelocidadBelorado2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "https://www.facebook.com/events/1779282468952437/",
+            },
+            {
+                titulo: "Clasif. 21km",
+                archivo: "http://rs-sport.es/Clasificaciones/Clasificaciones21kmPatines20082018.pdf",
+            },
+            {
+                titulo: "Clasif. 12km",
+                archivo: "http://rs-sport.es/Clasificaciones/Clasificaciones12kmPatines20082018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"VI Travesía Nocturna \"Entre Tesla\" 2018",
+        fecha: "4/08/2018",
+        categoria: "Carreras a pie",
+        hora: "22:00",
+        distancia: "14.300 metros",
+        organizador: "Ayuntamiento de Medina de Pomar",
+        miniatura:"img/2018/cartelEntreTesla2018.png",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "http://www.medinadepomar.net/noticia/419/marcha-nocturna-entre-tesla-2018.html",
+            },
+            {
+                titulo: "Clasif. Carrera",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesEntreTeslaCarrera04082018.pdf",
+            },
+            {
+                titulo: "Clasif. Senderismo",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesEntreTeslaSenderismo04082018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"VIII Carrera Popular 10km Ciudad de Briviesca 2018",
+        fecha: "4/08/2018",
+        categoria: "Carreras a pie",
+        hora: "20:00",
+        distancia: "5 km - 10 km",
+        organizador: "Ayto. Briviesca",
+        miniatura:"img/2018/cartel10kmBriviesca2018.jpg",
+        botones: [
+            {
+                titulo: "Clasificaciones 5 km",
+                archivo: "http://rs-sport.es/Clasificaciones/Clasificacion5kmBriviesca04082018.pdf",
+            },
+            {
+                titulo: "Clasificaciones 10 km",
+                archivo: "http://rs-sport.es/Clasificaciones/Clasificacion10kmBriviesca04082018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"II BTT Arlanza Extrem 2018",
+        fecha: "29/07/2018",
+        categoria: "BTT",
+        hora: "09:30",
+        distancia: "",
+        organizador: "Ayto. de Hortigüela",
+        miniatura:"img/2018/cartelarlanzaextreme2018.jpg",
+        botones: [
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesBTTExtrem29072018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"4ª Nocturna Ruta del Boletus 2018",
+        fecha: "28/07/2018",
+        categoria: "Carreras a pie",
+        hora: "22:00",
+        distancia: "10,85 km",
+        organizador: "Ayto. de Rabanera del Pinar",
+        miniatura:"img/2018/cartelBoletus2018.jpg",
+        botones: [
+            {
+                titulo: "Clasificaciones Carrera",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesBoletusCarrera28072018.pdf",
+            },
+            {
+                titulo: "Clasificaciones Senderismo",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesBoletusSenderismo29082018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"22 Marcha cicloturista Lagunas de Neila",
+        fecha: "22/07/2018",
+        categoria: "Ciclismo",
+        hora: "8:30",
+        distancia: "160 km",
+        organizador: "U.C. Burgalesa",
+        miniatura:"img/2018/cartelNeila2016.jpg",
+        botones: [
+            {
+                titulo: "Clasificaciones",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesCicloturistaNeila22072018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo: "3ª MEDIA MARATÓN HAZLA DEL TIRÓN" ,   
+        fecha: "22/07/2018",
+        categoria: "Carreras a pie",
+        hora: "09:00",
+        distancia: "21,097km",
+        organizador: "Ayto. Tirgo",
+        miniatura:"img/2018/mediahazladeltiron2018.jpg",
+        botones: [
+            {
+                titulo: "Clasif Patines",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesPatinesTirgo2018.pdf",
+            },
+            {
+                titulo: "Clasif Carrera",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesCorredoresTirgo2018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"III NOCTURNA TERRORIFICA 2018",    
+        fecha: "21/07/2018",
+        categoria: "Carreras a pie",
+        hora: "22:30",
+        distancia: "",
+        organizador: "Ayto. Villarcayo",
+        miniatura:"img/2018/cartelnocturnaterrorifica2018.jpg",
+        botones: [
+            {
+                titulo: "Página Web",
+                archivo: "https://www.facebook.com/NocturnaVillarcayoMCV/",
+            },
+            {
+                titulo: "Clasif. Carrera",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaTerrorificaCarrera2018.pdf",
+            },
+            {
+                titulo: "Clasif. Senderismo ",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaTerrorificaSenderismo2018.pdf",
+            },
+        ],
+    },
+
+    {
+        titulo:"COLINA TRISTE EPIC RACE'18",    
+        fecha: "20/07/2018",
+        categoria: "Carreras a pie",
+        hora: "",
+        distancia: "",
+        organizador: "Silos C.D",
+        miniatura:"img/2018/bttcolinatriste2018.jpg",
+        botones: [
+            {
+                titulo: "General",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEpicRaceGeneral220720178.pdf",
+            },
+            {
+                titulo: "Etapa 1",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEpicRaceEtapa1200720178.pdf",
+            },
+            {
+                titulo: "Etapa 2",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEpicRaceEtapa2210720178.pdf",
+            },
+            {
+                titulo: "Etapa 3",
+                archivo: "http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEpicRaceEtapa3220720178.pdf",
+            },
+        ],
+    },
 /*
     {
         titulo:"",
@@ -2069,1529 +3793,308 @@ carreras = [
         ],
     },
 
+    {
+        titulo:"",
+        fecha: "",
+        categoria: "Carreras a pie",
+        hora: "",
+        distancia: "",
+        organizador: "",
+        miniatura:"",
+        botones: [
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+        ],
+    },
 
+    {
+        titulo:"",
+        fecha: "",
+        categoria: "Carreras a pie",
+        hora: "",
+        distancia: "",
+        organizador: "",
+        miniatura:"",
+        botones: [
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+        ],
+    },
+
+    {
+        titulo:"",
+        fecha: "",
+        categoria: "Carreras a pie",
+        hora: "",
+        distancia: "",
+        organizador: "",
+        miniatura:"",
+        botones: [
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+        ],
+    },
+
+    {
+        titulo:"",
+        fecha: "",
+        categoria: "Carreras a pie",
+        hora: "",
+        distancia: "",
+        organizador: "",
+        miniatura:"",
+        botones: [
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+        ],
+    },
+
+    {
+        titulo:"",
+        fecha: "",
+        categoria: "Carreras a pie",
+        hora: "",
+        distancia: "",
+        organizador: "",
+        miniatura:"",
+        botones: [
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+        ],
+    },
+
+    {
+        titulo:"",
+        fecha: "",
+        categoria: "Carreras a pie",
+        hora: "",
+        distancia: "",
+        organizador: "",
+        miniatura:"",
+        botones: [
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+        ],
+    },
+
+    {
+        titulo:"",
+        fecha: "",
+        categoria: "Carreras a pie",
+        hora: "",
+        distancia: "",
+        organizador: "",
+        miniatura:"",
+        botones: [
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+        ],
+    },
+
+    {
+        titulo:"",
+        fecha: "",
+        categoria: "Carreras a pie",
+        hora: "",
+        distancia: "",
+        organizador: "",
+        miniatura:"",
+        botones: [
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+        ],
+    },
+
+    {
+        titulo:"",
+        fecha: "",
+        categoria: "Carreras a pie",
+        hora: "",
+        distancia: "",
+        organizador: "",
+        miniatura:"",
+        botones: [
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+            {
+                titulo: "",
+                archivo: "",
+            },
+        ],
+    },
+
+
+
+        
  
 
+    	
+ 
    
-                titulo:"IV TRAVESÍA NOCTURNA CASTILLO DE ISAR 2019",
-                    miniatura:"img/cartelNocturnaIsar2019.jpg",
-            
-            
-            
-                17/08/2019
-               hora: "21:30",
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=9157" target="_blank" ,INSCRIPCIONES
-                10 Euros
-                11.000 metros
-                Ayto. de Isar
-                <a href="http://www.carreranocturnaisar.es/" target="_blank" ,http://www.carreranocturnaisar.es/
-                 -   
-            
-                <a href="http://www.carreranocturnaisar.es/pages/normativa.html" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaCastilloIsar17082019.pdf" target="_blank" title="Clasificaciones",Clasificaciones
-                <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
- 
-	
-    
- 
-                titulo:"I XCO MONASTERIO DE RODILLA 2019",
-                    miniatura:"img/cartelXCOMonasterioRodilla2019.jpg",
-            
-            
-            
-                17/08/2019
-               hora: "16:30",
-                <a href="http://www.rs-sport.es/inscripciones" target="_blank" ,INSCRIPCIONES
-                15 Euros
-                Varias distancias
-                Asociación Cultural Nuestra Señora del Valle
-                <a href="http://www.facebook.com/Xco-Monasterio-de-Rodilla-404008356882606/" target="_blank" ,http://www.facebook.com/Xco-Monasterio-de-Rodilla-404008356882606/
-                -  
-            
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesXCOMonasterioRodilla17082019.pdf" target="_blank" title="Clasificaciones",Clasificaciones
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=9368" target="_blank" title="Ver Inscritos",Ver Inscritos --,
- 
-	
-               titulo:"VII TRAVESÍA NOCTURNA "SENDERO DE LAS FORTIFICACIONES" 2019",
-                    miniatura:"img/cartelNocturnaFuentecen2019.jpg",
-            
-                16/08/2019
-               hora: "22:00",
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=9368" target="_blank" ,INSCRIPCIONES
-                10 Euros
-                9.000 metros
-                El pico Taragudo
-                <a href="http://www.elpicotaragudo.com" target="_blank" ,http://www.elpicotaragudo.com
-                <a href="http://es.wikiloc.com/wikiloc/view.do?id=4712393" target="_blank" ,Wikiloc  
-            
-                <a href="http://www.elpicotaragudo.com/reglamento.html" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesFuentecenCarrera16082019.pdf" target="_blank" title="Clasificaciones",Clasif. Carrera
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesFuentecenSenderismo16082019.pdf" target="_blank" title="Clasificaciones",Clasif. Senderismo
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=9368" target="_blank" title="Ver Inscritos",Ver Inscritos --,
- 
-	
-  
-                titulo:"XI Subida al Pico de Navas 2019",
-                    miniatura:"img/cartelPicoNavas2019.jpg",
-            
-                13/08/2018
-               hora: "19:30",
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=9555" target="_blank" ,INSCRIPCIONES
-                10€
-                3,6 km
-                Ayto. de Navas del Pinar - C.D. Navas del Pinar
-                <a href="http://www.navasdelpinar.es" target="_blank" ,www.navasdelpinar.es
-                - 
-            
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPicoNavas13082019.pdf" target="_blank" title="Clasificaciones",Clasificaciones
- 
-	
- 
- 
-
-            titulo:"V TROFEO DE VELOCIDAD VILLA DE BELORADO 2019",
-                miniatura:"img/cartelPatinesBelorado2019.jpg",
-        
-
-            11/08/2019
-           hora: "11:30",
-            <a href="https://www.avaibooksports.com/inscripcion/index.php?id=9500" target="_blank" ,INSCRIPCIONES
-            10€
-            12Km / 21 Km
-            Ayto de Belorado
-            <a href="https://www.facebook.com/events/1779282468952437/" target="_blank" ,Página Web
-             -   
-
-            
-        <a href="http://rs-sport.es/Clasificaciones/Clasificaciones21kmPatines11082019.pdf" target="_blank" title="Clasif. Carrera",Clasif. 21km
-        <a href="http://rs-sport.es/Clasificaciones/Clasificaciones12kmPatines11082019.pdf" target="_blank" title="Clasif. Carrera",Clasif. 12km
-
-
-                titulo:"XI Carrera Popular 10km Ciudad de Briviesca 2019",
-                    miniatura:"img/cartel10kmBriviesca2019.jpg",
-           
-                3/08/2019
-               hora: "20:00",
-                http://serviciosonline.briviesca.es
-                -
-                5 km - 10 km
-                Ayto. Briviesca
-                <a href="http://deportes.briviesca.es" target="_blank" ,deportes.briviesca.es
-                - 
-            
-                <a href="http://rs-sport.es/Clasificaciones/Clasificacion5kmBriviesca03082019.pdf" target="_blank" title="Clasificaciones 5km",Clasificaciones 5km
-                <a href="http://rs-sport.es/Clasificaciones/Clasificacion10kmBriviesca03082019.pdf" target="_blank" title="Clasificaciones 10km",Clasificaciones 10km
- 
-
-
- 
-        titulo:"COLINA TRISTE 2019    
- 
-            miniatura:"img/cartelColinaTriste2019.jpg"
-    	
-            25 al 28/07/2019
-            14:30 (E1) -hora: "09:30", (E2) -hora: "09:00", (E3) -hora: "09:00", (E4)
-            <a href="https://www.colinatristeepicrace.com/galeria" target="_blank" ,INSCRIPCIONES
-            -
-            Varias distancias
-            Silos C.D
-            <a href="https://www.colinatristeepicrace.com" target="_blank" ,Pagina Web
-            <a href="https://www.colinatristeepicrace.com/newpage" target="_blank" ,Rutómetro
-
-    	
-            <a href="https://www.colinatristeepicrace.com/aviso-legal" target="_blank" title="Reglamento",Reglamento
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeGeneral28072019" target="_blank" title="Clasificación General",General
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEtapa125072019.pdf" target="_blank" title="Clasificaciones Etapa 1",Etapa 1
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEtapa226072019.pdf" target="_blank" title="Clasificaciones Etapa 2",Etapa 2
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEtapa327072019.pdf" target="_blank" title="Clasificaciones Etapa 3",Etapa 3
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEtapa428072019.pdf" target="_blank" title="Clasificaciones Etapa 4",Etapa 4
-
-	
- 
-        titulo:"HALF COLINA TRISTE 2019    
- 
-            miniatura:"img/cartelColinaTriste2019.jpg"
-    	
-            27 y 28/07/2019
-            09:15 (E1) - 09:15 (E2)
-            <a href="https://www.colinatristeepicrace.com/galeria" target="_blank" ,INSCRIPCIONES
-            -
-            Varias distancias
-            Silos C.D
-            <a href="https://www.colinatristeepicrace.com" target="_blank" ,Pagina Web
-            <a href="https://www.colinatristeepicrace.com/newpage" target="_blank" ,Rutómetro
-
-    	
-            <a href="https://www.colinatristeepicrace.com/aviso-legal" target="_blank" title="Reglamento",Reglamento
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeHalfGeneral28072019.pdf" target="_blank" title="Clasificaciones Generales",General
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeHalfEtapa127072019.pdf" target="_blank" title="Clasificaciones Etapa 1",Etapa 1
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeHalfEtapa228072019.pdf" target="_blank" title="Clasificaciones Etapa 2",Etapa 2
-
-	
- 
-        titulo:"STAGE COLINA TRISTE 2019    
-  miniatura:"img/cartelColinaTriste2019.jpg"
-    	
-            28/07/2019
-            09:15
-            <a href="https://www.colinatristeepicrace.com/galeria" target="_blank" ,INSCRIPCIONES
-            -
-            -
-            Silos C.D
-            <a href="https://www.colinatristeepicrace.com" target="_blank" ,Pagina Web
-            <a href="https://www.colinatristeepicrace.com/newpage" target="_blank" ,Rutómetro
-
-    	
-            <a href="https://www.colinatristeepicrace.com/aviso-legal" target="_blank" title="Reglamento",Reglamento
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeStage28072019.pdf" target="_blank" title="Clasificación",Clasificación
-
-
-                titulo:"5ª Nocturna Ruta del Boletus 2019",
-                    miniatura:"img/cartelBoletus2019.jpg",
-            
-            
-            
-                27/07/2019
-               hora: "22:00",
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=9006&iframe=0" target="_blank" ,INSCRIPCIONES
-                10 Euros
-                10,85 km
-                Ayto. de Rabanera del Pinar
-                <a href="http://www.rutadelboletus.com/" target="_blank" ,www.rutadelboletus.com
-                <a href="http://www.rutadelboletus.com/la-carrera/recorrido" target="_blank" ,Mapa de Recorrido 
-            
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBoletusCarrera27072019.pdf" target="_blank" title="Clasificaciones Carrera",Clasificaciones Carrera
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBoletusSenderismo27072019.pdf" target="_blank" title="Clasificaciones Senderismo",Clasificaciones Senderismo
- 
-
-
-                titulo:"23 Marcha cicloturista Lagunas de Neila 2019",
-                    miniatura:"img/cartelLagunasNeila2019.jpg",
-            
-                21/07/2019
-               hora: "08:30",
-                http://ucburgalesa.com/lagunasneila/inscripciones/
-                -
-                160 km
-                U.C. Burgalesa
-                <a href="http://ucburgalesa.com//" target="_blank" ,http://ucburgalesa.com/
-                <a href="http://ucburgalesa.com/lagunasneila/recorrido/" target="_blank" ,Mapa interactivo 
-            
-                <a href="http://ucburgalesa.com/lagunasneila/reglamento/" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesCicloturistaNeila21072019.pdf" target="_blank" title="Clasificaciones",Clasificaciones
- 
-
-    	
-        titulo:"CRONOESCALADA AL ARGALARIO 2019    
- 
-                miniatura:"img/cartelCronoescaladaArgalario2019.jpg",
-            
-            
-            
-                21/07/2018
-               hora: "11:00",
-                <a href="https://www.rockthesport.com/es/evento/cronoescalada-al-argalario---argalarioko-krono-igo" target="_blank" ,INSCRIPCIONES
-                5€
-                4,7 km
-                Barakaldesa, S.C.
-                <a href="http://www.barakaldesa.com" target="_blank" ,Pagina Web
-                -
-            
-                <a href="https://www.rockthesport.com/open/documentos/d318001e-9469-40ff-93d4-429cded2dc15/PDF" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesArgalarioCiclistas21072019.pdf" target="_blank" title="Clasificaciones",Clasif. Ciclistas 
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesArgalarioRunners21072019.pdf" target="_blank" title="Clasificaciones",Clasif. Runners
- 
-        	
-    	
-        titulo:"IV MEDIA MARATÓN HAZLA DEL TIRÓN 2019    
- 
-                miniatura:"img/cartelMediaMaratonHazlaDelTiron2019.jpg",
-            
-            
-                21/07/2018
-               hora: "09:00",
-                <a href="https://www.rockthesport.com/es/evento/media-maraton-hazla-del-tiron" target="_blank" ,INSCRIPCIONES
-                Varias tarifas
-                Media Maratón y 12 km
-                -
-                <a href="#" target="_blank",-
-                -
-            
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesMediaHazlaTironCorredores21072019.pdf" target="_blank" title="Clasificaciones",Clasif. Corredores 
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesMediaHazlaTironPatines21072019.pdf" target="_blank" title="Clasificaciones",Clasif. Patines
- 
-
-    	
-        titulo:"IV NOCTURNA TERRORIFICA 2019    
- 
-                miniatura:"img/cartelNocturnaVillarcayo2019.jpg",
-           
-                20/07/2018
-               hora: "22:30",
-                12€
-                -
-                Ayto. Villarcayo
-                <a href="https://www.facebook.com/NocturnaVillarcayoMCV/" target="_blank" ,Pagina Web
-                -
-            
-                <a href="https://www.avaibooksports.com/uploads/docs/eventos/rol/8293_evento_9090_reglamento.pdf?v=1559221226" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaTerrorificaCarrera20072019.pdf" target="_blank" title="Clasificaciones",Clasif. Carrera 
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaTerrorificaSenderismo20072019.pdf" target="_blank" title="Clasificaciones",Clasif. Senderismo
- 
-	
-    	
-        titulo:"VIII LOS 10 DE IBEAS 2019    
- 
-                miniatura:"img/cartelIbeas2019.jpg",
-            
-            
-                14/07/2019
-               hora: "09:30",
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=9254" target="_blank" ,INSCRIPCIONES
-                10€
-                10Km
-                ACAHIA
-                <a href="http://www.sierradeatapuerca.com/carrera.html" target="_blank" ,Pagina Web
-                <a href="http://www.sierradeatapuerca.com/recorrido.html" target="_blank" ,Recorrido
-            
-                <a href="http://www.sierradeatapuerca.com/reglamento.html" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesLos10deIbeas14072019.pdf" target="_blank" title="Clasificaciones",Clasif. Carrera 
-                <a href="https://www.avaibooksports.com/inscripcion/participantes.php?id=9254" target="_blank" title="Ver Inscritos",Ver Inscritos 
- 
-	
-    	
-            titulo:"V TRAVESÍA NOCTURNA MINERA 2019    
- 
-                miniatura:"img/cartelNocturnaBelorado2019.jpg"
-            
-            
-            
-                14/07/2018
-               hora: "22:30",
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=9499&iframe=0&lang=es" target="_blank" ,INSCRIPCIONES
-                10€
-                12,5 km
-                Ayto. de Belorado
-                <a href="https://www.facebook.com/nocturnaminera/" target="_blank" ,www.facebook.com/nocturnaminera
-                <a href="https://es.wikiloc.com/rutas-carrera-por-montana/travesia-nocturna-minera-25205239" target="_blank" ,Recorrido
-            
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaMinera13072019.pdf" target="_blank" title="Clasificaciones",Clasificaciones Carrera
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaMineraSenderismo13072019.pdf" target="_blank" title="Clasificaciones",Clasificaciones Senderismo
- 
-	
-    	
-            titulo:"XXIII LA MEDIA DE BURGOS 2019    
- 
-                miniatura:"img/cartellamediadeburgos2018.jpg",
-            
-                22/06/2019
-               hora: "09:30",
-                <a href="http://www.rs-sport.es/inscripciones/detalles-evento/evento/15-XXII-Media-Maraton-Ciudad-Burgos" target="_blank" ,INSCRIPCIONES
-                Varios precios
-                21,097Km
-                ABAVE
-                <a href="http://www.lamediadeburgos.com/" target="_blank" ,www.lamediadeburgos.com
-                <a href="http://www.lamediadeburgos.com/recorrido/" target="_blank" ,Circuito
-            
-                <a href="http://www.lamediadeburgos.com/reglamento/" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesMMCB23062019.pdf" target="_blank" title="Clasificaciones",Clasificaciones 
- 
-        	
-  titulo: "III DIA DEL PATÍN 2019",    
- 
-                miniatura:"img/carteldiadelpatin2017.jpg",
-            
-                16/06/2019
-               hora: "10:00",
-                Varias tarifas
-                21,097Km - Infantiles
-                C.D Roller Burgos
-                <a href="http://rollerburgos.com/" target="_blank" ,www.rollerburgos.com
-                <a href="http://rollerburgos.com/wp-content/uploads/2017/05/MAPA-2017-MEDIA-MARATON.jpg" target="_blank" ,Plano del recorrido
-        	
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesDiaPatinMedia16062019.pdf" target="_blank" title="Clasif. Media Maraton",Clasif Media Maratón 
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesDiaPatinInfantiles16062019.pdf" target="_blank" title="Clasif. Infantiles",Clasif. Infantiles
- 
-	
-    	
-            titulo:"VII LA NOCHE MAS DEPORTIVA 2019    
- 
-                miniatura:"img/cartelnochemasdeportiva2018.jpg"
-            
-            
-            
-                14/06/2019
-               hora: "21:00",
-                <a href="http://www.rs-sport.es/inscripciones/detalles-evento/evento/18-vi-carrera-noche-mas-deportiva" target="_blank" ,INSCRIPCIONES
-                5 € / niños gratis
-                5 Km
-                Logroño Deporte
-                <a href="http://www.logronodeporte.es/" target="_blank" ,www.logronodeporte.es
-                -
-            
-                <a href="http://www.rs-sport.es/inscripciones/reglamentos_competiciones/18-reglamento-carrera-noche-mas-deportiva-2018.pdf" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasifLaNocheMasDeportiva2019.pdf" target="_blank" title="Clasificaciones",Clasificaciones 
- 
-	
-    	
-            titulo:"PICON CASTRO 2019    
- 
-                miniatura:"img/cartelpiconcastro2019.jpg"
-            
-                8/06/2019
-               hora: "09:00",
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=8367" target="_blank" ,INSCRIPCIONES
-                --
-                --
-                --
-                <a href="http://www.lapiconcastro.com/" target="_blank" ,www.lapiconcastro.com
-                <a href="http://www.lapiconcastro.com/deporte/carrera/" target="_blank" ,Recorrido y Track
-            
-                <a href="http://www.lapiconcastro.com/deporte/carrera/" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPiconCastroUltra08062019.pdf" target="_blank" title="Clasif. Ultra",Clasif. Ultra
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPiconCastroCorta08062019.pdf" target="_blank" title="Clasif. Trail",Clasif. Trail
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPiconCastroSenderismo08062019.pdf" target="_blank" title="Clasif. Marcha",Clasif. Marcha
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPiconCastroVertical09062019.pdf" target="_blank" title="Clasif. Vertical",Clasif. Picon Castro Vertical
- 
-
-
-    	
-        titulo:"VI TRAVESIA NOCTURNA LIBERANOS DOMINE 2019    
- 
-                miniatura:"img/cartelcnocturnatardajos2019.jpg"
-            
-                8/06/2019
-                22:15
-                10€
-                10Km
-                Ayto. de Rabe de las Calzadas y Ayto. de Tardajos
-                <a href="http://www.liberanosdomine.es/" target="_blank" ,www.liberanosdomine.es
-                <a href="http://www.liberanosdomine.es/recorrido/" target="_blank" ,Recorrido
-            
-                <a href="http://www.liberanosdomine.es/reglamento-1/" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesLiberanosDomineCarrera08062019.pdf" target="_blank" title="Clasif. Carrera",Clasif. Carrera
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesLiberanosDomineSenderismo08062019.pdf" target="_blank" title="Clasif. Senderismo",Clasif. Senderismo
- 
-
-    	
-            titulo:"GRAN FONDO BIBE TRANSBIZKAIA    
- 
-                miniatura:"img/cartelBIBE2018.jpg",
-            
-                2/06/2019
-               hora: "08:00",
-                <a href="https://www.granfondobibetransbizkaia.com/es/inscripciones/" target="_blank" ,INSCRIPCIONES
-                51€/60€
-                178Km
-                Jotamas Eventos
-                <a href="https://www.granfondobibetransbizkaia.com/" target="_blank" ,www.granfondobibetransbizkaia.com
-                <a href="https://www.granfondobibetransbizkaia.com/es/recorrido-granfondo/" target="_blank" ,Gran Fondo
-            
-                <a href="https://www.granfondobibetransbizkaia.com/es/reglamento/" target="_blank" title="Reglamento",Reglamento
- 
-	
-    
- 
-                titulo:"XII CROSS SUBIDA A SANTA CASILDA 2019",
-                    miniatura:"img/cartelsantacasilda2019.jpg",
-            
-                2/06/2019
-               hora: "11:30",
-                http://serviciosonline.briviesca.es/competicross.php
-                Carrera 10€ / Marcha popular 6€
-                9 km
-                Ayuntamiento de Briviersca
-                <a href="http://deporte.briviesca.es/cross-subida-a-santa-casilda-0" target="_blank" ,http://deporte.briviesca.es/
-                Briviescca - Santa Casilda  
-            
-                <a href="http://deporte.briviesca.es/cross-subida-a-santa-casilda-2019" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/CarreraSantaCasilda02062019.pdf" target="_blank" title="Clasif. Carrera",Clasificaciones
- 
-
-
-    	
-        titulo:"XIV MARCHA IÑIGO CUESTA 2019    
- 
-            miniatura:"img/cartelicuesta2018.jpg",
-    	
-            25/05/2019
-           hora: "08:30",
-            <a href="#" target="_blank" ,INSCRIPCIONES
-            --
-            150Km
-            Club Ciclista Villarcayo
-            <a href="http://laicuesta.com/" target="_blank" ,laicuesta.com
-            --
-
-    	
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesICuesta25052019.pdf" target="_blank" title="Clasificaciones Kom Lunada",Clasificaciones Kom Lunada
-
-
- 
-        titulo:"VIII 1/2 MARATON "CAÑÓN DEL RÍO LOBOS"    
- 
-                miniatura:"img/cartelMediaRioLobos2019.jpg",
-            
-            
-            
-                19/05/2019
-               hora: "10:30",
-                <a href="https://www.avaibooksports.com/inscripcion/inscripcion_datos.php?id=8986" target="_blank" ,INSCRIPCIONES
-                10 €
-                12,4km / 21Km
-                Ayto. de Hontoria del Pinar
-                <a href="http://www.hontoriadelpinar.es/" target="_blank" ,www.hontoriadelpinar.es
-                <a href="https://www.google.com/maps/d/u/0/viewer?mid=1rx_2cDByyxvpXaa9L23iHr_k-01Zwsdz&ll=41.84021711521787%2C-3.1659498674927136&z=13" target="_blank" ,Enlace externo
-            
-                <a href="https://www.avaibooksports.com/inscripcion/reglamento.php?id=8986" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/Clasificacion12Hontoria19052019.pdf" target="_blank" title="Clasif. 12km",Clasif. 12km
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionMediaHontoria19052019.pdf" target="_blank" title="Clasif. Media Maraton",Clasif. Media Maraton
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionSenderismoHontoria19052019.pdf" target="_blank" title="Clasif. Senderismo",Clasif. Senderismo
- 
-        	
-    	
- 
- 
-                titulo:"VI HIGUERO RUNNING FESTIVAL 2019",
-                    miniatura:"img/cartelHiguero2019.jpg",
-            
-                18/05/2019
-               hora: "18:30",
-                <a href="http://inscripciones.runvasport.es/es/evento/6higuero-running" target="_blank" ,INSCRIPCIONES
-                11,40€
-                5Km / 10Km
-                Higuero Sport
-                <a href="http://higuerosport.com/" target="_blank" ,www.higuerosport.com
-                <a href="http://higuerosport.com/circuito/" target="_blank" ,Circuito
-            
-            <a href="http://higuerosport.com/reglamento/" target="_blank" title="Reglamento",Reglamento
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesHiguero5km18052019.pdf" target="_blank" title="Clasif. 5km",Clasif. 5km
-                    <a href="http://rs-sport.es/Clasificaciones/ClasificacionesHiguero10km18052019.pdf" target="_blank" title="Clasif. 10km",Clasif. 10km
- 
-	
-    
-  titulo: "LOS MEANDROS DE BRIONES 2019",    
- 
-                miniatura:"img/cartellosmeandros2018.jpg",
-            
-                12/05/2019
-               hora: "11:30",
-                <a href="http://www.rs-sport.es/inscripciones/detalles-evento/evento/31-meandros-briones-2019" target="_blank" ,INSCRIPCIONES
-                10 €
-                7 km / 13 km
-                Peña Zamaca
-                <a href="http://meandros-briones.rs-sport.es/" target="_blank" ,WEB
-                <a href="https://es.wikiloc.com/rutas-carrera/i-los-meandros-de-briones-corta-11952590" target="_blank" ,Ruta Corta / <a href="https://es.wikiloc.com/rutas-carrera/i-los-meandros-de-briones-larga-11959443" target="_blank" ,Ruta Larga 
-            
-                <a href="http://meandros-briones.rs-sport.es/reglamento/" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesLosMeandrosCorta2019.pdf" target="_blank" title="Clasif. General",Clasificación 7km
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesLosMeandrosLarga2019.pdf" target="_blank" title="Clasif. General",Clasificación 10km
- 
-	
- 
-        titulo:"VIII NOCTURNA DE MODUBAR 2019    
- 
-                miniatura:"img/cartelnocturnamodubar2019.jpg"
-              11/05/2019
-                22:45
-                -
-                13€
-                13Km
-                C.D Modubeos
-                <a href="http://cmmodubeos.blogspot.com.es/" target="_blank" ,Pagina Web
-                -
-            
-                <a href="https://www.avaibooksports.com/inscripcion/reglamento.php?id=8840" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesNoctModubarCarrera11052019.pdf" target="_blank" title="Clasif. Carrera",Clasif. Carrera
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesNoctModubarSenderismo11052019.pdf" target="_blank" title="Clasif. Senderismo",Clasif. Senderismo
- 
-    	
-        titulo:"CLÁSICA LOS BUITRES 2019"    
- 
-                miniatura:"img/cartellosbuitres2019.jpg",
-            
-            
-            
-                5/05/2018
-               hora: "12:00",
-                10 €
-                10 km
-                ABAVE
-                -
-                <a href="https://es.wikiloc.com/rutas-carrera/clasica-de-los-buitres-puentedura-ura-puentedura-23390607" target="_blank" ,Puentedura - Ura - Puentedura
-            
-                <a href="https://www.avaibooksports.com/inscripcion/reglamento.php?id=9031" target="_blank" title="Reglamento",Reglamento
-                <a href="https://www.avaibooksports.com/inscripcion/inscripcion_datos.php?id=9031" target="_blank" title="Inscripciones",Inscripciones
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBuitresMenores2019.pdf" target="_blank" title="Clasif. General",Clasificación Menores
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBuitres2019.pdf" target="_blank" title="Clasif. General",Clasificación 10km
- 
-	
-    
-  titulo: "CARRERA CAMPUS UNIVERSIDAD DE LA RIOJA"    
- 
-                miniatura:"img/cartelunirioja2019.jpg" alt="" width="173" height="137"/,
-            
-            
-            
-                5/05/2019
-               hora: "11:00",
-                <a href="https://carreracampus.unirioja.es/index.php/inscripcion/page/3" target="_blank" ,INSCRIPCIONES
-                5 € / 10 €
-                5 km / 10 km
-                Universidad de La Rioja
-                <a href="https://carreracampus.unirioja.es/index.php/contenido/page/1" target="_blank" ,www.carreracampus.unirioja.es
-                -
-            
-                <a href="https://carreracampus.unirioja.es/index.php/contenido/page/26/reglamento-organizacion-pruebas" target="_blank" title="Reglamento",Reglamento
-                <a href="https://carreracampus.unirioja.es/index.php/inscripcion/page/3" target="_blank" title="Inscripciones",Inscripciones
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesUniRioja4km2019" target="_blank" title="Clasif. General",Clasificación Preuniversitarios
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesUniRioja5km2019" target="_blank" title="Clasif. General",Clasificación 5km
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesUniRioja10km2019" target="_blank" title="Clasif. General",Clasificación 10km
- 
-	
- 
-        titulo:"MUÑALBA TRAIL XTREM 2019    
- 
-                miniatura:"img/cartelmuñalbatrail2019.jpg",
-            28/04/2019
-               hora: "09:00",
-                <a href="https://www.avaibooksports.com/inscripcion/inscripcion_datos.php?id=8909" target="_blank" ,INSCRIPCIONES
-                18 €
-                23Km
-                Ayto. Regumiel de la Sierra
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=8909" target="_blank" ,http://laguerrillera.ayuntamientodelerma.es/
-                ---
-            
-                <a href="https://www.avaibooksports.com/inscripcion/reglamento.php?id=8909" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesMuñalbaTrailXtrem28042019.pdf" target="_blank" title="Clasificacion",Clasificacion
-                    <a href="https://www.youtube.com/watch?v=_RBcZ7AI1Yg" target="_blank" title="Video Promocional",Video Promocional
- 
-         
-
- 
-            titulo:"XCO ALDEDOS BURGOS 2019",XCO ALDEDOS BURGOS 2019    
- 
-                titulo:"XCO ALDEDOS BURGOS 2019",
-                    miniatura:"img/cartelxcoaldedosburgos2019.jpg",
-            	
-	
-    
-            
-                27/04/2019
-               hora: "16:00",
-                --
-                --
-                --
-                C.D Colina Triste
-                -
-                -  
-            
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesXCOBURGOS2019.pdf" target="_blank" title="Clasificaciones",Clasificaciones 
- 
-
- 
-        titulo:"I CARRERA SOLIDARIA DONA MEDULA    
- 
-                miniatura:"img/carteldonamedula2019.jpg",
-            
-            
-            
-                14/04/2019
-               hora: "09:30",
-                10 € / 15 €
-                10km / 21Km
-                Ayto. de Cardeñadijo
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=8889" target="_blank" ,http://laguerrillera.ayuntamientodelerma.es/
-            
-                <a href="https://www.avaibooksports.com/inscripcion/reglamento.php?id=8889" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesDonaMedula10km14042019.pdf" target="_blank" title="Clasif. 10km",Clasif. 10km 
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesDonaMedula21km14042019.pdf" target="_blank" title="Clasif. 21km",Clasif. 21km
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesDonaMedulaSend14042019.pdf" target="_blank" title="Senderismo",Senderismo
- 
-         
-
-
- 
-        titulo:"IV ""LA GUERRILLERA"" 2019",   
- 
-                miniatura:"img/cartellaguerrillera2019.jpg",
-            
-            
-            
-                7/04/2019
-               hora: "10:00",
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=8814" target="_blank" ,INSCRIPCIONES
-                10 € / 15 €
-                15km / 25Km
-                Ayto. de Lerma
-                <a href="http://laguerrillera.ayuntamientodelerma.es/" target="_blank" ,http://laguerrillera.ayuntamientodelerma.es/
-                ---
-            
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesGuerrillera15km07042019.pdf" target="_blank" title="Clasif. 15km",Clasif. 15km
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesGuerrillera25km07042019.pdf" target="_blank" title="Clasif. 25km",Clasif. 25km
-                    <a href="https://www.facebook.com/Ayto.Lerma/videos/1638375209590125/" target="_blank" title="Video Promocional",Video Promocional
- 
-         
-
- 
-        titulo:"JIMENA RUNNING -SOTOPALACIOS- 2019    
- 
-                miniatura:"img/carteljimena2019.jpg",
-            
-            
-            
-                30/03/2019
-               hora: "17:00",
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=8815" target="_blank" ,INSCRIPCIONES
-                8€ / Cat Menores GRATIS
-                10Km
-                Ayto. Merindad Rio Ubierna
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=8815" target="_blank" ,WEB
-                - 
-            
-                <a href="https://www.avaibooksports.com/inscripcion/reglamento.php?id=8815" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesJIMENA2019.pdf" target="_blank" title="Clasificaciones",Clasificaciones
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesSENDERISMOJIMENA2019.pdf" target="_blank" title="Clasificaciones",Tiempos senderismo
- 
-
-
-        
-  titulo: "IV MUSHING SALAS DE LOS INFANTES 2019",    
- 
-                miniatura:"img/cartelcanicrosssalas2019.jpg",
-            
-            
-            
-                24/03/2019
-                9:30
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=8508&iframe=0" target="_blank" ,INSCRIPCIONES
-                5€ infantil // 15€ Resto categorias
-                ---
-                Ayto. Salas de los Infantes
-                <a href="http://www.canicrossburgos.com/" target="_blank" ,www.canicrossburgos.com
-                ---
-            
-                <a href="https://www.avaibooksports.com/inscripcion/reglamento.php?id=8508" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesCaniSalas2019.pdf" target="_blank" title="Clasificaciones",Clasificaciones 
- 
-         				
-
-
-        
-  titulo: "XXXVIII CARRERA DE SAN JOSE 2019",    
- 
-                miniatura:"img/cartelcarrerasanjose2019.jpg",
-            
-            
-            
-                10/03/2019
-                12:15
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=8465&iframe=0" target="_blank" ,INSCRIPCIONES
-                10 €
-                10 km
-                Diputación de Burgos
-                <a href="http://www.atletismovalledemena.com/san-jose/" target="_blank" ,www.atletismovalledemena.com
-                --- 
-            
-                <a href="https://www.avaibooksports.com/inscripcion/reglamento.php?id=8465" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesSanJose17032019.pdf" target="_blank" title="Clasificaciones",Clasificaciones
- 
-        	
-               titulo:"1ª Carrera por el TDAH BRICOMART BURGOS",
-                    miniatura:"img/29-cartel-carrera-tdah-2019.jpg",
-            
-            
-            
-                10/03/2019
-               hora: "10:00",
-                <a href="http://www.rs-sport.es/inscripciones/detalles-evento/evento/29-carrera-tdah-bricomart-2018" target="_blank" ,INSCRIPCIONES
-                10 Euros
-                6 / 10 kilometros
-                ABUDAH
-                <a href="https://carreratdah.wordpress.com/" target="_blank" ,WEB
-                <a href="https://carreratdah.wordpress.com/circuitos/" target="_blank" ,Circuitos
-            
-                <a href="https://carreratdah.wordpress.com/reglamento/" target="_blank" title="Reglamento",Reglamento
-               <a href="http://www.rs-sport.es/Clasificaciones/Clasificaciones10kmBricomart10032019.pdf" target="_blank" title="Clasificaciones 10km",Clasif. 10km
-                <a href="http://www.rs-sport.es/Clasificaciones/Clasificaciones6kmBricomart10032019.pdf" target="_blank" title="Clasificaciones 6km",Clasif. 6km
-               <a href="http://www.rs-sport.es/inscripciones/listado-participantes/evento/29-carrera-tdah-bricomart-2018" target="_blank" title="Ver Inscritos",Ver Inscritos --,
- 
-
- 
-        titulo:"IX CANICROSS DE COVARRUBIAS 2019    
- 
-                miniatura:"img/cartelcanicrosscovarrubias2019.jpg",
-            
-            
-            
-                24/02/2019
-               hora: "10:00",
-                <a href="https://www.avaibooksports.com/inscripcion/index.php?id=8356&iframe=0" target="_blank" ,INSCRIPCIONES
-                ---
-                ---
-                Canicross Burgos
-                <a href="https://canicrossburgos.com/" target="_blank" ,www.canicrossburgos.com
-                <a href="https://canicrossburgos.com/wp-content/uploads/2019/01/PROG-2019-Canicross-COVA.pdf" target="_blank" ,Circuitos 
-            
-                <a href="https://canicrossburgos.com/wp-content/uploads/2019/01/PROG-2019-Canicross-COVA.pdf" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesCaniCova2019.pdf" target="_blank" title="Clasificaciones",Clasificaciones
- 
 
-            
- 
-                titulo:"XLI Cross de San Lesmes 2019",
-                    miniatura:"img/cartel_San_Lesmes_2019.jpg",
-            
-            
-            
-                10/02/2019
-               hora: "10:30",
-                <a href="http://www.rs-sport.es/inscripciones/detalles-evento/evento/30-xli-cross-popular-san-lesmes" target="_blank" ,INSCRIPCIONES
-                8 Euros
-                10 kilometros
-                Asociación Atletas Veteranos Burgos
-                https://www.facebook.com/abave.abave/
-                Plaza del Rey San Fernando - Paseo del Espolón  
-            
-                <a href="http://www.rs-sport.es/inscripciones/reglamentos_competiciones/30-reglamento-xli-cross-popular-san-lesmes.pdf" target="_blank" title="Reglamento",Reglamento
-                <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesSanLesmes10022019.pdf" target="_blank" title="Clasificaciones Absolutas",Clasif. Absolutas
-                <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesSanLesmesMenores10022019.pdf" target="_blank" title="Clasificaciones Menores",Clasif. Menores
- 
-
-    
-                titulo:"EL DESAFIO DE HELIOS 2018",
-                    miniatura:"img/carteldesafiohelios.jpg",
-            
-            
-            
-                26/01/2019
-                 08:34 
-                <a href="http://www.rs-sport.es/inscripciones/" target="_blank" ,INSCRIPCIONES
-                Varios
-                 125km 
-                 - 
-                <a href="http://eldesafiodehelios.blogspot.com.es/" target="_blank" ,eldesafiodehelios.blogspot.com.es
-                -  
-            
-                <a href="http://eldesafiodehelios.blogspot.com.es/p/edicion-2018-informacion-general.html" target="_blank" title="Reglamento",Informacion
-                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesBTTDesafioHelios2019.pdf" target="_blank" title="Clasif. BTT",Clasif. BTT
-                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesDuatlonDesafioHelios2019.pdf" target="_blank" title="Clasif. Duatlón",Clasif. Duatlón
-                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesEquiposDesafioHelios2019.pdf" target="_blank" title="Clasif. Equipos",Clasif. Equipos
- 
-	
-       
- 
-                titulo:"XXIX SAN SILVESTRE CIDIANA 2018",
-                    miniatura:"img/cartelSanSivestreCidiana2018.png"
-            
-            
-            
-                31/12/2018
-               hora: "19:00",
-                <a href="http://www.sansilvestrecidiana.com" target="_blank" ,www.sansilvestrecidiana.com
-                6 €
-                5 km
-                C.D. Florentino Díaz Reig
-                <a href="http://www.sansilvestrecidiana.com" target="_blank" ,www.sansilvestrecidiana.com
-                -  
-            
-                <a href="http://www.rs-sport.es/Clasificaciones/ClasifSanSilvestreCidiana31122018.pdf" target="_blank" title="Clasificaciones Carrera Absoluta",Clasificaciones Carrera Absoluta
-                <a href="http://www.rs-sport.es/inscripciones/listado-participantes/evento/11-xv-carrera-popular-venta-banos" target="_blank" title="Ver Inscritos",Ver Inscritos --,
- 
-
- 
-            titulo:"SAN SILVESTRE LOGROÑO 2018",SAN SILVESTRE LOGROÑO 2018    
- 
-                titulo:"SAN SILVESTRE LOGROÑO 2018",
-                    miniatura:"img/cartelSanSilvestreogrono2018.jpg",
-            	
-	
-            	
-            
-                31/12/2018
-                18:45
-                -
-                -
-                9km
-                Logroño Deporte
-                -
-                -
-   
-                <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesSanSilvestreLogrono2018.pdf" target="_blank" title="Clasificación",Clasificación 
- 
-    	
-    	
-      
- 
-                titulo:"XX SAN SILVESTRE LERMEÑA 2018",
-                    miniatura:"img/cartelSanSivestreLerma2018.jpg"
-            
-            
-            
-                30/12/2018
-                -
-                -
-                Gratis
-                Varias distancias
-                Ayto. de Lerma
-                <a href="http://www.ayuntamientodelerma.es" target="_blank" ,www.ayuntamientodelerma.es
-                -  
-            
-                <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesSanSilvestreLermaMenores2018.pdf" target="_blank" title="Clasificaciones Categorías Menores",Clasificaciones Categorias Menores
-                <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesSanSilvestreLermaAbsoluta2018.pdf" target="_blank" title="Clasificaciones Carrera Absoluta",Clasificaciones Carrera Absoluta
-                <a href="http://www.rs-sport.es/inscripciones/listado-participantes/evento/11-xv-carrera-popular-venta-banos" target="_blank" title="Ver Inscritos",Ver Inscritos --,
- 
-	
-        
-                titulo:"XXXIX CROSS INTERNACIONAL VENTA DE BAÑOS",
-                    miniatura:"img/cartelventabanos2018.jpg"
-            
-            
-            
-                16/12/2018
-                -
-                -
-                -
-                -
-                Ayto. Venta de Baños
-                <a href="http://www.pmdeportesventadebanos.com/cross_internacional/cross.html" target="_blank" ,www.pmdeportesventadebanos.com
-                -  
-            
-                <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesCrossIntVentaBanos16122018.pdf" target="_blank" title="Clasificaciones Cross Internacional",Clasificaciones Cross Internacional
-                <a href="http://www.rs-sport.es/inscripciones/listado-participantes/evento/11-xv-carrera-popular-venta-banos" target="_blank" title="Ver Inscritos",Ver Inscritos --,
- 
-    	
-
-       
-                titulo:"XVI CARRERA POPULAR VENTA DE BAÑOS",
-                    miniatura:"img/cartelventabanos2018.jpg"
-            
-            
-            
-                15/12/2018
-                -
-                -
-                5€
-                5km / 10km
-                Ayto. Venta de Baños
-                <a href="http://www.pmdeportesventadebanos.com/cross_internacional/cross.html" target="_blank" ,www.pmdeportesventadebanos.com
-                -  
-            
-                <a href="https://ventadebanos.es/wp-content/uploads/2018/11/Normasdeorganizaci%C3%B3nycompetici%C3%B3nCarreraPopular2018.pdf" target="_blank" title="Reglamento",Reglamento
-                 <a href="http://www.rs-sport.es/Clasificaciones/Clasificaciones5kmPopularVentaBanos15122018.pdf" target="_blank" title="Clasif. 5km",Clasif. 5km
-                 <a href="http://www.rs-sport.es/Clasificaciones/Clasificaciones10kmPopularVentaBanos15122018.pdf" target="_blank" title="Clasif. 10km",Clasif. 10km 
-                <a href="http://www.rs-sport.es/inscripciones/listado-participantes/evento/11-xv-carrera-popular-venta-banos" target="_blank" title="Ver Inscritos",Ver Inscritos --,
- 
-    	
-       
-                titulo:"III MAMBLAS TRAIL 2018",
-                    miniatura:"img/cartelMamblasTrail2017.jpg",
-            
-            
-            
-                4/11/2018
-               hora: "10:00",
-                13 Euros
-                23km - 12km - 8,5km
-                Ayuntamiento de Covarrubias
-                <a href="http://idj.burgos.es/content/ii-mamblas-trail-de-covarrubias" target="_blank" ,INFORMACION
-                <a href="https://idj.burgos.es/sites/default/files/file/evento/perfiles_mamblas_trail2017.pdf" target="_blank" ,PERFILES 
-            
-                <a href="https://idj.burgos.es/content/ii-mamblas-trail-de-covarrubias" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/clasificacionesMamblasTrail11km04112018.pdf" target="_blank" title="Clasificiaciones 11km",Clasif. 12km
-                <a href="http://rs-sport.es/Clasificaciones/clasificacionesMamblasTrail22km04112018.pdf" target="_blank" title="Clasificiaciones 22km",Clasif. 22km
-                 <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
- 
-
-       
-                titulo:"XIII CANICROSS DE BURGOS 2018",
-                    miniatura:"img/cartelcanicrossburgos2018.jpg",
-            
-            
-            
-                3 y 4/11/2018
-                -
-                .
-                .
-                Ayuntamiento de San Adrián de Juarros
-                <a href="https://canicrossburgos.com/" target="_blank" ,http://www.canicrossburgos.com/
-                <a href="https://canicrossburgos.com/" target="_blank" ,Circuitos  
-            
-                <a href="https://canicrossburgos.com/wp-content/uploads/2018/10/Dossier-XIII-Mushing-San-Adri%C3%A1n-de-Juarros.pdf" target="_blank" title="Reglamento",Reglamento
-                <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesMushingSanAdrianMD04112018.pdf" target="_blank" title="Clasif. Media Distancia",Clasif. Media Distancia
-                <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesMushingSanAdrianSprint04112018.pdf" target="_blank" title="Clasif. Sprint",Clasif. Sprint
-                 <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
- 
-
-    	
- 
- 
-                titulo:"V CARRERA INTEGRACION 2018",
-                    miniatura:"img/cartelCarreraIntegracion2018.jpg",
-            	
-	
-            	
-            
-                4/11/2018
-               hora: "11:30",
-                5€ (donación 100%) 
-                3,5km (marcha) / 12km (carrera) 
-                Logroño Deporte
-                <a href="https://www.logronodeporte.es/carrera-integracion#1-marcha-de-la-integraci%C3%B3n-3-5-kms" target="_blank" ,Página Web
-                <a href="https://www.logronodeporte.es/images/carrera-integracion/plano-carrera-integracion.pdf" target="_blank" ,Recorrido
-   
-                <a href="http://www.rs-sport.es/inscripciones/reglamentos_competiciones/24-reglamento-carrera-marcha-integracion-2018.pdf" target="_blank" title="Reglamento",Reglamento
-                <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesCarreraIntegracion2018.pdf" target="_blank" title="Clasificación",Clasificación
- 
-    	
-    	
-
-    
- 
-                titulo:"IV MARCHA BTT RAUL GUREKIN 2018",
-                    miniatura:"img/cartelBTTRaulGurekin2018.jpg",
-            	
-	
-            	
-            
-                28/10/2018
-               hora: "09:00",
-                18€ / 25€
-                23km / 40km
-                BTT Miribilla
-                <a href="https://raulgurekin.com/" target="_blank" ,Página Web
-                <a href="https://raulgurekin.com/recorrido/" target="_blank" ,Recorrido
-            
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesMiribillaBTTLargaHombres2018.pdf" target="_blank" title="Clasif. Ruta Larga Hombres",Clasif. Ruta Larga Hombres
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesMiribillaBTTLargaMujeres2018.pdf" target="_blank" title="Clasif. Ruta Larga Mujeres",Clasif. Ruta Larga Mujeres
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesMiribillaBTTCortaHombres2018.pdf" target="_blank" title="Clasif. Ruta Corta Hombres",Clasif. Ruta Corta Hombres
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesMiribillaBTTCortaMujeres2018.pdf" target="_blank" title="Clasif. Ruta Corta Mujeres",Clasif. Ruta Corta Mujeres
- 
-	
- 
- 
-                titulo:"PULMON DE ACERO BTT 2018",
-                    miniatura:"img/cartelPulmonAcero2018.jpg",
-            	
-	
-            	
-            
-                21/10/2018
-               hora: "09:00",
-                -
-                63km - 41km
-                Aire Norte
-                <a href="http://www.pulmondeacero.com/" target="_blank",www.pulmondeacero.com
-                -
-            
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPulmonAceroCronoescaladaCortaFem21102018.pdf" target="_blank" title="Clasif. Cronoescalada",Crono Media Maraton F
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPulmonAceroCronoescaladaCortaMasc21102018.pdf" target="_blank" title="Clasif. Cronoescalada",Crono Media Maraton M
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPulmonAceroCronoescaladaLargaFem21102018.pdf" target="_blank" title="Clasif. Cronoescalada",Crono Bike Maraton F
-                    <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPulmonAceroCronoescaladaLargaMasc21102018.pdf" target="_blank" title="Clasif. Cronoescalada",Crono Bike Maraton M
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPulmonAceroMarchaCorta21102018.pdf" target="_blank" title="Clasif. Marcha BTT",Tpo.Media Maraton
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPulmonAceroMarchaLarga21102018.pdf" target="_blank" title="Clasif. Marcha BTT",Tpo.Maraton
- 
-	
- 
- 
-                titulo:"V CARRERA SOLIDARIA SK RUN BURGOS 2018",
-                    miniatura:"img/cartelSmurfitKappa2018.jpg",
-            	
-	
-            	
-            
-                20/10/2018
-               hora: "16:30",
-                10
-                5km - 10km - Marcha
-                Smurfit Kappa, S.A.
-                -
-                -
-            
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesSmurfitKappa5km20102018.pdf" target="_blank" title="Clasif. 5km",Clasificación 5km 
-                    <a href="http://rs-sport.es/Clasificaciones/ClasificacionesSmurfitKappa10km20102018.pdf" target="_blank" title="Clasif. 10km",Clasificación 10km 
- 
-    	
- 
- 
-                titulo:"VII MARCHA DEMANDASAURUS 2018",
-                    miniatura:"img/cartelDemandasaurus2018.jpg",
-            	
-	
-            	
-            
-                14/10/2018
-               hora: "10:00",
-                15
-                Varias distancias
-                Excmo. Ayuntamiento de Salas de los Infantes
-                <a href="http://www.marchademandasaurus.com" target="_blank" ,www.marchademandasaurus.com
-                <a href="http://www.marchademandasaurus.com" target="_blank" ,Circuito
-            
-            <a href="http://www.marchademandasaurus.com/" target="_blank" title="Reglamento",Reglamento
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesDemandasaurusBTT14102018.pdf" target="_blank" title="Clasif. BTT",Clasif. BTT 
-                    <a href="http://rs-sport.es/Clasificaciones/ClasificacionesDemandasaurusCarreras14102018.pdf" target="_blank" title="Clasif. Carreras",Clasif. Carreras 
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesDemandasaurusSenderismo14102018.pdf" target="_blank" title="Clasif. Senderismo",Clasif. Senderismo 
- 
-	
-    	
-        titulo:"GERNIKA BILBAO 2018    
- 
-                miniatura:"img/cartelGernikaBilbao2018.jpg" alt="" width="173" height="179"/,
-            
-            
-            
-                7/10/2018
-               hora: "10:00",
-                10€ - 40€
-                34Km 22km 12km 8km
-                Jotamas Eventos
-                <a href="http://gernikabilbaorunning.com" target="_blank" ,www.gernikabilbaorunning.com
-                <a href="http://gernikabilbaorunning.com/es/recorrido/" target="_blank" ,Recorridos
-            
-                <a href="http://gernikabilbaorunning.com/es/reglamento/" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesGernikaBilbaoOro2018.pdf" target="_blank" title="Clasif ORO",Clasif ORO
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesGernikaBilbaoPlata2018.pdf" target="_blank" title="Clasif PLATA",Clasif PLATA
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesGernikaBilbaoBronce2018.pdf" target="_blank" title="Clasif BRONCE",Clasif BRONCE
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesGernikaBilbaoBlanco2018.pdf" target="_blank" title="Clasif BLANCO",Clasif BLANCO
- 
-	
-
-
-
- 
- 
-                titulo:"V HIGUERO RUNNING FESTIVAL 2018",
-                    miniatura:"img/cartelHiguero2018.jpg",
-            	
-	
-    
-            
-                6/10/2018
-                18:15
-                <a href="http://higuerosport.com/" target="_blank" ,INSCRIPCIONES
-                11,40€
-                5Km / 10Km
-                Higuero Sport
-                <a href="http://higuerosport.com/" target="_blank" ,www.higuerosport.com
-                <a href="http://higuerosport.com/circuito/" target="_blank" ,Circuito
-            
-            <a href="http://higuerosport.com/reglamento/" target="_blank" title="Reglamento",Reglamento
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesHiguero5km06102018.pdf" target="_blank" title="Clasif. 5km",Clasif. 5km
-                    <a href="http://rs-sport.es/Clasificaciones/ClasificacionesHiguero10km06102018.pdf" target="_blank" title="Clasif. 10km",Clasif. 10km
- 
-	
-
- 
-            titulo:"I MARCHA CICLOTURSTA LA ESCAPADA 2018",I MARCHA CICLOTURSTA LA ESCAPADA 2018    
- 
-                titulo:"I MARCHA CICLOTURSTA LA ESCAPADA 2018",
-                    miniatura:"img/cartellaescapada2018.jpg",
-            	
-	
-    
-            
-                15/09/2018
-               hora: "09:00",
-                28€
-                -
-                U.C Medinesa
-                <a href="https://cicloturistamedinesa.es/" target="_blank" ,www.cicloturistamedinesa.es
-                <a href="https://view.publitas.com/nuevas-ideas-web/i_cicloturista_medinesa_060718_def/page/1" target="_blank" ,Recorridos
-            
-            <a href="https://cicloturistamedinesa.es/wp-content/uploads/2018/06/REGLAMENTO_LAESCAPADA_MEDINESA_15SEP18.pdf" target="_blank" title="Reglamento",Reglamento
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesUCMedinesa15092018.pdf" target="_blank" title="Clasif. Carrera",Clasificaciones
- 
-	
-    	
- 
- 
-                titulo:"IV CARRERA SOLIDARIA BRIDGESTONE 2018",
-                    miniatura:"img/cartelsolidariabasauri2018.jpg",
-            	
-	
-    
-            
-                9/09/2018
-               hora: "11:00",
-                --
-                --
-                4km / 10km
-                Bridgestone Hispania
-                <a href="http://www.carrerasolidariabridgestone.com/" target="_blank" ,Pagina Web
-                <a href="http://www.carrerasolidariabridgestone.com/" target="_blank" ,Recorrido  
-            
-            <a href="https://www.avaibooksports.com/uploads/docs/eventos/rol/7896_evento_7191_reglamento.pdf?v=1533801982" target="_blank" title="Reglamento",Reglamento
-            <a href="http://rs-sport.es/Clasificaciones/clasificacionesbridgestonebasauri4km.pdf" target="_blank" title="Clasificaciones",Clasificaciones 4km 
-            <a href="http://rs-sport.es/Clasificaciones/clasificacionesbridgestonebasauri10km.pdf" target="_blank" title="Clasificaciones",Clasificaciones 10km 
- 
-	
-
- 
- 
-                titulo:"XCO ALDEDOS BURGOS 2018",
-                    miniatura:"img/cartelxcoaldedosburgos2018.jpg",
-            	
-	
-    
-            
-                2/09/2018
-               hora: "10:00",
-                --
-                --
-                --
-                C.D Colina Triste
-                <a href="https://www.colinatristeepicrace.com/xco-aldedos-burgos" target="_blank" ,Pagina Web
-                <a href="https://www.colinatristeepicrace.com/recorrido1" target="_blank" ,Recorrido  
-            
-            <a href="https://static.yosoyciclista.com/documentos/smartweb/menu/257/doc_5a96815c85a392.71461149_normativa-cyl-2018.pdf" target="_blank" title="Reglamento",Reglamento
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesXCOALDEDOSBURGOS2018.pdf" target="_blank" title="Clasificaciones",Clasificaciones 
- 
-
-    	
-
- 
- 
-                titulo:"IV MARCHA BTT ¡HAZLA DEL TIRÓN! 2018",
-                    miniatura:"img/cartelHazlaDelTiron2018.jpg",
-            	
-	
-    
-            
-                1/09/2018
-               hora: "09:00",
-                <a href="https://www.rockthesport.com/es/evento/iv-bttiron" target="_blank" ,INSCRIPCIONES
-                --
-                27Km / 48Km / 59Km
-                Asociación Cultural de Tirgo
-                <a href="https://www.rockthesport.com/es/evento/iv-bttiron" target="_blank" ,Pagina Web
-                <a href="https://www.rockthesport.com/open/documentos/af1785c0-b1d1-453a-966b-56dfaa29e979/pdf" target="_blank" ,Descargar  
-            
-            <a href="https://www.rockthesport.com/open/documentos/6cec7a6d-91fa-4abe-800b-fe3a1132ee80/pdf" target="_blank" title="Reglamento",Reglamento
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesHazlaDelTironCorta01102018.pdf" target="_blank" title="Clasif. Corta",Clasif. Corta 
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesHazlaDelTironMedia01102018.pdf" target="_blank" title="Clasif. Media",Clasif. Media  
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesHazlaDelTironLarga01102018.pdf" target="_blank" title="Clasif. Larga",Clasif. Larga 
- 
-
- 
- 
-                titulo:"IV CARRERA POPULAR VILLA DE PINEDA 2018",
-                    miniatura:"img/cartelPinedaSierra2018.jpg",
-            	
-	
-    
-            
-                1/09/2018
-               hora: "10:00",
-                <a href="http://www.carreravilladepineda.com/inscripciones/" target="_blank" ,INSCRIPCIONES
-                10€
-                8Km / 21Km
-                Ayuntamiento de Pineda de la Sierra
-                <a href="http://www.carreravilladepineda.com/" target="_blank" ,www.carreravilladepineda.com
-                <a href="http://www.runmap.net/es/route/3010317-pienda-via-verde-8-km/" target="_blank" ,8Km / <a href="http://www.runmap.net/es/route/3381273-minas-via-verde-21-km/" target="_blank" ,21Km
-            
-            <a href="http://www.carreravilladepineda.com/reglamento/" target="_blank" title="Reglamento",Reglamento
-            <a href="http://rs-sport.es/Clasificaciones/Clasificaciones8kmPineda2018.pdf" target="_blank" title="Clasif. Carrera",Clasif 8km 
-            <a href="http://rs-sport.es/Clasificaciones/Clasificaciones21kmPineda2018.pdf" target="_blank" title="Clasif. Carrera",Clasif 21km 
- 
-
-
- 
-            titulo:"VII TRAVESIA NOCTURNA ME TOMO LAS DE VILLADIEGO",VII TRAVESIA NOCTURNA ME TOMO LAS DE VILLADIEGO    
- 
-                titulo:"VII TRAVESIA NOCTURNA ME TOMO LAS DE VILLADIEGO",
-                    miniatura:"img/cartelNocturnaVilladiego2018.jpg",
-            	
-	
-            	
-            
-                25/08/2018
-               hora: "22:00",
-                10€
-                12Km / 21,097Km
-                Ayto. de Villadiego
-                <a href="http://www.nocturnavilladiego.es/" target="_blank" ,www.nocturnavilladiego.es
-                <a href="http://www.nocturnavilladiego.es/recorrido.htm" target="_blank" ,Recorridos
-            
-            <a href="http://www.nocturnavilladiego.es/categoria-reglamento.htm" target="_blank" title="Reglamento",Reglamento
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesCarreraVilladiego25082018.pdf" target="_blank" title="Clasif. Carrera",Clasif. Carrera 
-                    <a href="http://rs-sport.es/Clasificaciones/ClasificacionesSenderismoVilladiego25082018.pdf" target="_blank" title="Clasif. Senderismo",Clasif. Senderismo 
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesMediaVilladiego25082018.pdf" target="_blank" title="Clasif. 1/2 Maraton",Clasif. 1/2 Maraton 
- 
-	
- 
- 
-                titulo:"IV LEGUA POPULAR BACO RACE 2018",
-                    miniatura:"img/cartelBacoRace2018.jpg",  
-            
-                25/08/2018
-                19:45
-                -
-                desde 5€
-                5,3 Km
-                Asociación Cultural Dios Baco
-                <a href="https://www.facebook.com/bacorace" target="_blank" ,Página Web
-                 -   
-            
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBaco25082018.pdf" target="_blank" title="Clasificaciones",Clasif. Carrera
-            <a href="http://rs-sport.es/Clasificaciones/ClasificacionesAndarinesBaco25082018.pdf" target="_blank" title="Clasificaciones",Clasif. Andarines
-                    <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos
- 
-
-        {
-                titulo:"I Travesía Nocturna ""Castillo de Isar"" 2018",
- 
-                    miniatura:"img/cartelNocturnaIsar2018.jpg",
-            
-            
-            
-                18/08/2018
-               hora: "21:30",
-                <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" ,http://deportes.diputaciondeburgos.es/competicross.php
-                10 Euros
-                11.000 metros
-                Ayto. de Isar
-                <a href="http://www.carreranocturnaisar.es/" target="_blank" ,http://www.carreranocturnaisar.es/
-                 -   
-            
-                <a href="http://www.carreranocturnaisar.es/pages/normativa.html" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaCastilloIsar18082018.pdf" target="_blank" title="Clasificaciones",Clasificaciones
-                <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
- 
-	
-    	
- 
-                titulo:"VI Travesía Nocturna ""Sendero de las Fortificaciones"" 2018",
-                miniatura:"img/cartelNocturnaSenderoFortificaciones2018.jpg",
-            
-            
-            
-                17/08/2018
-               hora: "22:00",
-                <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" ,http://deportes.diputaciondeburgos.es/competicross.php
-                10 Euros
-                9.000 metros
-                El pico Taragudo
-                <a href="http://www.elpicotaragudo.com" target="_blank" ,http://www.elpicotaragudo.com
-                <a href="http://es.wikiloc.com/wikiloc/view.do?id=4712393" target="_blank" ,Wikiloc  
-            
-                <a href="http://www.elpicotaragudo.com/reglamento.html" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesFuentecenCarrera17082018.pdf" target="_blank" title="Clasificaciones",Clasif. Carrera
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesFuentecenSenderismo17082018.pdf" target="_blank" title="Clasificaciones",Clasif. Senderismo
-                <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones
-                <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos
- 
-            	
-        	
-                titulo:"X Subida al Pico de Navas 2018",
- 
-                miniatura:"img/cartelPicoNavas2018.jpg",
-            
-            
-            
-                13/08/2018
-               hora: "19:30",
-                10€
-                3,6 km
-                Ayto. de Navas del Pinar - C.D. Navas del Pinar
-                <a href="http://www.navasdelpinar.es" target="_blank" ,www.navasdelpinar.es
-                - 
-            
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPicoNavas13082018.pdf" target="_blank" title="Clasificaciones",Clasificaciones
- 
-	
- 
-            titulo:"IV TROFEO DE VELOCIDAD VILLA DE BELORADO 2018",IV TROFEO DE VELOCIDAD VILLA DE BELORADO 2018    
- 
-                titulo:"IV TROFEO DE VELOCIDAD VILLA DE BELORADO 2018",
-                    miniatura:"img/cartelTrofeoVelocidadBelorado2018.jpg",
-            	
-	
-    
-            
-                12/08/2018
-               hora: "11:30",
-                10€
-                12Km / 21 Km
-                Ayto de Belorado
-                <a href="https://www.facebook.com/events/1779282468952437/" target="_blank" ,Página Web
-                 -   
-            
-            <a href="http://rs-sport.es/Clasificaciones/Clasificaciones21kmPatines20082018.pdf" target="_blank" title="Clasif. Carrera",Clasif. 21km
-            <a href="http://rs-sport.es/Clasificaciones/Clasificaciones12kmPatines20082018.pdf" target="_blank" title="Clasif. Carrera",Clasif. 12km
-                    <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos
- 
-
-
 
-	
  
-                titulo:"VI Travesía Nocturna ""Entre Tesla"" 2018",
-                miniatura:"img/2018/cartelEntreTesla2018.png",
-            
-            
-            
-                4/08/2018
-               hora: "22:00",
-                <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" ,http://deportes.diputaciondeburgos.es/competicross.php
-                5 Euros
-                14.300 metros
-                Ayuntamiento de Medina de Pomar
-                <a href="http://www.medinadepomar.net/noticia/419/marcha-nocturna-entre-tesla-2018.html" target="_blank" ,http://www.medinadepomar.net/noticia/419/marcha-nocturna-entre-tesla-2018.html
-                <a href="http://www.medinadepomar.net/noticia/419/marcha-nocturna-entre-tesla-2018.html" target="_blank" ,Recorrido  
-            
-                <a href="http://www.medinadepomar.net/archivos/noticias/bases-nocturna-2018-optimizado153198403141.pdf" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesEntreTeslaCarrera04082018.pdf" target="_blank" title="Clasificaciones",Clasif. Carrera
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesEntreTeslaSenderismo04082018.pdf" target="_blank" title="Clasificaciones",Clasif. Senderismo
-                <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
- 
-    	
-                titulo:"VIII Carrera Popular 10km Ciudad de Briviesca 2018",
-                    miniatura:"img/cartel10kmBriviesca2018.jpg",
-            
-            
-            
-                4/08/2017
-               hora: "20:00",
-                http://serviciosonline.briviesca.es
-                -
-                5 km - 10 km
-                Ayto. Briviesca
-                <a href="http://deportes.briviesca.es" target="_blank" ,deportes.briviesca.es
-                - 
-            
-                <a href="http://rs-sport.es/Clasificaciones/Clasificacion5kmBriviesca04082018.pdf" target="_blank" title="Clasificaciones 5km",Clasificaciones 5km
-                <a href="http://rs-sport.es/Clasificaciones/Clasificacion10kmBriviesca04082018.pdf" target="_blank" title="Clasificaciones 10km",Clasificaciones 10km
-
-
-
-                titulo:"II BTT Arlanza Extrem 2018",
-                    miniatura:"img/.jpg",
-            
-            
-            
-                29/07/2018
-               hora: "09:30",
-                 - 
-                - km
-                Ayto. de Hortigüela
-                <a href="http://www.bttarlanzaextrem.es.com/" target="_blank" ,www.bttarlanzaextrem.es
-                - 
-            
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBTTExtrem29072018.pdf" target="_blank" title="Clasificaciones Tramos Cronometrados",Clasificaciones Tramos Cronometrados
- 
-
-        
-                titulo:"4ª Nocturna Ruta del Boletus 2018",
-                    miniatura:"img/cartelBoletus2018.jpg",
-            
-            
-            
-                28/07/2018
-               hora: "22:00",
-                10 Euros
-                10,85 km
-                Ayto. de Rabanera del Pinar
-                <a href="http://www.rutadelboletus.com/" target="_blank" ,www.rutadelboletus.com
-                <a href="http://www.rutadelboletus.com/la-carrera/recorrido" target="_blank" ,Mapa de Recorrido 
-            
-            <!--	<a href="http://www.rutadelboletus.com/la-carrera/normas" target="_blank" title="Reglamento",Reglamento --,
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBoletusCarrera28072018.pdf" target="_blank" title="Clasificaciones Carrera",Clasificaciones Carrera
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBoletusSenderismo29082018.pdf" target="_blank" title="Clasificaciones Senderismo",Clasificaciones Senderismo
-            <!--	<a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
-            <!--    <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
- 
-
-        {
-  titulo: "
-titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS DE NEILA 2018    
- 
-                titulo:"22 Marcha cicloturista Lagunas de Neila",
-                    miniatura:"img/cartelNeila2016.jpg",
-            
-            
-            
-                22/07/2018
-                8:30
-                http://ucburgalesa.com/lagunasneila/inscripciones/
-                -
-                160 km
-                U.C. Burgalesa
-                <a href="http://ucburgalesa.com//" target="_blank" ,http://ucburgalesa.com/
-                <a href="http://ucburgalesa.com/lagunasneila/recorrido/" target="_blank" ,Mapa interactivo 
-            
-                <a href="http://ucburgalesa.com/lagunasneila/reglamento/" target="_blank" title="Reglamento",Reglamento
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesCicloturistaNeila22072018.pdf" target="_blank" title="Clasificaciones",Clasificaciones
-            <!--	<a href="http://ucburgalesa.com/lagunasneila/inscripciones/" target="_blank" title="Inscripciones",Inscripciones --,
-            <!--    <a href="http://ucburgalesa.com/lagunasneila/listado-inscritos/" target="_blank" title="Ver Inscritos",Ver Inscritos --,
- 
-
-        {
-  titulo: "
-3ª MEDIA MARATÓN HAZLA DEL TIRÓN    
- 
-                miniatura:"img/mediahazladeltiron2018.jpg" alt="" width="173" height="97"/,
-            
-            
-            
-                22/07/2018
-               hora: "09:00",
-                <a href="https://www.rockthesport.com/es/evento/tirgomedia/inscripcion/selecciona-tarifa" target="_blank" ,INSCRIPCIONES
-                12€ / 15€
-                21,097km
-                Ayto. Tirgo
-                <a href="https://www.rockthesport.com/es/evento/tirgomedia" target="_blank" ,Pagina Web
-                <a href="https://www.rockthesport.com/open/documentos/1b154cfa-cfaf-4bde-9d18-4fdc6cef4ac5/pdf" target="_blank" ,Rutómetro
-            
-                <a href="https://www.rockthesport.com/es/evento/tirgomedia/documentacion" target="_blank" title="Reglamento",Reglamento
-        <!--		<a href="https://www.rockthesport.com/es/evento/tirgomedia/inscripcion/selecciona-tarifa" target="_blank" title="Inscripciones",Inscripciones --,
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPatinesTirgo2018.pdf" target="_blank" title="Clasif Patines",Clasif Patines 
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesCorredoresTirgo2018.pdf" target="_blank" title="Clasif Carrera",Clasif Carrera
-        <!--		<a href="https://www.youtube.com/watch?v=oMtbrxkGOnc" target="_blank" title="Video Promocional",Video Promocional --,
- 
-    	
-
-
-    	
-        titulo:"III NOCTURNA TERRORIFICA 2018    
  
-                miniatura:"img/2018/cartelnocturnaterrorifica2018",
             
-            
-            
-                21/07/2018
-               hora: "22:30",
-                12€
-                -
-                Ayto. Villarcayo
-                <a href="https://www.facebook.com/NocturnaVillarcayoMCV/" target="_blank" ,Pagina Web
-                -
-            
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaTerrorificaCarrera2018.pdf" target="_blank" title="Clasificaciones",Clasif. Carrera 
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesNocturnaTerrorificaSenderismo2018.pdf" target="_blank" title="Clasificaciones",Clasif. Senderismo 
- 
-
-
-
- 
-        titulo:"COLINA TRISTE EPIC RACE'18    
- 
-                miniatura:"img/bttcolinatriste2018.jpg"
-            
-            
-            
-                20 al 22/07/2018
-                -
-                70€-95€
-                -
-                Silos C.D
-            
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEpicRaceGeneral220720178.pdf" target="_blank" title="Clasificación General",General
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEpicRaceEtapa1200720178.pdf" target="_blank" title="Clasificaciones Etapa 1",Etapa 1
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEpicRaceEtapa2210720178.pdf" target="_blank" title="Clasificaciones Etapa 2",Etapa 2
-                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesColinaTristeEpicRaceEtapa3220720178.pdf" target="_blank" title="Clasificaciones Etapa 3",Etapa 3
- 
-	
+          
     	
         titulo:"VII LOS 10 DE IBEAS 2018    
  
@@ -3604,10 +4107,8 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 10€
                 10Km
                 ACAHIA
-                <a href="http://www.sierradeatapuerca.com/carrera.html" target="_blank" ,Pagina Web
-                <a href="http://www.sierradeatapuerca.com/recorrido.html" target="_blank" ,Recorrido
             
-                <a href="http://www.sierradeatapuerca.com/reglamento.html" target="_blank" title="Reglamento",Reglamento
+                
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesLos10deIbeas15072018.pdf" target="_blank" title="Clasificaciones",Clasif. Carrera 
                 <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos 
  
@@ -3649,9 +4150,7 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 12 - 24 - 16 km
                 C.D. Comelobos
                 <a href="http://www.comelobos.es/" target="_blank" ,www.www.comelobos.es
-                <a href="http://www.comelobos.es/comelobos/recorridos" target="_blank" ,Recorridos
             
-                <a href="http://www.comelobos.es/comelobos/reglamento" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesTrailComelobos14072018.pdf" target="_blank" title="Clasificaciones",Clasificaciones
  
         	
@@ -3664,14 +4163,10 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
             
                 17/06/2018
                hora: "09:30",
-                <a href="http://www.rs-sport.es/inscripciones/detalles-evento/evento/15-XXII-Media-Maraton-Ciudad-Burgos" target="_blank" ,INSCRIPCIONES
                 15€ / 21€
                 21,097Km
                 ABAVE
-                <a href="http://www.lamediadeburgos.com/" target="_blank" ,www.lamediadeburgos.com
-                <a href="http://www.lamediadeburgos.com/recorrido/" target="_blank" ,Circuito
             
-                <a href="http://www.lamediadeburgos.com/reglamento/" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesMMCB17062018.pdf" target="_blank" title="Clasificaciones",Clasificaciones 
  
 	
@@ -3736,9 +4231,7 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 178Km
                 Jotamas Eventos
                 <a href="https://www.granfondobibetransbizkaia.com/" target="_blank" ,www.granfondobibetransbizkaia.com
-                <a href="https://www.granfondobibetransbizkaia.com/es/recorrido-granfondo/" target="_blank" ,Gran Fondo
             
-                <a href="https://www.granfondobibetransbizkaia.com/es/reglamento/" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBIBECronoescalada.pdf" target="_blank" title="Clasif Cronoescalada",Clasif Cronoescalada
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBIBEMedioFondo.pdf" target="_blank" title="Clasif Medio Fondo",Clasif Medio Fondo
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBIBEGranFondo.pdf" target="_blank" title="Clasif Gran Fondo",Clasif Gran Fondo
@@ -3775,14 +4268,10 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
             
                 2/06/2018
                hora: "17:00", (niños) /hora: "19:00", (absoluta)
-                <a href="http://www.rs-sport.es/inscripciones/detalles-evento/evento/17-iii-carrera-salesianos-domingo-savio" target="_blank" ,INSCRIPCIONES
                 Niños gratis / Absoluta 5€
                 5Km / 10km
                 Club Deportivo Salesianos
-                <a href="http://cdsalesianosds.com/carrera-salesianos-domingo-savio/" target="_blank" ,www.cdsalesianosds.com
-                <a href="http://cdsalesianosds.com/wp-content/uploads/2018/05/Reglamento-Carrera-Salesianos-Domingo-Savio.pdf" target="_blank" ,Recorrido
             
-                <a href="http://cdsalesianosds.com/wp-content/uploads/2018/05/Reglamento-Carrera-Salesianos-Domingo-Savio.pdf" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesCarreraSalesianos5km2018.pdf" target="_blank" title="Clasif. Trail",Clasif. 5km 
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesCarreraSalesianos10km2018.pdf" target="_blank" title="Clasif. Marcha",Clasif. 10km 
  
@@ -3821,7 +4310,6 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 Carrera 10€ / Marcha popular 6€
                 9 km
                 Ayuntamiento de Briviersca
-                <a href="http://deporte.briviesca.es/cross-subida-a-santa-casilda-0" target="_blank" ,http://deporte.briviesca.es/
                 Briviescca - Santa Casilda  
             
                 <a href="http://deporte.briviesca.es/cross-subida-a-santa-casilda-2018" target="_blank" title="Reglamento",Reglamento
@@ -3834,7 +4322,7 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
     	
         titulo:"I ASCENSO URBANO PORTU KALEA 2018    
  
-                miniatura:"img/cartelportukalea2018.jpg" alt="" width="173" height="188"/,
+                miniatura:"img/cartelportukalea2018.jpg",
             
             
             
@@ -3846,7 +4334,6 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 <a href="https://www.ascensoportukalea.com/" target="_blank" ,www.ascensoportukalea.com
                 --
             
-                <a href="https://www.ascensoportukalea.com/inscripciones/reglamento/" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/FINALportukalea26052018.pdf" target="_blank" title="Clasificaciones Kom Lunada",Clasificaciones
  
 	
@@ -3868,9 +4355,7 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 <a href="http://laicuesta.com/" target="_blank" ,laicuesta.com
                 --
             
-                <a href="http://laicuesta.com/wp-content/uploads/2017/03/Reglamento_12_Marcha_2017.pdf" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesICuesta26052018.pdf" target="_blank" title="Clasificaciones Kom Lunada",Clasificaciones Kom Lunada
-                <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos
  
 	
 
@@ -3904,14 +4389,10 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
             
                 19/05/2018
                hora: "23:00",
-                <a href="http://www.rs-sport.es/inscripciones/detalles-evento/evento/13-vi-nocturna-solidaria-bridgestone" target="_blank" ,INSCRIPCIONES
                 10€
                 5,5 Km
                 C.D Bridgestone Aventura
-                <a href="http://carrera.solidariasburgos.com/" target="_blank" ,www.solidariasburgos.com
-                <a href="http://carrera.solidariasburgos.com/recorrido/" target="_blank" ,Rutometro y plano
             
-                <a href="http://carrera.solidariasburgos.com/reglamento-de-la-carrera/" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBridgestone19052018.pdf" target="_blank" title="Clasificaciones 5km",Clasificaciones
  
 	
@@ -3930,7 +4411,6 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 <a href="http://cmmodubeos.blogspot.com.es/" target="_blank" ,Pagina Web
                 -
             
-                <a href="http://cmmodubeos.blogspot.com.es/p/reglamento-la-nocturna.html" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesNoctModubarCanicross12052018.pdf" target="_blank" title="Clasif. Canicross",Clasif. Canicross
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesNoctModubarCarrera12052018.pdf" target="_blank" title="Clasif. Carrera",Clasif. Carrera
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesNoctModubarSenderismo12052018.pdf" target="_blank" title="Clasif. Senderismo",Clasif. Senderismo
@@ -3952,7 +4432,6 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 -
                 -
             
-                <a href="https://www.rockthesport.com/open/documentos/a4b7c0db-d1a6-45c6-88ab-6175b8b8061d/pdf" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesExtemeOztopro2018.pdf" target="_blank" title="Clasif. General",Clasificacione OztoPRO
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesExtemeOztopo2018.pdf" target="_blank" title="Clasif. General",Clasificacione Oztopo
  
@@ -3971,10 +4450,8 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 21 €
                 35 km / 52 km
                 Aire Norte
-                <a href="www.pedalesdehierro.es/" target="_blank" ,www.pedalesdehierro.es
                 <a href="https://es.wikiloc.com/rutas-carrera/clasica-de-los-buitres-puentedura-ura-puentedura-23390607" target="_blank" ,Puentedura - Ura - Puentedura
             
-                <a href="http://www.pedalesdehierro.es/category/reglamento/" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPedalesHierroCorta2018.pdf" target="_blank" title="Clasif. General",Tiempos Ruta Corta
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPedalesHierroLarga2018.pdf" target="_blank" title="Clasif. General",Tiempos Ruta Larga
  
@@ -4015,7 +4492,6 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 18€ - 25€
                 75 km / 103 km
                 C.D.C AGUILARENSE “ALBERTO!FERNANDEZ”
-                <a href="http://www.cdcalbertofernandez.es/btt/" target="_blank" ,www.cdcalbertofernandez.es
                 <a href="https://es.wikiloc.com/rutas-mountain-bike/montana-palentina-4-cumbres-2018-ruta-corta-22416327" target="_blank" ,Ruta Corta / <a href="https://es.wikiloc.com/rutas-mountain-bike/montana-palentina-4-cumbres-2018-ruta-larga-22236135" target="_blank" ,Ruta Larga 
             
                 <a href="http://www.rs-sport.es/Clasificaciones/Clasificaciones4Cumbres75kmBTT05052018.pdf" target="_blank" title="Clasif. General",Clasificación corta 
@@ -4030,14 +4506,11 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
             
                 29/04/2018
                hora: "11:30",
-                <a href="https://www.rockthesport.com/es/evento/los-meandros-de-briones2018" target="_blank" ,INSCRIPCIONES
                 10 €
                 7 km / 10 km
                 Peña Zamaca
-                <a href="http://losmeandrosdebriones.disfrutabriones.es/" target="_blank" ,www.losmeandrosdebriones.disfrutabriones.es
                 <a href="https://es.wikiloc.com/rutas-carrera/i-los-meandros-de-briones-corta-11952590" target="_blank" ,Ruta Corta / <a href="https://es.wikiloc.com/rutas-carrera/i-los-meandros-de-briones-larga-11959443" target="_blank" ,Ruta Larga 
             
-                <a href="https://www.rockthesport.com/open/documentos/6dc186ce-5398-4ae5-9c55-7f4539ef8f2e/doc" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesLosMeandrosCorta2018.pdf" target="_blank" title="Clasif. General",Clasificación 7km
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesLosMeandrosLarga2018.pdf" target="_blank" title="Clasif. General",Clasificación 10km
  
@@ -4055,7 +4528,6 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 10 € / 15 €
                 15km / 24Km
                 Ayto. de Lerma
-                <a href="http://laguerrillera.ayuntamientodelerma.es/" target="_blank" ,http://laguerrillera.ayuntamientodelerma.es/
                 ---
             
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesGuerrillera15km15042018.pdf" target="_blank" title="Clasif. 15km",Clasif. 15km
@@ -4088,7 +4560,7 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
  
                 miniatura:"img/2018/cartelcanicrosssalas2018.jpg",
             
-            
+                categoria:"Mushing",
             
                 18/03/2018
                 9:30
@@ -4111,7 +4583,8 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
  
                 miniatura:"img/cartelcanicrosscovarrubias2018.jpg",
             
-            
+                categoria:"Mushing",
+
             
                 25/02/2018
                 9:30
@@ -4236,14 +4709,14 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 <a href="http://www.rs-sport.es/inscripciones/reglamentos_competiciones/11-reglamento-xv-carrera-popular-venta-banos-2017.pdf" target="_blank" title="Reglamento",Reglamento
                  <a href="http://www.rs-sport.es/Clasificaciones/Clasificaciones5kmPopularVentaBanos16122017.pdf" target="_blank" title="Clasif. 5km",Clasif. 5km
                  <a href="http://www.rs-sport.es/Clasificaciones/Clasificaciones10kmPopularVentaBanos16122017.pdf" target="_blank" title="Clasif. 10km",Clasif. 10km 
-                <a href="http://www.rs-sport.es/inscripciones/listado-participantes/evento/11-xv-carrera-popular-venta-banos" target="_blank" title="Ver Inscritos",Ver Inscritos --,
  
 
         
                 titulo:"XII CANICROSS DE BURGOS 2017",
                     miniatura:"img/cartelcanicrossburgos2017.jpg",
             
-            
+                    categoria:"Mushing",
+
             
                 19/11/2017
                 9:30
@@ -4419,7 +4892,7 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
  
  
                 titulo:"II CICLOCROSS ENCUENTRO DE CAMINOS 2017",
-                    miniatura:"img/cartelCicloFresno2017.jpg" alt="" width="166" height="244"/,
+                    miniatura:"img/cartelCicloFresno2017.jpg" ,alt="" width="166" height="244"/,
             	
 	
             	
@@ -4883,7 +5356,7 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
     	
         titulo:"XII MARCHA IÑIGO CUESTA 2017    
  
-                miniatura:"img/cartelicuesta2017.jpg" alt="" width="173" height="195"/,
+                miniatura:"img/cartelicuesta2017.jpg" ,alt="" width="173" height="195"/,
             
             
             
@@ -5290,13 +5763,12 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesHiguero5km2016.pdf" target="_blank" title="Clasif. 5km",Clasif. 5km
                     <a href="http://rs-sport.es/Clasificaciones/ClasificacionesHiguero10km2016.pdf" target="_blank" title="Clasif. 10km",Clasif. 10km
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesHigueroDiscapacitados2016.pdf" target="_blank" title="Clasif. 10km",Clasif. Discapacitados
-            <a href="https://www.youtube.com/watch?v=srrNH17UpIE" target="_blank" title="Video Promocional",Video Promocional --,
  
     	
  
  
                 titulo:"IV BURGOS BIKE BTT SCOTT 2016",
-                    miniatura:"img/cartelBurgosBike2016.jpg" alt="" width="173" height="249"/,
+                    miniatura:"img/cartelBurgosBike2016.jpg" ,alt="" width="173" height="249"/,
             	
 	
     
@@ -5393,18 +5865,14 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 -<a href="http://cmmodubeos.blogspot.com.es/p/mapas.html" target="_blank" ,Mapas
             
             <a href="http://cmmodubeos.blogspot.com.es/" target="_blank" title="Reglamento",Reglamento
-        <!--	<a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesCrossModumarcha2016.pdf" target="_blank" title="Clasif. Carrera",Clasif.Cross
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesMediaModumarcha2016.pdf" target="_blank" title="Clasif. Carrera",Clasif.Media
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesSendModumarcha2016.pdf" target="_blank" title="Clasif. Carrera",Clasif.Send
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBTTModumarcha2016.pdf" target="_blank" title="Clasif. Carrera",Clasif.BTT
-        <!--	<a href="https://www.rockthesport.com/evento/ii-marcha-btt-hazla-del-tiron/listado-participantes" target="_blank" title="Ver Inscritos",Ver Inscritos --,
-        <!--	<a href="https://www.youtube.com/watch?v=qvI_09BNksw" target="_blank" title="Video Promocional",Video Promocional --,
  
 	
 
  
-            titulo:"II MARCHA BTT ¡HAZLA DEL TIRÓN! 2016",II MARCHA BTT ¡HAZLA DEL TIRÓN! 2016    
  
                 titulo:"II MARCHA BTT ¡HAZLA DEL TIRÓN! 2016",
                     miniatura:"img/cartelHazlaDelTiron2016.jpg",
@@ -5422,19 +5890,15 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                  -   
             
             <a href="https://rockthesportv2.blob.core.windows.net/documentos/adaff783-5652-4241-b8e7-33d91d8a265d.pdf?sv=2012-02-12&se=2016-08-10T20%3A15%3A04Z&sr=b&sp=r&sig=Fed7wFaDZPZP8nkxx3wXMa0RHk1e%2B6TSqBRRPNxr1gw%3D" target="_blank" title="Reglamento",Reglamento
-        <!--	<a href="https://www.rockthesport.com/evento/ii-marcha-btt-hazla-del-tiron/inscripcion/selecciona-tarifa" target="_blank" title="Inscripciones",Inscripciones --,
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesHazlaDelTironCorta03092016.pdf" target="_blank" title="Clasif. Corta",Clasif. Corta
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesHazlaDelTironMedia03092016.pdf" target="_blank" title="Clasif. Media",Clasif. Media
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesHazlaDelTironLarga03092016.pdf" target="_blank" title="Clasif. Larga",Clasif. Larga
-              <!--	<a href="https://www.rockthesport.com/evento/ii-marcha-btt-hazla-del-tiron/listado-participantes" target="_blank" title="Ver Inscritos",Ver Inscritos --,
-        <!--	<a href="https://www.youtube.com/watch?v=qvI_09BNksw" target="_blank" title="Video Promocional",Video Promocional --,
  
 	
  
-            titulo:"BTT COLINA TRISTE 2016",BTT COLINA TRISTE 2016    
  
                 titulo:"BTT COLINA TRISTE 2016",
-                    miniatura:"img/cartelColinaTriste2016.jpg" alt="" width="173" height="229"/,
+                    miniatura:"img/cartelColinaTriste2016.jpg" ,alt="" width="173" height="229"/,
             	
 	
     
@@ -5449,15 +5913,11 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 <a href="http://zonarfec.com/documentos/carreras/3433/doc_5794ed5e22afa1.71740630_perfil.png" target="_blank" ,Perfil
             
             <a href="http://zonarfec.com/documentos/carreras/3433/reglamento_579717d2a2ff55.78048996_solicitud_reglamento_reducido.pdf" target="_blank" title="Reglamento",Reglamento
-        <!--	<a href="http://zonarfec.com/index.php/inscripciones/prueba/3433" target="_blank" title="Inscripciones",Inscripciones ---,
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBTTColinaTriste28082016.pdf" target="_blank" title="Clasifificaciones",Clasificaciones
-              <!--	<a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos
-            <a href="https://www.youtube.com/watch?v=qvI_09BNksw" target="_blank" title="Video Promocional",Video Promocional --,
  
 
 
  
-            titulo:"III MARCHA OJO GUAREÑA",III MARCHA OJO GUAREÑA 2016    
  
                 titulo:"III MARCHA OJO GUAREÑA 2016",
                     miniatura:"img/cartelOjoGuareña2016.jpg",
@@ -5473,14 +5933,10 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 <a href="http://hobbymerindades.com/" target="_blank" ,www.hobbymerindades.com
                 <a href="http://www.wikiloc.com/wikiloc/view.do?id=13947387" target="_blank" ,Trail y Senderismo / <a href="http://www.wikiloc.com/wikiloc/view.do?id=13941168" target="_blank" ,BTT
             
-        <!--    <a href="http://zonarfec.com/documentos/carreras/3433/reglamento_579717d2a2ff55.78048996_solicitud_reglamento_reducido.pdf" target="_blank" title="Reglamento",Reglamento ---,
-        <!--	<a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones ---,
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesTrailOjoGuareña2016.pdf" target="_blank" title="Clasif. Trail",Clasif. Trail 
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesSenderismoOjoGuareña2016.pdf" target="_blank" title="Clasif. Senderismo",Clasif. Senderismo
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBTTOjoGuareña2016.pdf" target="_blank" title="Clasif. BTT",Clasif. BTT
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBTTParejasOjoGuareña2016.pdf" target="_blank" title="Clasif. BTT Parejas",Clasif. BTT Parejas
-              <!--	<a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
-        <!--	<a href="https://www.youtube.com/watch?v=qvI_09BNksw" target="_blank" title="Video Promocional",Video Promocional --,
  
     	
     	
@@ -5503,17 +5959,13 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                 <a href="http://www.nocturnavilladiego.es/recorrido.htm" target="_blank" ,Recorridos
             
             <a href="http://www.nocturnavilladiego.es/categoria-reglamento.htm" target="_blank" title="Reglamento",Reglamento
-        <!--	<a href="http://deportes.diputaciondeburgos.es/competicross.php"_blank" title="Inscripciones",Inscripciones ---,
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesCarreraVilladiego2016.pdf" target="_blank" title="Clasif. Carrera",Clasif. Carrera 
                     <a href="http://rs-sport.es/Clasificaciones/ClasificacionesSenderismoVilladiego2016.pdf" target="_blank" title="Clasif. Senderismo",Clasif. Senderismo 
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesMediaVilladiego2016.pdf" target="_blank" title="Clasif. 1/2 Maraton",Clasif. 1/2 Maraton 
-        <!--		<a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos 
-        <!--	<a href="https://www.youtube.com/watch?v=qvI_09BNksw" target="_blank" title="Video Promocional",Video Promocional --,
  
 
 
  
-            titulo:"II TROFEO DE VELOCIDAD VILLA DE BELORADO 2016",II TROFEO DE VELOCIDAD VILLA DE BELORADO 2016    
  
                 titulo:"II TROFEO DE VELOCIDAD VILLA DE BELORADO 2016",
                     miniatura:"img/cartelTrofeoVelocidadBelorado2016.jpg",
@@ -5530,14 +5982,11 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                  -   
             
             <a href="https://www.dropbox.com/s/ucr1nmn7c4qu0o7/II%20Trofeo%20Villa%20de%20Belorado2016.pdf?dl=0" target="_blank" title="Reglamento",Reglamento
-        <!--	<a href="http://deportes.diputaciondeburgos.es/competicross.php target="_blank" title="Inscripciones",Inscripciones --,
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesTrofeoVelocidadBelorado2016.pdf" target="_blank" title="Clasif. Carrera",Clasificaciones
                     <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos
-        <!--	<a href="https://www.youtube.com/watch?v=qvI_09BNksw" target="_blank" title="Video Promocional",Video Promocional --,
  
 	
  
-            titulo:"II LEGUA POPULAR BACO RACE 2016",II LEGUA POPULAR BACO RACE 2016    
  
                 titulo:"II LEGUA POPULAR BACO RACE 2016",
                     miniatura:"img/cartelBacoRace2016.jpg",
@@ -5555,18 +6004,12 @@ titulo:"22 Marcha cicloturista Lagunas de Neila",22 MARCHA CICLOTURISTA LAGUNAS 
                  -   
             
             <a href="https://deporticket.blob.core.windows.net/dpt/2016-rgto-Baco-2.pdf" target="_blank" title="Reglamento",Reglamento
-        <!--	<a href="http://www.deporticket.com/dpk-detalle-evento/evento/2189-ii-legua-baco-race"_blank" title="Inscripciones",Inscripciones ---,
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBaco20082016.pdf" target="_blank" title="Clasificaciones",Clasif. Carrera
             <a href="http://rs-sport.es/Clasificaciones/ClasificacionesAndarinesBaco20082016.pdf" target="_blank" title="Clasificaciones",Clasif. Andarines
-              <!--	<a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
-        <!--	<a href="https://www.youtube.com/watch?v=qvI_09BNksw" target="_blank" title="Video Promocional",Video Promocional --,
  
 
     	
-    {
-  titulo: "
-titulo:"IV TRAVESÍA NOCTURNA "SENDERO DE LAS FORTIFICACIONES" 2016",IV TRAVESÍA NOCTURNA FUENTECEN 2016    
- 
+    
                 titulo:"IV TRAVESÍA NOCTURNA FUENTECEN 2016",
                     miniatura:"img/cartelnocturnafuentecen.jpg",
             
@@ -5584,13 +6027,10 @@ titulo:"IV TRAVESÍA NOCTURNA "SENDERO DE LAS FORTIFICACIONES" 2016",IV TRAVESÍ
                 <a href="http://www.elpicotaragudo.com/reglamento.html" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesFuentecen19082016.pdf" target="_blank" title="Clasificaciones",Clasif. Carrera
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesSenderismoFuentecen19082016.pdf" target="_blank" title="Clasificaciones",Clasif. Senderismo
-            <!--    <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
-            <!--    <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
  
     	
 	
  
-            titulo:"VIII SUBIDA AL PICO NAVAS 2016",VIII SUBIDA AL PICO NAVAS 2016    
  
                 titulo:"VIII SUBIDA AL PICO NAVAS 2016",
                     miniatura:"img/cartelPicoNavas2016.jpg",
@@ -5607,15 +6047,12 @@ titulo:"IV TRAVESÍA NOCTURNA "SENDERO DE LAS FORTIFICACIONES" 2016",IV TRAVESÍ
                 Subida Pico Navas
             
             <a href="http://www.hontoriadelpinar.es/sites/www.hontoriadelpinar.es/files/eventos/subida-pico-2016-bases.pdf" target="_blank" title="Reglamento",Reglamento
-        <!--	<a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones ---,
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPicoNavas13082016.pdf" target="_blank" title="Clasif. Carrera",Clasificaciones 
-              <!--	<a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos ---,
             <a href="https://www.youtube.com/watch?v=qvI_09BNksw" target="_blank" title="Video Promocional",Video Promocional 
  
     	
 	
  
-            titulo:"II RUTA DEL BOLETUS 2016",II RUTA DEL BOLETUS 2016    
  
                 titulo:"II RUTA DEL BOLETUS 2016",
                     miniatura:"img/cartelRutaBoletus2016.jpg",
@@ -5631,14 +6068,12 @@ titulo:"IV TRAVESÍA NOCTURNA "SENDERO DE LAS FORTIFICACIONES" 2016",IV TRAVESÍ
                 <a href="http://www.rutadelboletus.com/la-carrera/recorrido" target="_blank" ,Circuito
             
                 <a href="http://www.rutadelboletus.com/la-carrera/normas" target="_blank" title="Reglamento",Reglamento
-            <!--	<a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesNocturnaBoletus30072016.pdf" target="_blank" title="Clasifificaciones",Clasificaciones
          <a href="https://youtu.be/zN7AQlLn-7U" target="_blank" title="Video Promocional",Video Promocional
  
     	
         	
  
-            titulo:"IV 10KM CIUDAD DE BRIVIESCA 2016",IV 10KM CIUDAD DE BRIVIESCA 2016    
  
                 titulo:"IV 10KM CIUDAD DE BRIVIESCA 2016",
                     miniatura:"img/cartel10kmbriviesca2016.jpg",
@@ -5652,20 +6087,16 @@ titulo:"IV TRAVESÍA NOCTURNA "SENDERO DE LAS FORTIFICACIONES" 2016",IV TRAVESÍ
                 5km y 10km
                 Ayuntamiento de Briviesca
                 <a href="http://deporte.briviesca.es/10-km-ciudad-de-briviesca-2016" target="_blank" ,http://deporte.briviesca.es/10-km-ciudad-de-briviesca-2016
-                <a href="http://deporte.briviesca.es/sites/deporte.briviesca.es/files/page/imagenes/10kmmaparecorrido2016.jpg" target="_blank" ,Circuito
+                <a href="http://deporte.briviesca.es/sites/deporte.briviesca.es/files/page/imagenes/10kmmaparecorrido2016.jpg" ,target="_blank" ,Circuito
             
                 <a href="http://deporte.briviesca.es/10-km-ciudad-de-briviesca-2016" target="_blank" title="Reglamento",Reglamento
-            <!--	<a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
                 <a href="http://www.rs-sport.es/Clasificaciones/Clasificaciones5kmBriviesca30072016.pdf" target="_blank" title="Clasifificaciones",Clasif. 5km
                 <a href="http://www.rs-sport.es/Clasificaciones/Clasificaciones10kmBriviesca30072016.pdf" target="_blank" title="Clasifificaciones",Clasif. 10km
          <a href="https://www.youtube.com/watch?v=msa2CJ9nWQ0" target="_blank" title="Video Promocional",Video Promocional
  
 
 	
-    {
-  titulo: "
-titulo:"20 Marcha cicloturista Lagunas de Neila",20 MARCHA CICLOTURISTA LAGUNAS DE NEILA 2016    
- 
+    
                 titulo:"20 Marcha cicloturista Lagunas de Neila",
                     miniatura:"img/cartelNeila2016.jpg",
             
@@ -5682,16 +6113,11 @@ titulo:"20 Marcha cicloturista Lagunas de Neila",20 MARCHA CICLOTURISTA LAGUNAS 
             
                 <a href="http://ucburgalesa.com/lagunasneila/reglamento/" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesCicloturistaNeila17072016.pdf" target="_blank" title="Clasificaciones",Clasificaciones
-            <!--	<a href="http://ucburgalesa.com/lagunasneila/inscripciones/" target="_blank" title="Inscripciones",Inscripciones --,
                 <a href="http://ucburgalesa.com/lagunasneila/listado-inscritos/" target="_blank" title="Ver Inscritos",Ver Inscritos
  
     	
 	
-    {
-  titulo: "
-titulo:"V LOS 10 DE IBEAS 2016",V LOS 10 DE IBEAS 2016    
- 
-                titulo:"V LOS 10 DE IBEAS 2016",
+             titulo:"V LOS 10 DE IBEAS 2016",
                     miniatura:"img/cartel10deibeas2016.jpg",
             
             
@@ -5705,17 +6131,13 @@ titulo:"V LOS 10 DE IBEAS 2016",V LOS 10 DE IBEAS 2016
                 <a href="http://www.sierradeatapuerca.com/carrera.html" target="_blank" ,www.sierradeatapuerca.com
                 <a href="http://www.sierradeatapuerca.com/recorrido.html" target="_blank" ,Mapa interactivo 
             
-                <a href="http://www.sierradeatapuerca.com/reglamento.html" target="_blank" title="Reglamento",Reglamento
+                
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesLos10deIbeas17072016.pdf" target="_blank" title="Clasificaciones",Clasificaciones
-            <!--	<a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
                 <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos
  
         	
 	
-    {
-  titulo: "
-titulo:"II Travesia Nocturna Minera 2015",II TRAVESIA NOCTURNA MINERA 2016 BELORADO    
- 
+    
                 titulo:"II Travesia Nocturna Minera 2016",
                     miniatura:"img/cartelnoctunabelorado2016.jpg",
             
@@ -5748,20 +6170,15 @@ titulo:"II Travesia Nocturna Minera 2015",II TRAVESIA NOCTURNA MINERA 2016 BELOR
                 11 km y 24 km
                 Ayuntamiento de Lerma
                 <a href="http://www.ayuntamientodelerma.es/index.php/la-guerrillera" target="_blank" ,http://www.ayuntamientodelerma.es/index.php/la-guerrillera
-                <a href="http://www.ayuntamientodelerma.es/images/mapimage.jpg" target="_blank" ,RECORRIDO
+                <a href="http://www.ayuntamientodelerma.es/images/mapimage.jpg" ,target="_blank" ,RECORRIDO
             
                 <a href="http://www.ayuntamientodelerma.es/index.php/la-guerrillera" target="_blank" title="Reglamento",Reglamento
-                <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesGuerrillera24km25062016.pdf" target="_blank" title="Clasif. Carrera 24km",Clasif. Carrera 24km
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesGuerrillera11km25062016.pdf" target="_blank" title="Clasif. Carrera 11km",Clasif. Carrera 11km
                 <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos
-                <!-- <a href="https://youtu.be/Dxcm_L44Lic" target="_blank" title="Video Promocional",Video Promocional --,
  
 	
-        {
-  titulo: "
-titulo:"XXI MEDIA MARATON CIUDAD DE BURGOS 2016",XXI MEDIA MARATON CIUDAD DE BURGOS 2016    
- 
+       
                 titulo:"XXI MEDIA MARATON CIUDAD DE BURGOS 2016",
                     miniatura:"img/cartelMediaBurgos2016.jpg",
             
@@ -5777,15 +6194,12 @@ titulo:"XXI MEDIA MARATON CIUDAD DE BURGOS 2016",XXI MEDIA MARATON CIUDAD DE BUR
                 <a href="https://rockthesportv2.blob.core.windows.net/documentos/fdd77431-a23c-4b3d-afba-6205016342d3.jpg?sv=2012-02-12&se=2016-05-16T18%3A30%3A53Z&sr=b&sp=r&sig=KbL73uY9gngg218ulzWhFayx8FhMWV2%2Bu9WVopmvbYg%3D" target="_blank" ,Circuito de los Puentes
             
                 <a href="https://rockthesportv2.blob.core.windows.net/documentos/19e418cb-6e2a-49a6-9c10-dec16f552a55.pdf?sv=2012-02-12&se=2016-05-16T18%3A30%3A53Z&sr=b&sp=r&sig=GSAh31uVNDUgx%2FDqdtxSwIqmxZBO%2BWm8ihjTdjFByZI%3D" target="_blank" title="Reglamento",Reglamento
-        <!--	<a href="https://www.rockthesport.com/evento/xxi-media-maraton-ciudad-de-burgos-corremos-por-la/inscripcion/selecciona-tarifa" target="_blank" title="Inscripciones",Inscripciones ---,
                 <a href="http://rs-sport.es/Clasificaciones/CarreraMMCB19062016.pdf" target="_blank" title="Clasificacion general",Clasificacion general 
                 <a href="http://rs-sport.es/Clasificaciones/CarreraMMCBACRECA19062016.pdf" target="_blank" title="Clasificación ACRECA",Clasificación ACRECA  
-        <!-- <a href="https://www.rockthesport.com/evento/xxi-media-maraton-ciudad-de-burgos-corremos-por-la/listado-participantes target="_blank" title="Ver Inscritos",Ver Inscritos ---,
  
     	
     	
     
-            titulo:"V LA VUELTUCA SOPERA 2016",V LA VUELTUCA SOPERA    
  
                 titulo:"V LA VUELTUCA SOPERA 2016",
                     miniatura:"img/cartelVueltuca2016.jpg",
@@ -5805,12 +6219,10 @@ titulo:"XXI MEDIA MARATON CIUDAD DE BURGOS 2016",XXI MEDIA MARATON CIUDAD DE BUR
                 <a href="http://rs-sport.es/Clasificaciones/CarreraSoperaPie1806016.pdf" target="_blank" title="Clasif. Carrera",Clasif. Ruta Pie
                 <a href="http://rs-sport.es/Clasificaciones/CarreraSoperaCarrera1806016.pdf" target="_blank" title="Clasif. Carrera",Clasif. Ruta Corriendo
                 <a href="http://rs-sport.es/Clasificaciones/CarreraSoperaBTT1806016.pdf" target="_blank" title="Clasif. Carrera",Clasif. BTT
-                <!-- <a href="http://serviciosonline.briviesca.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
  
 
 	
     
-            titulo:"IX CROSS SUBIDA A SANTA CASILDA 2016",IX CROSS SUBIDA A SANTA CASILDA 2016    
  
                 titulo:"IX CROSS SUBIDA A SANTA CASILDA 2016",
                     miniatura:"img/cartelSantaCasilda2016.jpg",
@@ -5834,7 +6246,7 @@ titulo:"XXI MEDIA MARATON CIUDAD DE BURGOS 2016",XXI MEDIA MARATON CIUDAD DE BUR
     
  
                 titulo:"XI Marcha Cicloturista Iñigo Cuesta 2016",
-                    miniatura:"img/cartelICuesta2016.jpg",
+                    miniatura:"img/2016/cartelICuesta2016.jpg",
             
             
             
@@ -5848,16 +6260,11 @@ titulo:"XXI MEDIA MARATON CIUDAD DE BURGOS 2016",XXI MEDIA MARATON CIUDAD DE BUR
                 Villarcayo - Villarcayo  
             
                 <a href="http://laicuesta.com/wp-content/uploads/2016/03/Reglamento-11%C2%AA-Marcha-2016.pdf" target="_blank" title="Reglamento",Reglamento
-        <!--		<a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesICuesta28052016.pdf" target="_blank" title="Clasificaciones",Clasificaciones
-        <!--        <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
  
         	
     	
-        {
-  titulo: "
-titulo:"IV CARRERA SOLIDARIA BRIDGESTONE 2016",IV CARRERA SOLIDARIA BRIDGESTONE 2016    
- 
+       
                 titulo:"IV CARRERA SOLIDARIA BRIDGESTONE 2016",
                     miniatura:"img/cartelBridgestone2016.jpg",
             
@@ -5873,17 +6280,12 @@ titulo:"IV CARRERA SOLIDARIA BRIDGESTONE 2016",IV CARRERA SOLIDARIA BRIDGESTONE 
                 Plaza del Rey San Fernando (Burgos) (Salida y llegada)  
             
                 <a href="https://rockthesportv2.blob.core.windows.net/documentos/90588300-2aa3-4f86-b0ef-4a727a56317c.pdf?sv=2012-02-12&se=2016-05-16T17%3A47%3A03Z&sr=b&sp=r&sig=h%2FBghMw1D8OexhYRdF6BDpfFhsxWvfZK8ZthKAlQ%2FrQ%3D" target="_blank" title="Reglamento",Reglamento
-                <!-- <a href="https://www.rockthesport.com/evento/iv-carrera-popular-solidaria-bridgestone/inscripcion/selecciona-tarifa" target="_blank" title="Inscripciones",Inscripciones --,
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBridgestone220520165kms.pdf" target="_blank" title="Clasif. 5km",Clasif. 5km 
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBridgestone2205201610kms.pdf" target="_blank" title=",Clasif. 10km",Clasif. 10km
-                <!-- <a href="https://www.rockthesport.com/evento/iv-carrera-popular-solidaria-bridgestone/listado-participantes" target="_blank" title="Ver Inscritos",Ver Inscritos --,
  
         	
     	
-        {
-  titulo: "
-titulo:"V TRAVESÍA NOCTURNA MODUBAR 2016",V TRAVESÍA NOCTURNA MODUBAR 2016    
- 
+        
                 titulo:"V TRAVESÍA NOCTURNA MODUBAR 2016",
                     miniatura:"img/cartelNocturnaModubar2016.jpg",
             
@@ -5902,16 +6304,11 @@ titulo:"V TRAVESÍA NOCTURNA MODUBAR 2016",V TRAVESÍA NOCTURNA MODUBAR 2016
                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesModubarCarrera2016.pdf" target="_blank" title="Clasificaciones",Clasificaciones Carrera
                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesModubarCanicross2016.pdf" target="_blank" title="Clasificaciones",Clasificaciones Canicross
                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesModubarSenderismo2016.pdf" target="_blank" title="Clasificaciones",Clasificaciones Senderismo
-            <!--    <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
-            <!--    <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
  
          
     	
-        {
-  titulo: "
-titulo:"2ª EDICIÓN "LA CANTABRONA" 2016",2ª EDICIÓN "LA CANTABRONA" 2016    
- 
-                titulo:"2ª EDICIÓN "LA CANTABRONA" 2016",
+        
+                titulo:"2ª EDICIÓN \"LA CANTABRONA\" 2016",
                     miniatura:"img/cartelCantabrona2016.jpg",
             
             
@@ -5928,13 +6325,9 @@ titulo:"2ª EDICIÓN "LA CANTABRONA" 2016",2ª EDICIÓN "LA CANTABRONA" 2016
                 <a href="http://lacantabrona.com/wp-content/uploads/reglamento-lacantabrona-2016.pdf" target="_blank" title="Reglamento",Reglamento
                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesCantabrona2016.pdf" target="_blank" title="Clasificaciones",Clasificaciones
                 <a href="https://vimeo.com/150279037" target="_blank" title="Video",Video
-                <!-- <a href="http://zonarfec.com/index.php/inscripciones/prueba/4435" target="_blank" title="Ver Inscritos",Inscripciones --,
  
         	
-        {
-  titulo: "
-titulo:"IV CANICROSS SALAS DE LOS INFANTES 2016",IV CANICROSS SALAS DE LOS INFANTES 2016    
- 
+        
                 titulo:"IV CANICROSS SALAS DE LOS INFANTES 2016",
                     miniatura:"img/cartelCanicrossSalas.jpg",
             
@@ -5953,14 +6346,10 @@ titulo:"IV CANICROSS SALAS DE LOS INFANTES 2016",IV CANICROSS SALAS DE LOS INFAN
                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesCanicrossSalasCopa28022016.pdf" target="_blank" title="Clasificaciones",Copa España
                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesCanicrossSalasDipu28022016.pdf" target="_blank" title="Clasificaciones",Circuito Provincial
                 <a href="https://www.youtube.com/watch?v=jMGZSJyufvs" target="_blank" title="Video",Video
-                <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Inscripciones ---,
         	
  
         	
-        {
-  titulo: "
-titulo:"XXVI SAN SILVESTRE CIDIANA 2015",XXVI SAN SILVESTRE CIDIANA 2015    
- 
+       
                 titulo:"XXVI SAN SILVESTRE CIDIANA 2015",
                     miniatura:"img/cartelSanSilvestreCidiana2015.jpg",
             
@@ -5975,16 +6364,9 @@ titulo:"XXVI SAN SILVESTRE CIDIANA 2015",XXVI SAN SILVESTRE CIDIANA 2015
                 <a href="http://sansilvestre.florentinofdr.com" target="_blank" ,http://sansilvestre.florentinofdr.com
                 <a href="http://sansilvestre.florentinofdr.com/recorrido" target="_blank" ,Circuito  
             
-                <!-- <a href="http://www.canicrossburgos.com/canicrossburgos.aspx?id=covarrubias_masinformacion" target="_blank" title="Reglamento",Reglamento --,
                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesSanSilvestreCidiana31122015.pdf" target="_blank" title="Clasificaciones",Clasificaciones
-                <!-- <a href="http://10kmcajaviva.com/cat/inscripcion" target="_blank" title="Inscripciones",Inscripciones --,
-               <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
  
 	
-        {
-  titulo: "
-titulo:"X CANICROSS BURGOS 2015",VI CANICROSS COVARRUBIAS 2015    
- 
                 titulo:"VI CANICROSS COVARRUBIAS 2015",
                     miniatura:"img/cartelcanicrosscovarrubias.jpg",
             
@@ -6002,15 +6384,10 @@ titulo:"X CANICROSS BURGOS 2015",VI CANICROSS COVARRUBIAS 2015
                 <a href="http://www.canicrossburgos.com/canicrossburgos.aspx?id=covarrubias_masinformacion" target="_blank" title="Reglamento",Reglamento
                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesCanicrossCovarrubiasInfantil29112015.pdf" target="_blank" title="Clasificaciones",Clasificaciones Infantil
                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesCanicrossCovarrubiasPopular29112015.pdf" target="_blank" title="Clasificaciones",Clasificaciones Popular
-                <!-- <a href="http://10kmcajaviva.com/cat/inscripcion" target="_blank" title="Inscripciones",Inscripciones --,
-               <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
  
 	
 
-        {
-  titulo: "
-titulo:"X CANICROSS BURGOS 2015",X CANICROSS BURGOS 2015    
- 
+        
                 titulo:"X CANICROSS BURGOS 2015",
                     miniatura:"img/cartelcanicrossburgos.jpg",
             
@@ -6028,15 +6405,9 @@ titulo:"X CANICROSS BURGOS 2015",X CANICROSS BURGOS 2015
                 <a href="http://www.canicrossburgos.com/canicrossburgos.aspx?id=mushing2012masinformacion" target="_blank" title="Reglamento",Reglamento
                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesCanicrossBurgos1Dia31102015.pdf" target="_blank" title="Clasificaciones",Clasificaciones 1ª Manga
                 <a href="http://www.rs-sport.es/Clasificaciones/ClasificacionesCanicrossBurgos2Dia01112015.pdf" target="_blank" title="Clasificaciones",Clasificaciones Generales
-                <!-- <a href="http://10kmcajaviva.com/cat/inscripcion" target="_blank" title="Inscripciones",Inscripciones --,
-               <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
  
       
   
-        {
-  titulo: "
-titulo:"III 10KM CAJA VIVA BURGOS 2015",'III 10KM CAJA VIVA BURGOS 2015'    
- 
                 titulo:"III 10KM CAJA VIVA BURGOS 2015",
                     miniatura:"img/cartel10kmcajaviva.jpg",
             
@@ -6058,10 +6429,7 @@ titulo:"III 10KM CAJA VIVA BURGOS 2015",'III 10KM CAJA VIVA BURGOS 2015'
  
         	
   
-        {
-  titulo: "
-titulo:"IV MARCHA DE MONTAÑA DEMANDASAURUS 2015",IV MARCHA DE MONTAÑA DEMANDASAURUS 2015    
- 
+        
                 titulo:"IV MARCHA DE MONTAÑA DEMANDASAURUS 2015",
                     miniatura:"img/carteldemandasaurus.jpg",
             
@@ -6083,22 +6451,11 @@ titulo:"IV MARCHA DE MONTAÑA DEMANDASAURUS 2015",IV MARCHA DE MONTAÑA DEMANDAS
  
       
   
-                {
-  titulo: "
-titulo:"I TRAIL POR ETAPAS "TIERRA DE DINOSAURIOS" 2015",I TRAIL ETAPAS "TIERRA DE DINOSAURIOS"    
- 
-                titulo:"I TRAIL POR ETAPAS "TIERRA DE DINOSAURIOS" 2015",
+               
+                titulo:"I TRAIL POR ETAPAS \"TIERRA DE DINOSAURIOS\" 2015",
                     miniatura:"img/carteltrailsalas.jpg",
             
-            <div class="grpelem info_evento1",
-                Fecha:
-                Etapas:
-                Inscripciones:
-                Precio:
-                Distancia:
-                Organizador:
-                Página web:
-                Recorrido:
+                
             
                 10-12/10/2015
                 3 etapas
@@ -6117,10 +6474,7 @@ titulo:"I TRAIL POR ETAPAS "TIERRA DE DINOSAURIOS" 2015",I TRAIL ETAPAS "TIERRA 
  
       
   
-    {
-  titulo: "
-titulo:"CARRERA DE MUSHING VILLATORO 2015",CARRERA DE MUSHING VILLATORO 2015    
- 
+    
                 titulo:"CARRERA DE MUSHING VILLATORO 2015",
                     miniatura:"img/cartelMushingVillatoro2015.jpg",
             
@@ -6135,17 +6489,11 @@ titulo:"CARRERA DE MUSHING VILLATORO 2015",CARRERA DE MUSHING VILLATORO 2015
                 &nbsp;
                 <a href="http://es.wikiloc.com/wikiloc/view.do?id=10881652" target="_blank" ,Canicross
             
-                <!-- <a href="http://www.marchademandasaurus.com/index.php/edicion-2015/2015-trail/277" target="_blank" title="Reglamento",Reglamento --,
                  <a href="http://www.rs-sport.es/Clasificaciones/clasificacionesMushingVillatoro2015.pdf" target="_blank" title="Clasificaciones",Clasificaciones
-                <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
-                <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
  
     	
 	
-    {
-  titulo: "
-titulo:"I CARRERA "EMBALSE DEL ARLANZÓN"",I CARRERA "EMBALSE DEL ARLANZÓN    
- 
+    
                 titulo:"I CARRERA "EMBALSE DEL ARLANZÓN",
                     miniatura:"img/cartelpineda.jpg",
             
@@ -6160,18 +6508,12 @@ titulo:"I CARRERA "EMBALSE DEL ARLANZÓN"",I CARRERA "EMBALSE DEL ARLANZÓN
                 <a href="http://www.carreraembalsedelarlanzon.com/" target="_blank" ,http://www.carreraembalsedelarlanzon.com/
                 <a href="http://www.carreraembalsedelarlanzon.com/run8.html" target="_blank" ,8km / <a href="http://www.carreraembalsedelarlanzon.com/run21.html" target="_blank" ,21km
             
-                <!-- <a href="http://www.villadiego.es/sites/www.villadiego.es/files/pagina/reglamentotravesianocturnametomolasdevilladiego.pdf" target="_blank" title="Reglamento",Reglamento --,
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPineda21km19092015.pdf" target="_blank" title="Carrera 21km",Carrera 21km
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesPineda8km19092015.pdf" target="_blank" title="Carrera 8km",Carrera 8km
-                <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
-                <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
  
 
   
-    {
-  titulo: "
-titulo:"XXII MODUMARCHA 2015",XXII MODUMARCHA 2015    
- 
+   
                 titulo:"XXII MODUMARCHA 2015",
                     miniatura:"img/cartelmodumarcha.jpg",
             
@@ -6179,28 +6521,20 @@ titulo:"XXII MODUMARCHA 2015",XXII MODUMARCHA 2015
             
                 13/09/2015
                 9:00
-                <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" ,http://deportes.diputaciondeburgos.es/competicross.php
                 &nbsp;
                 BTT 27 y 42km / Senderismo 10 y 21km / Carrera 10 y 21km
                 Club de Montaña Modubeo
                 <a href="http://cmmodubeos.blogspot.com.es" target="_blank" ,http://cmmodubeos.blogspot.com.es
                   
             
-                <!-- <a href="http://www.villadiego.es/sites/www.villadiego.es/files/pagina/reglamentotravesianocturnametomolasdevilladiego.pdf" target="_blank" title="Reglamento",Reglamento --,
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesCarreraModumarcha130915.pdf" target="_blank" title="Carrera",Carrera
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesBTTModumarcha1309015.pdf" target="_blank" title="BTT",BTT
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesSenderismoModumarcha130915.pdf" target="_blank" title="Senderismo",Senderismo
-                <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
-                <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
  
 	
 	
 	
-    {
-  titulo: "
-titulo:"II TRAVESÍA NOCTURNA "LIBERANOS DOMINE" 2015",'II TRAVESÍA NOCTURNA "LIBERANOS DOMINE" 2015'    
- 
-                titulo:"II TRAVESÍA NOCTURNA "LIBERANOS DOMINE" 2015",
+                titulo:"II TRAVESÍA NOCTURNA \"LIBERANOS DOMINE\" 2015",
                     miniatura:"img/cartelnocturnatardajos.jpg"
             
             
@@ -6212,20 +6546,16 @@ titulo:"II TRAVESÍA NOCTURNA "LIBERANOS DOMINE" 2015",'II TRAVESÍA NOCTURNA "L
                 12.000 metros
                 Zorros Run
                 <a href="http://zorrosrun.com/" target="_blank" ,http://zorrosrun.com/
-                <a href="http://zorrosrun.com/wp-content/uploads/2014/09/Recorrido1.jpg" target="_blank" ,Consulta el recorrido
+                <a href="http://zorrosrun.com/wp-content/uploads/2014/09/Recorrido1.jpg" ,target="_blank" ,Consulta el recorrido
             
                 <a href="http://zorrosrun.com/2015/07/29/reglamento-ii-travesia-nocturna-liberanos-domine-3/" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesTardajos05092015" target="_blank" title="Clasificaciones",Clasificaciones 
-                <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
                 <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos
  
     	
 	
-    {
-  titulo: "
-titulo:"IV TRAVESÍA NOCTURNA "ME TOMO LAS DE VILLADIEGO" 2015",IV TRAVESÍA NOCTURNA "ME TOMO LAS DE VILLADIEGO" 2015    
- 
-                titulo:"IV TRAVESÍA NOCTURNA "ME TOMO LAS DE VILLADIEGO" 2015",
+    
+                titulo:"IV TRAVESÍA NOCTURNA \"ME TOMO LAS DE VILLADIEGO\" 2015",
                     miniatura:"img/cartelnocturnavilladiego.jpg",
             
             
@@ -6239,29 +6569,20 @@ titulo:"IV TRAVESÍA NOCTURNA "ME TOMO LAS DE VILLADIEGO" 2015",IV TRAVESÍA NOC
                 <a href="http://www.nocturnavilladiego.es/" target="_blank" ,http://www.nocturnavilladiego.es/
                   
             
-                <!-- <a href="http://www.nocturnavilladiego.es/categoria-reglamento.htm" target="_blank" title="Reglamento",Reglamento --,
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesCarreraVilladiego29082015.pdf" target="_blank" title="Carrera 12,1Km",Carrera 12,1Km
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesMediaVilladiego29082015.pdf" target="_blank" title="Media Maraton 21,097Km",Media Maraton 21,097Km
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesSenderismoVilladiego29082015.pdf" target="_blank" title="Senderismo 12,1Km",Senderismo 12,1Km
-                <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
-                <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
  
     	
 	
 	
-    {
-  titulo: "
-titulo:"I TROFEO DE VELOCIDAD VILLA DE BELORADO 2015",I TROFEO DE VELOCIDAD VILLA DE BELORADO 2015    
- 
                 titulo:"I TROFEO DE VELOCIDAD VILLA DE BELORADO 2015",
-                    miniatura:"img/cartelvelocidadbelorado.jpg",
+                    miniatura:"img/2015/cartelvelocidadbelorado.jpg",
             
             	
             
                 23/08/2015
                hora: "11:30",
-                <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" ,http://deportes.diputaciondeburgos.es/competicross.php
-                3 Euros (federados) y 5 euros (resto)
                 12 km
                 Ayuntamiento de Belorado
                 <a href="http://idj.burgos.es/content/i-trofeo-de-velocidad-villa-de-belorado" target="_blank" ,http://idj.burgos.es/
@@ -6269,15 +6590,11 @@ titulo:"I TROFEO DE VELOCIDAD VILLA DE BELORADO 2015",I TROFEO DE VELOCIDAD VILL
             
                 <a href="http://idj.burgos.es/sites/default/files/file/evento/i_trofeo_villa_de_belorado.pdf" target="_blank" title="Reglamento",Reglamento
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesVelocidadBelorado23082015.pdf" target="_blank" title="Clasificaciones",Clasificaciones
-                <!-- <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
             <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos
  
     	
 	
-    {
-  titulo: "
-titulo:"III TRAVESÍA NOCTURNA "SENDERO DE LAS FORTIFICACIONES" 2015",III TRAVESÍA NOCTURNA FUENTECEN 2015    
- 
+    
                 titulo:"III TRAVESÍA NOCTURNA FUENTECEN 2015",
                     miniatura:"img/cartelnocturnafuentecen.jpg",
             
@@ -6294,14 +6611,10 @@ titulo:"III TRAVESÍA NOCTURNA "SENDERO DE LAS FORTIFICACIONES" 2015",III TRAVES
             
                 <a href="http://www.elpicotaragudo.com/reglamento.html" target="_blank" title="Reglamento",Reglamento
                <a href="http://rs-sport.es/Clasificaciones/ClasificacionesFuentecen22082015.pdf" target="_blank" title="Clasificaciones",Clasificaciones
-            <!--    <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
                 <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos
  
     	
-    {
-  titulo: "
-titulo:"I Travesia Nocturna Ruta de Boletus 2015",I TRAVESIA NOCTURNA RUTA DE BOLETUS 2015    
- 
+    
                 titulo:"I Travesia Nocturna Minera 2015",
                     miniatura:"img/cartelnocturnaboletus.jpg",
             
@@ -6309,7 +6622,6 @@ titulo:"I Travesia Nocturna Ruta de Boletus 2015",I TRAVESIA NOCTURNA RUTA DE BO
             
                 1/08/2015
                hora: "22:00",
-                http://deportes.diputaciondeburgos.es/competicross.php
                 10 Euros
                 10.850 m
                 Aytos de Rabanera del Pinar y Hontoria del Pinar
@@ -6384,15 +6696,9 @@ titulo:"I Travesia Nocturna Ruta de Boletus 2015",I TRAVESIA NOCTURNA RUTA DE BO
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesOjoGuarena12072015Trail.pdf" target="_blank" title="Paso 10km",Trail
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesOjoGuarena12072015BTT.pdf" target="_blank" title="Paso 10km",BTT
                 <a href="http://rs-sport.es/Clasificaciones/ClasificacionesOjoGuarena12072015BTTEquipos.pdf" target="_blank" title="Paso 10km",BTT por equipos
-            <!--    <a href="#" target="_blank" title="Clasificaciones",Clasificaciones --,
-            <!--    <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Inscripciones",Inscripciones --,
-            <!--    <a href="http://deportes.diputaciondeburgos.es/competicross.php" target="_blank" title="Ver Inscritos",Ver Inscritos --,
  
         	
-        {
-  titulo: "
-titulo:"III CARRERA SOLIDARIA BRIDGESTONE 2015",III CARRERA SOLIDARIA BRIDGESTONE 2015    
- 
+        
                 titulo:"III CARRERA SOLIDARIA BRIDGESTONE 2015",
                     miniatura:"img/cartelBridgestone2015.jpg",
             
