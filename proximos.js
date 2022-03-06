@@ -1,6 +1,25 @@
 proximos = [
 
 {
+	titulo: "Carrera de prueba",
+	fecha: "06/03/2022",
+	categoria: "Carreras a pie",
+	hora: "10:00",
+	distancia: "1km",
+	organizador: "raul",
+	miniatura: "img/2022/cartel_Ogro_Maraton_2022.jpg",
+	botones:
+		[
+			{
+				titulo: "boton",
+				archivo: "http://www.marca.com",
+			},
+
+		],
+
+},
+
+{
 	titulo: "Prueba inscripciones",
 	fecha: "11/11/1111",
 	categoria: "Carreras a pie",

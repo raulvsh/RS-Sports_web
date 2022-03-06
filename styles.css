@@ -256,7 +256,28 @@ div.actions {
   transition: ease-in 0.2s all;
 }
 
-#subseccion1, #subseccion2 {
+
+#subseccion1, #subseccion2, #subseccion3, #subseccion5{ 
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0.2em 0.5em;
+  display: none;
+  transition: ease-in 0.2s all;
+}
+
+
+
+ #subseccion4, #subseccion6 {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  padding: 0.2em 0.5em;
+  display: none;
+  transition: ease-in 0.2s all;
+}
+
+#subsubseccion1, #subsubseccion2 {
   position: absolute;
   top: 100%;
   left: 0px;
@@ -277,4 +298,8 @@ div.actions {
   width: 1050px;
   height: 690px;
   /*width: fit-content;*/
+}
+
+.hidden{
+display: none;
 }

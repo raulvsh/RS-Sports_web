@@ -168,11 +168,43 @@ const menuView = () => {
             <li class="servicios">
             <p class="servicios">servicios</p>
             </li>
+
+            <li onmouseover="ver(3), ver(5)" >
+                <p>Clasific prueba</p>
+                <div id="subseccion3">
+                  <button onmouseover="ver(4)" >por año</button>
+                </div>
+                <div id="subseccion4" onmouseover="ver(3), ver(4)" onmouseout="ocultar(3), ocultar(4)" >
+                  <ul>
+                  <button class="searchDate" data-my-id="${2022}" >2022</button>
+                  <button class="searchDate" data-my-id="${2021}" >2021</button>
+                  <button class="searchDate" data-my-id="${2020}" >2020</button>
+                  <button class="searchDate" data-my-id="${2019}" >2019</button>
+                  <button class="searchDate" data-my-id="${2018}" >2018</button>
+                  <button class="searchDate" data-my-id="${2017}" >2017</button>
+                  <button class="searchDate" data-my-id="${2016}" >2016</button>
+                  <button class="searchDate" data-my-id="${2015}" >2015</button>
+                  </ul>
+                </div>
+                
+
+                
+
+
+
+
+
+
+            </li>
+       
+      
+
+
             <li class="reset">
               <p class="reset">clasificaciones</p>
             </li>
 
-            <li onmouseover="ver(1)" onmouseout="ocultar(1)">
+            <li class="hidden" onmouseover="ver(1)" onmouseout="ocultar(1)">
               <p>Año</p>
               <div id="subseccion1">
                 <button class="searchDate" data-my-id="${2022}">2022</button>
@@ -186,7 +218,7 @@ const menuView = () => {
  
               </div>
             </li>
-            <li onmouseover="ver(2)" onmouseout="ocultar(2)">
+            <li  id="hidden" onmouseover="ver(2)" onmouseout="ocultar(2)">
               <p>Categoría</p>
               <div id="subseccion2">
               <button class="searchCat" data-my-id="${0}">Carreras a pie</button>
@@ -197,7 +229,7 @@ const menuView = () => {
             </li>
             <li class="contacto">
             <p class="contacto">contacto</p>
-          </li>
+            </li>
             
           </ul>`
 
