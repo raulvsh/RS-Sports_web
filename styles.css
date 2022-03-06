@@ -223,11 +223,12 @@ div.actions {
 /*MENÚS DESPLEGABLES*/
 #navegador ul {
   padding: 0;
-  margin-left: 12px;
+  display: block;
+
 }
 
 #navegador li {
-  min-width: 150px;
+  min-width: 240px;
   border-radius: 3px;
   position: relative;
   display: inline-block;
@@ -257,35 +258,65 @@ div.actions {
 }
 
 
-#subseccion1, #subseccion2, #subseccion3, #subseccion5{ 
+#subseccion1, #subseccion2, #subseccion3, #subseccion4, #subseccion5, #subseccion6, #subseccion7{
+  /*position: absolute;*/
+  padding: 0.2em 0.5em;
+  display: none;
+  transition: ease-in 0.2s all;
+
+}
+
+#subseccion1, #subseccion2, #subseccion3 { 
   position: absolute;
-  top: 100%;
+  top: 120%;
   left: 0px;
-  padding: 0.2em 0.5em;
-  display: none;
-  transition: ease-in 0.2s all;
+  /*padding: 0.2em 0.5em;*/
+  /*display: none;
+  transition: ease-in 0.2s all;*/
 }
 
-
-
- #subseccion4, #subseccion6 {
+#subseccion4{
   position: absolute;
-  top: 100%;
-  left: 100%;
-  padding: 0.2em 0.5em;
-  display: none;
-  transition: ease-in 0.2s all;
+  top: 120%;
+  left: 70%;
+  /*padding: 0.2em 0.5em;*/
+  /*display: none;
+  transition: ease-in 0.2s all;*/
+
 }
 
-#subsubseccion1, #subsubseccion2 {
+#subseccion5{
   position: absolute;
-  top: 100%;
+  top: 200%;
   left: 0px;
-  padding: 0.2em 0.5em;
-  display: none;
-  transition: ease-in 0.2s all;
+  /*/padding: 0.2em 0.5em;*/
+  /*display: none;
+  transition: ease-in 0.2s all;*/
+}
+
+#subseccion6 {
+  position: absolute;
+  top: 200%;
+  left: 70%;
+  /*padding: 0.2em 0.5em;*/
+  /*display: none;
+  transition: ease-in 0.2s all;*/
 
 }
+
+#subseccion7 {
+  position: absolute;
+  top: 280%;
+  /*left: 70%;*/
+  /*padding: 0.2em 0.5em;*/
+  /*display: none;
+  transition: ease-in 0.2s all;*/
+
+}
+
+
+
+
 
 .borrar {
   clear: both;
@@ -298,8 +329,4 @@ div.actions {
   width: 1050px;
   height: 690px;
   /*width: fit-content;*/
-}
-
-.hidden{
-display: none;
 }

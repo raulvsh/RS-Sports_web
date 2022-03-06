@@ -169,12 +169,12 @@ const menuView = () => {
             <p class="servicios">servicios</p>
             </li>
 
-            <li onmouseover="ver(3), ver(5)" >
-                <p>Clasific prueba</p>
-                <div id="subseccion3">
-                  <button onmouseover="ver(4)" >por año</button>
+            <li onmouseover="ver(3), ver(5), ver(7)">
+                <p onmouseoute="ocultar(3), ocultar(5), ocultar(7)">Clasificaciones</p>
+                <div id="subseccion3" onmouseover="ver(4), ocultar(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)">
+                  <button >por año</button>
                 </div>
-                <div id="subseccion4" onmouseover="ver(3), ver(4)" onmouseout="ocultar(3), ocultar(4)" >
+                <div id="subseccion4" onmouseover="ver(3), ver(4), ocultar(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)" >
                   <ul>
                   <button class="searchDate" data-my-id="${2022}" >2022</button>
                   <button class="searchDate" data-my-id="${2021}" >2021</button>
@@ -186,21 +186,28 @@ const menuView = () => {
                   <button class="searchDate" data-my-id="${2015}" >2015</button>
                   </ul>
                 </div>
-                
+                <div id="subseccion5" onmouseover="ver(6), ocultar(4)", onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)" >
+                  <button >por categoría</button>
+                </div>
+                <div id="subseccion6" onmouseover="ver(5), ver(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)" >
+                  <ul>
+                    <button class="searchCat" data-my-id="${0}">Carreras a pie</button>
+                    <button class="searchCat" data-my-id="${1}">ciclismo</button>
+                    <button class="searchCat" data-my-id="${2}">BTT</button>
+                    <button class="searchCat" data-my-id="${3}">mushing</button>
+                  </ul>
+                </div>
+                <div id="subseccion7" onmouseover="ocultar(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)">
+                  <button class="reset">Listado Total</button>
+                </div>
+              
+               </li>
 
-                
-
-
-
-
-
-
-            </li>
        
       
 
 
-            <li class="reset">
+            <!--<li class="reset">
               <p class="reset">clasificaciones</p>
             </li>
 
@@ -226,7 +233,7 @@ const menuView = () => {
               <button class="searchCat" data-my-id="${2}">BTT</button>
               <button class="searchCat" data-my-id="${3}">mushing</button>
               </div>			
-            </li>
+            </li>-->
             <li class="contacto">
             <p class="contacto">contacto</p>
             </li>
