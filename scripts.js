@@ -83,9 +83,9 @@ const showView = (carrera) => {
     <div class="contentDescription">
       <div class="elementoDescription">${formatDate(parseDate(carrera.fecha))}</div>
       <div class="elementoDescription">${carrera.categoria}</div>
-      <div class="elementoDescription">${carrera.hora}</div>
-      <div class="elementoDescription">${carrera.distancia}</div>
-      <div class="elementoDescription">${carrera.organizador}</div>
+      <div class="elementoDescription">${carrera.hora|| "Según categoría"}</div>
+      <div class="elementoDescription">${carrera.distancia|| "Según categoría"}</div>
+      <div class="elementoDescription">${carrera.organizador|| ""}</div>
       
     </div>
     <div class="actions">`

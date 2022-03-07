@@ -72,8 +72,8 @@ proximos = [
 	titulo: "Nájera Xtrem Cuna de Reyes",
 	fecha: "08/05/2022",
 	categoria: "Carreras a pie",
-	hora: "\t ",
-	distancia: "\t ",
+	hora: "",
+	distancia: "",
 	organizador: "K2 Nájera",
 	miniatura: "/img/2022/65-cartel-najera-xtrem.jpg",
 	botones:
