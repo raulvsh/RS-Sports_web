@@ -85,17 +85,17 @@ def print_all(entries):
 
 
 def draw_final_button():
-    button = Button(text="Añadir Próximo Evento", command=lambda: lectura_escritura())
+    button = Button(text="Añadir Clasificaciones Evento", command=lambda: lectura_escritura())
     button.grid(column=1, row=20)
 
 
 def draw_instructions():
     label = Label(root, text="\nFecha: dd/mm/aaaa", justify=LEFT)
     label.grid(column=0, row=22, columnspan=1)
-    label = Label(root, text="Miniatura: poner imagen en la carpeta raiz, copiar solo nombre: image.jpg.\nNo usar ñ ni espacios.\nEl programa la guarda automáticamente en su carpeta.", justify=LEFT)
+    label = Label(root, text="Miniatura: poner imagen en su carpeta correspondiente, copiar solo nombre: image.jpg.\nNo usar ñ ni espacios.\n", justify=LEFT)
     label.grid(column=0, row=23, columnspan=2)
     label = Label(
-        root, text="Link: poner link completo, sea de PDF o web.\n Por ejemplo: pdf/2022/ogro.pdf, http://www.ogromaraton.com", justify=LEFT)
+        root, text="Link: poner link completo, sea de PDF o web.\n Por ejemplo: clasificaciones/clasificacionesBTT2022.pdf, http://www.ogromaraton.com", justify=LEFT)
     label.grid(column=0, row=24, columnspan=2)
 
 
@@ -112,7 +112,7 @@ def lectura_escritura():
     mensaje = leer_archivo()
     mensaje = add_race(mensaje)
     guardar_archivo(mensaje)
-    copiar_img()
+    #copiar_img()
     label = Label(root, text="\nEvento Añadido", justify=LEFT)
     label.grid(column=3, row=20, columnspan=1)
 
@@ -136,7 +136,7 @@ def parse_date(date):
 
 
 def leer_archivo():
-    fichero = open('carreras.js', 'r')
+    fichero = open('carreras.js', 'r', encoding="utf8")
     mensaje = ""
     i = 0
     for i, line in enumerate(fichero):
@@ -200,7 +200,7 @@ def add_race(mensaje):
 
 
 def guardar_archivo(mensaje):
-    fichero = open('carreras.js', 'w')
+    fichero = open('carreras.js', 'w', encoding="utf8")
     fichero.write(mensaje)
 
 

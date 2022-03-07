@@ -1,6 +1,24 @@
 carreras = [
 
 {
+	titulo: "1",
+	fecha: "10/10/2022",
+	categoria: "Carreras a pie",
+	hora: "",
+	distancia: "",
+	organizador: "",
+	miniatura: "img/2022/",
+	botones:
+		[
+			{
+				titulo: "",
+				archivo: "",
+			},
+
+		],
+},
+
+{
 	titulo: "123",
 	fecha: "10/10/2022",
 	categoria: "Atletismo",

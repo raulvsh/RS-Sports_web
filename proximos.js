@@ -1,6 +1,25 @@
 proximos = [
 
 {
+	titulo: "prueba",
+	fecha: "06/03/2022",
+	categoria: "Carreras a pie",
+	hora: "",
+	distancia: "",
+	organizador: "",
+	miniatura: "img/2022/",
+	botones:
+		[
+			{
+				titulo: "",
+				archivo: "",
+			},
+
+		],
+
+},
+
+{
 	titulo: "Carrera de prueba",
 	fecha: "06/03/2022",
 	categoria: "Carreras a pie",

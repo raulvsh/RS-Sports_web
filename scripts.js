@@ -161,11 +161,11 @@ const menuView = () => {
   view = "";
 
   view += `<ul>
-            <li class="proximos">
+            <li class="proximos" onmouseover="ocultar(3), ocultar(5), ocultar(7)">
               <p class="proximos">próximos eventos </p>
             </li>
 
-            <li class="servicios">
+            <li class="servicios" onmouseover="ocultar(3), ocultar(5), ocultar(7)">
             <p class="servicios">servicios</p>
             </li>
 
@@ -234,7 +234,7 @@ const menuView = () => {
               <button class="searchCat" data-my-id="${3}">mushing</button>
               </div>			
             </li>-->
-            <li class="contacto">
+            <li class="contacto" onmouseover="ocultar(3), ocultar(5), ocultar(7)">
             <p class="contacto">contacto</p>
             </li>
             
