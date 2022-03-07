@@ -1,41 +1,89 @@
 proximos = [
 
 {
-	titulo: "prueba",
-	fecha: "06/03/2022",
+	titulo: "I Canicross de Torrecilla en Cameros 2022",
+	fecha: "13/03/2022",
+	categoria: "Mushing",
+	hora: "9:30 / 11:30 / 12:30",
+	distancia: "6.8km, 1.5km, 450m ",
+	organizador: "Club Rioiia Mushing",
+	miniatura: "/img/2022/62-cartel-canicross-torrecilla-cameros-2022.jpg",
+	botones:
+		[
+		],
+	inscripciones: "https://www.rs-sport.es/inscripciones/detalles-evento/evento/62-i-canicross-torrecilla-cameros-2022",
+},
+
+{
+	titulo: "I Trail Run Haciendo Sed Burgos 2022",
+	fecha: "03/04/2022",
 	categoria: "Carreras a pie",
 	hora: "",
 	distancia: "",
 	organizador: "",
-	miniatura: "img/2022/",
+	miniatura: "/img/2022/61-cartel-trail-run-haciendo-sed-burgos-2022.jpg",
 	botones:
 		[
 			{
-				titulo: "",
-				archivo: "",
+				titulo: "Página Web",
+				archivo: "https://trail.haciendosedburgos.com/",
 			},
-
 		],
-
+	inscripciones: "https://www.rs-sport.es/inscripciones/detalles-evento/evento/61-trail-run-haciendo-sed-burgos-2022",
 },
 
 {
-	titulo: "Carrera de prueba",
-	fecha: "06/03/2022",
+	titulo: "Sampol Experience 7",
+	fecha: "24/04/2022",
 	categoria: "Carreras a pie",
-	hora: "10:00",
-	distancia: "1km",
-	organizador: "raul",
-	miniatura: "img/2022/cartel_Ogro_Maraton_2022.jpg",
+	hora: "08:00 / 09:45 / 10:00",
+	distancia: "28km / 17km",
+	organizador: "Club Calceatense de Montaña SAMPOL",
+	miniatura: "/img/2022/64-cartel-sampol-experience-7-2022.jpg",
 	botones:
 		[
 			{
-				titulo: "boton",
-				archivo: "http://www.marca.com",
+				titulo: "Página Web",
+				archivo: "https://clubcalceatensesampol.blogspot.com/p/informacion-inscripciones-y-precios.html?m=1",
 			},
-
 		],
+	inscripciones: "https://www.rs-sport.es/inscripciones/detalles-evento/evento/64-sampol-experience-7-2022",
+},
 
+{
+	titulo: "VII Carrera a pie popular \"Los meandros de Briones\" 2022",
+	fecha: "01/05/2022",
+	categoria: "Carreras a pie",
+	hora: "11:30",
+	distancia: "7km / 13km",
+	organizador: "Peña Zamaca",
+	miniatura: "/img/2022/63-cartel-meandros-briones-2022.jpg",
+	botones:
+		[
+			{
+				titulo: "Página Web",
+				archivo: "http://meandros-briones.rs-sport.es/",
+			},
+		],
+	inscripciones: "https://www.rs-sport.es/inscripciones/detalles-evento/evento/63-meandros-briones-2022",
+},
+
+{
+	titulo: "Nájera Xtrem Cuna de Reyes",
+	fecha: "08/05/2022",
+	categoria: "Carreras a pie",
+	hora: "\t ",
+	distancia: "\t ",
+	organizador: "K2 Nájera",
+	miniatura: "/img/2022/65-cartel-najera-xtrem.jpg",
+	botones:
+		[
+			{
+				titulo: "Página Web",
+				archivo: "https://clubdemontanak2.blogspot.com/",
+			},
+		],
+	inscripciones: "https://www.rs-sport.es/inscripciones/detalles-evento/evento/65-najera-xtrem-2022",
 },
 
 {
@@ -65,7 +113,7 @@ proximos = [
 
 
 
-	//INICIO CARRERA
+/*	//INICIO CARRERA
 	{
 		titulo: "proximo evento 22",
 		fecha: "20-02-2022",
@@ -198,6 +246,6 @@ proximos = [
 
 			],
 	},
-	//FIN CARRERA
+	//FIN CARRERA*/
 
 ];
