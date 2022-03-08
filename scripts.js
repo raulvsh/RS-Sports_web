@@ -171,36 +171,36 @@ const menuView = () => {
             <p class="servicios">servicios</p>
             </li>
 
-            <li onmouseover="ver(3), ver(5), ver(7)">
-                <p onmouseoute="ocultar(3), ocultar(5), ocultar(7)">Clasificaciones</p>
-                <div id="subseccion3" onmouseover="ver(4), ocultar(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)">
-                  <button class="botonmenu">por año</button>
+            <li  onmouseover="ver(3), ver(5), ver(7)">
+                <p onmouseout="ocultar(3), ocultar(5), ocultar(7)">Clasificaciones</p>
+                <div  id="subseccion3"  onmouseover="ver(4), ocultar(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)" >
+                  <button class="botonmenu" ">por año</button>
                 </div>
                 <div id="subseccion4" onmouseover="ver(3), ver(4), ocultar(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)" >
-                  <ul>
-                  <button class="searchDate" data-my-id="${2022}" >2022</button>
-                  <button class="searchDate" data-my-id="${2021}" >2021</button>
-                  <button class="searchDate" data-my-id="${2020}" >2020</button>
-                  <button class="searchDate" data-my-id="${2019}" >2019</button>
-                  <button class="searchDate" data-my-id="${2018}" >2018</button>
-                  <button class="searchDate" data-my-id="${2017}" >2017</button>
-                  <button class="searchDate" data-my-id="${2016}" >2016</button>
-                  <button class="searchDate" data-my-id="${2015}" >2015</button>
-                  </ul>
+                  <ul class="listasubapartados" onclick="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)">
+                  <button class="searchDate botonmenu" data-my-id="${2022}" >2022</button>
+                  <button class="searchDate botonmenu" data-my-id="${2021}" >2021</button>
+                  <button class="searchDate botonmenu" data-my-id="${2020}" >2020</button>
+                  <button class="searchDate botonmenu" data-my-id="${2019}" >2019</button>
+                  <button class="searchDate botonmenu" data-my-id="${2018}" >2018</button>
+                  <button class="searchDate botonmenu" data-my-id="${2017}" >2017</button>
+                  <button class="searchDate botonmenu" data-my-id="${2016}" >2016</button>
+                  <button class="searchDate botonmenu" data-my-id="${2015}" >2015</button>
+                  </ul> 
                 </div>
                 <div id="subseccion5" onmouseover="ver(6), ocultar(4)", onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)" >
                   <button class="botonmenu">por categoría</button>
                 </div>
                 <div id="subseccion6" onmouseover="ver(5), ver(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)" >
-                  <ul>
-                    <button class="searchCat" data-my-id="${0}">Carreras a pie</button>
-                    <button class="searchCat" data-my-id="${1}">ciclismo</button>
-                    <button class="searchCat" data-my-id="${2}">BTT</button>
-                    <button class="searchCat" data-my-id="${3}">mushing</button>
+                  <ul class="listasubapartados" onclick="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)">
+                    <button class="searchCat botonmenu" data-my-id="${0}">Carreras a pie</button>
+                    <button class="searchCat botonmenu" data-my-id="${1}">ciclismo</button>
+                    <button class="searchCat botonmenu" data-my-id="${2}">BTT</button>
+                    <button class="searchCat botonmenu" data-my-id="${3}">mushing</button>
                   </ul>
                 </div>
                 <div id="subseccion7" onmouseover="ocultar(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)">
-                  <button class="reset botonmenu">Listado Total</button>
+                  <button class="reset botonmenu" onclick="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)">Listado Total</button>
                 </div>
               
                </li>

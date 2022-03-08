@@ -42,6 +42,8 @@ button {
   min-width: 150px;
   border-radius: 3px;
   transition: ease-in 0.2s all;
+  box-shadow: 2px 2px 7px lightgrey;
+  
 
 }
 
@@ -129,7 +131,8 @@ div.movie div.movie-img {
 div.movie div.movie-img img {
   width: 100%;
   border-radius: 5px;
-  height: 16em;
+  height: 24rem;
+  
 }
 
 div.movie div.title {
@@ -189,7 +192,6 @@ div.movie div.subtitle {
 div .contenedorDetalle .contentTitle {
   padding: 40px 0px 40px 20px;
   grid-area: contentTitle;
-  /*background-color: pink;*/
 }
 
 div.elementoTitulo {
@@ -236,7 +238,6 @@ div.elementoDescription {
 
 .descServicios {
   grid-area: contentDescription;
-  /*background-color: pink;*/
   font-size: larger;
   text-align: justify;
   padding: 40px 20px;
@@ -290,6 +291,8 @@ div.actions {
   color: black;
   text-align: center;
   padding: 1%;
+  box-shadow: 2px 2px 7px lightgrey;
+
   /*padding: 0 0 17px;*/
 
   
@@ -307,7 +310,7 @@ div.actions {
 
 #subseccion1, #subseccion2, #subseccion3, #subseccion4, #subseccion5, #subseccion6, #subseccion7{
   /*position: absolute;*/
-  padding: 0.2em 0.5em;
+  /*padding: 0.2em 0.5em;*/
   display: none;
   transition: ease-in 0.2s all;
 
@@ -315,7 +318,7 @@ div.actions {
 
 #subseccion1, #subseccion2, #subseccion3 { 
   position: absolute;
-  top: 120%;
+  top: 100%;
   left: 0px;
   /*padding: 0.2em 0.5em;*/
   /*display: none;
@@ -324,8 +327,8 @@ div.actions {
 
 #subseccion4{
   position: absolute;
-  top: 120%;
-  left: 70%;
+  top: 100%;
+  left: 90%;
   /*padding: 0.2em 0.5em;*/
   /*display: none;
   transition: ease-in 0.2s all;*/
@@ -334,7 +337,7 @@ div.actions {
 
 #subseccion5{
   position: absolute;
-  top: 200%;
+  top: 220%;
   left: 0px;
   /*/padding: 0.2em 0.5em;*/
   /*display: none;
@@ -343,8 +346,8 @@ div.actions {
 
 #subseccion6 {
   position: absolute;
-  top: 200%;
-  left: 70%;
+  top: 220%;
+  left: 90%;
   /*padding: 0.2em 0.5em;*/
   /*display: none;
   transition: ease-in 0.2s all;*/
@@ -353,7 +356,7 @@ div.actions {
 
 #subseccion7 {
   position: absolute;
-  top: 280%;
+  top: 340%;
   /*left: 70%;*/
   /*padding: 0.2em 0.5em;*/
   /*display: none;
@@ -362,7 +365,29 @@ div.actions {
 }
 
 .botonmenu{
-  background-color: aqua;
+  height: 75px;
+  font-size: larger;
+  padding: 20px 0px;
+  margin: 15px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  min-width: 1fr;
+  border-radius: 3px;
+  transition: ease-in 0.2s all;
+  min-width: 400px;
+  box-shadow: 2px 2px 7px lightgrey;
+
+}
+
+.botonmenu:hover{
+  box-shadow: 2px 2px 7px grey;
+
+}
+
+.listasubapartados{
+  gap: 0px;
+
 }
 
 
@@ -373,11 +398,10 @@ div.actions {
 }
 
 .htmlinscripciones{
-  /*background-color: red;*/
   display: block;
   /*max-height:90%; max-width:90%;*/
-  width: 1050px;
-  height: 690px;
+  width: 100%;
+  height: 1900px;
   /*width: fit-content;*/
 }
 
@@ -420,7 +444,87 @@ div.actions {
     font-size: 14px;
   }
   .botonmenu{
-    background-color: red;
+    height: 40px;
+    font-size: 14px;
+    padding: 0 8px 0 8px;
+    margin: 0px;
+    min-width: 200px;
+
+
   }
+  div.movie div.movie-img img {
+    height: 16em;
+  }
+  
+#subseccion1,  #subseccion3, #subseccion4, #subseccion5, #subseccion6, #subseccion7{
+  /*position: absolute;*/
+  padding: 0.2em 0.5em;
+  display: none;
+  transition: ease-in 0.2s all;
+  
+
+}
+
+#subseccion2{
+background-color: green;
+}
+
+#subseccion3 { 
+  position: absolute;
+  top: 120%;
+  left: 0px;
+  /*padding: 0.2em 0.5em;*/
+  /*display: none;
+  transition: ease-in 0.2s all;*/
+}
+
+#subseccion4{
+  position: absolute;
+  top: 120%;
+  left: 90%;
+  /*padding: 0.2em 0.5em;*/
+  /*display: none;
+  transition: ease-in 0.2s all;*/
+
+}
+
+#subseccion5{
+  position: absolute;
+  top: 220%;
+  left: 0px;
+  /*/padding: 0.2em 0.5em;*/
+  /*display: none;
+  transition: ease-in 0.2s all;*/
+}
+
+#subseccion6 {
+  position: absolute;
+  top: 220%;
+  left: 90%;
+  /*padding: 0.2em 0.5em;*/
+  /*display: none;
+  transition: ease-in 0.2s all;*/
+
+}
+
+#subseccion7 {
+  position: absolute;
+  top: 320%;
+  /*left: 70%;*/
+  /*padding: 0.2em 0.5em;*/
+  /*display: none;
+  transition: ease-in 0.2s all;*/
+
+}
+
+.listasubapartados{
+  gap: 5px;
+}
+
+.htmlinscripciones{
+  width: 1050px;
+  height: 690px;
+  /*width: fit-content;*/
+}
 
 }
