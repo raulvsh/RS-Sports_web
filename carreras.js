@@ -1036,7 +1036,7 @@ carreras = [
         hora: "19:00",
         distancia: "5,5 km",
         organizador: "C.D. Florentino Díaz Reig",
-        miniatura:"img/2019/cartelSanSilvestreCidiana2019.png",
+        miniatura:"img/2019/cartelSanSilvestreCidiana2019.jpg",
         botones: [
             {
                 titulo: "Página Web",
@@ -1105,7 +1105,7 @@ carreras = [
         hora: "",
         distancia: "",
         organizador: "Ayuntamiento de San Adrián de Juarros",
-        miniatura:"img/2019/cartelCanicrossBurgos2019.png",
+        miniatura:"img/2019/cartelCanicrossBurgos2019.jpg",
         botones: [
             {
                 titulo: "Reglamento",

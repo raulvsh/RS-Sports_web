@@ -11,6 +11,7 @@ const indexView = (carreras, seccion) => {
   let view = "";
   //Discrimino entre servicios y el resto, si hubiese que hacer más categorías separar en if / else if
   let show = seccion == "servicios" ? "showServicios" : "show";
+  view+=`<div class=gridGeneral>`
   while (i < carreras.length) {
     view += `
         <div class="${show} movie "  data-my-id="${i}">
@@ -32,6 +33,7 @@ const indexView = (carreras, seccion) => {
           `
     i = i + 1;
   }
+  view+=`</div>`
   return view;
 };
 
@@ -160,7 +162,7 @@ const inscripcionesView = (web) => {
 const menuView = () => {
   view = "";
 
-  view += `<ul>
+  view += `<ul class="listabotones">
             <li class="proximos" onmouseover="ocultar(3), ocultar(5), ocultar(7)">
               <p class="proximos">próximos eventos </p>
             </li>
@@ -172,7 +174,7 @@ const menuView = () => {
             <li onmouseover="ver(3), ver(5), ver(7)">
                 <p onmouseoute="ocultar(3), ocultar(5), ocultar(7)">Clasificaciones</p>
                 <div id="subseccion3" onmouseover="ver(4), ocultar(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)">
-                  <button >por año</button>
+                  <button class="botonmenu">por año</button>
                 </div>
                 <div id="subseccion4" onmouseover="ver(3), ver(4), ocultar(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)" >
                   <ul>
@@ -187,7 +189,7 @@ const menuView = () => {
                   </ul>
                 </div>
                 <div id="subseccion5" onmouseover="ver(6), ocultar(4)", onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)" >
-                  <button >por categoría</button>
+                  <button class="botonmenu">por categoría</button>
                 </div>
                 <div id="subseccion6" onmouseover="ver(5), ver(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)" >
                   <ul>
@@ -198,7 +200,7 @@ const menuView = () => {
                   </ul>
                 </div>
                 <div id="subseccion7" onmouseover="ocultar(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)">
-                  <button class="reset">Listado Total</button>
+                  <button class="reset botonmenu">Listado Total</button>
                 </div>
               
                </li>

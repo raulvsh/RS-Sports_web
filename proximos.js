@@ -7,7 +7,7 @@ proximos = [
 	hora: "9:30 / 11:30 / 12:30",
 	distancia: "6.8km, 1.5km, 450m ",
 	organizador: "Club Rioiia Mushing",
-	miniatura: "/img/2022/62-cartel-canicross-torrecilla-cameros-2022.jpg",
+	miniatura: "img/2022/62-cartel-canicross-torrecilla-cameros-2022.jpg",
 	botones:
 		[
 		],
@@ -21,7 +21,7 @@ proximos = [
 	hora: "",
 	distancia: "",
 	organizador: "",
-	miniatura: "/img/2022/61-cartel-trail-run-haciendo-sed-burgos-2022.jpg",
+	miniatura: "img/2022/61-cartel-trail-run-haciendo-sed-burgos-2022.jpg",
 	botones:
 		[
 			{
@@ -39,7 +39,7 @@ proximos = [
 	hora: "08:00 / 09:45 / 10:00",
 	distancia: "28km / 17km",
 	organizador: "Club Calceatense de Montaña SAMPOL",
-	miniatura: "/img/2022/64-cartel-sampol-experience-7-2022.jpg",
+	miniatura: "img/2022/64-cartel-sampol-experience-7-2022.jpg",
 	botones:
 		[
 			{
@@ -57,7 +57,7 @@ proximos = [
 	hora: "11:30",
 	distancia: "7km / 13km",
 	organizador: "Peña Zamaca",
-	miniatura: "/img/2022/63-cartel-meandros-briones-2022.jpg",
+	miniatura: "img/2022/63-cartel-meandros-briones-2022.jpg",
 	botones:
 		[
 			{
@@ -75,7 +75,7 @@ proximos = [
 	hora: "",
 	distancia: "",
 	organizador: "K2 Nájera",
-	miniatura: "/img/2022/65-cartel-najera-xtrem.jpg",
+	miniatura: "img/2022/65-cartel-najera-xtrem.jpg",
 	botones:
 		[
 			{
