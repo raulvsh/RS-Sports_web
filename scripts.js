@@ -98,13 +98,13 @@ const showView = (carrera) => {
       enlace_inscripciones=carrera.inscripciones;
       //view += `<div class="actions">`
       //view += `<a class = "new" href=${carrera.inscripciones} target=_blank><button class="new">Inscripciones</button></a> `;
-      view += `<button class="inscripciones">Inscripciones</button>`;/*${carrera.inscripciones}*/
+      view += `<button class="inscripciones botondetallecarrera">Inscripciones</button>`;/*${carrera.inscripciones}*/
   
       //view += `</div>`
   
     }
   for (let j = 0; j < carrera.botones.length; j++) {
-    view += `<a href=${carrera.botones[j].archivo} target=_blank><button>${carrera.botones[j].titulo}</button></a> `;
+    view += `<a href=${carrera.botones[j].archivo} target=_blank><button class=botondetallecarrera>${carrera.botones[j].titulo}</button></a> `;
     //view += `<button href=${carrera.clasificaciones[j].archivo} target=_blank>${carrera.clasificaciones[j].titulo}</button> `;
     //view+=`${carrera.inscripciones}`;
   }
