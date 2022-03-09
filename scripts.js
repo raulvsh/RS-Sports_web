@@ -69,6 +69,7 @@ const indexView = (carreras, seccion) => {
 
 const showView = (carrera) => {
   view = `
+  <div class="detalleevento">
   <div class="tituloDetalle">${carrera.titulo}</div>
   <div class="contenedorDetalle">
     <img id="miniaturaShow" src=${carrera.miniatura}></img>
@@ -113,6 +114,8 @@ const showView = (carrera) => {
   view += `</div>` //Cierre actions
 
   view += `</div>` //Cierre contenedorDetalle
+  view += `</div>` //Cierre detalleevento
+
   /*view+=`<div class="actions">
      <button class="index">Volver</button>
   </div>`*/
@@ -204,40 +207,9 @@ const menuView = () => {
                 </div>
               
                </li>
-
-       
-      
-
-
-            <!--<li class="reset">
-              <p class="reset">clasificaciones</p>
-            </li>
-
-            <li class="hidden" onmouseover="ver(1)" onmouseout="ocultar(1)">
-              <p>Año</p>
-              <div id="subseccion1">
-                <button class="searchDate" data-my-id="${2022}">2022</button>
-                <button class="searchDate" data-my-id="${2021}">2021</button>
-                <button class="searchDate" data-my-id="${2020}">2020</button>
-                <button class="searchDate" data-my-id="${2019}">2019</button>
-                <button class="searchDate" data-my-id="${2018}">2018</button>
-                <button class="searchDate" data-my-id="${2017}">2017</button>
-                <button class="searchDate" data-my-id="${2016}">2016</button>
-                <button class="searchDate" data-my-id="${2015}">2015</button>
- 
-              </div>
-            </li>
-            <li  id="hidden" onmouseover="ver(2)" onmouseout="ocultar(2)">
-              <p>Categoría</p>
-              <div id="subseccion2">
-              <button class="searchCat" data-my-id="${0}">Carreras a pie</button>
-              <button class="searchCat" data-my-id="${1}">ciclismo</button>
-              <button class="searchCat" data-my-id="${2}">BTT</button>
-              <button class="searchCat" data-my-id="${3}">mushing</button>
-              </div>			
-            </li>-->
+               
             <li class="contacto" onmouseover="ocultar(3), ocultar(5), ocultar(7)">
-            <p class="contacto">contacto</p>
+              <p class="contacto">contacto</p>
             </li>
             
           </ul>`
@@ -248,15 +220,21 @@ const menuView = () => {
 const contactoView = () => {
   view = "";
 
-  view += `<h1>Formulario de contacto</h1>
+  view += `
+  <div class="formulariocontacto">
+    <h1 class="h1contacto">Formulario de contacto</h1>
+
   
-  <p>Si quiere ponerse en contacto con nosotros hágalo a través, cualquiera de estos medios:
-  teléfono, e-mail o rellene el formulario que tiene a continuación.</p>
+    <p>Si quiere ponerse en contacto con nosotros hágalo a través, cualquiera de estos medios:
+    teléfono, e-mail o rellene el formulario que tiene a continuación.</p>
 
-  <h3>Rubén: 666666666</h3>
-  <h3>Samuel: 666666666</h3>
-  <h3>email: rssports@666666666</h3>
+    <h3>Rubén: 666666666</h3>
+    <h3>Samuel: 666666666</h3>
+    <h3>email: rssports@666666666</h3>
 
+  </div>
+
+  
 
 
 
