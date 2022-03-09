@@ -14,9 +14,9 @@ const indexView = (carreras, seccion) => {
   view+=`<div class=gridGeneral>`
   while (i < carreras.length) {
     view += `
-        <div class="${show} movie "  data-my-id="${i}">
+        <div class="${show} carrera "  data-my-id="${i}">
         
-          <div class="movie-img">
+          <div class="carrera-img">
                <img data-my-id="${i}" src="${carreras[i].miniatura}" onerror="this.src='assets/placeholder.png'" class="${show}"/>
           </div>
           <div class="title" >
@@ -57,7 +57,7 @@ const indexView = (carreras, seccion) => {
         <input  type="text" id="miniatura" placeholder="URL de la miniatura" 
                 value="${carrera.miniatura}">
         </div>
-        <div class="actions">
+        <div class="actionsEvento">
             <button class="update" data-my-id="${i}">
                 Actualizar
             </button>
@@ -84,20 +84,20 @@ const showView = (carrera) => {
     </div>
 
     <div class="contentDescription">
-      <div class="elementoDescription">${formatDate(parseDate(carrera.fecha))}</div>
-      <div class="elementoDescription">${carrera.categoria}</div>
-      <div class="elementoDescription">${carrera.hora|| "Según categoría"}</div>
-      <div class="elementoDescription">${carrera.distancia|| "Según categoría"}</div>
-      <div class="elementoDescription">${carrera.organizador|| ""}</div>
+      <div class="elementoDescripcion">${formatDate(parseDate(carrera.fecha))}</div>
+      <div class="elementoDescripcion">${carrera.categoria}</div>
+      <div class="elementoDescripcion">${carrera.hora|| "Según categoría"}</div>
+      <div class="elementoDescripcion">${carrera.distancia|| "Según categoría"}</div>
+      <div class="elementoDescripcion">${carrera.organizador|| ""}</div>
       
     </div>
-    <div class="actions">`
+    <div class="actionsEvento">`
 
     if (carrera.inscripciones != undefined) {
       //view+=`<p>hola</p>`
       //view+=`${carrera.inscripciones}`
       enlace_inscripciones=carrera.inscripciones;
-      //view += `<div class="actions">`
+      //view += `<div class="actionsEvento">`
       //view += `<a class = "new" href=${carrera.inscripciones} target=_blank><button class="new">Inscripciones</button></a> `;
       view += `<button class="inscripciones botondetallecarrera">Inscripciones</button>`;/*${carrera.inscripciones}*/
   
@@ -111,15 +111,15 @@ const showView = (carrera) => {
   }
 
 
-  view += `</div>` //Cierre actions
+  view += `</div>` //Cierre actionsEvento
 
   view += `</div>` //Cierre contenedorDetalle
   view += `</div>` //Cierre detalleevento
 
-  /*view+=`<div class="actions">
+  /*view+=`<div class="actionsEvento">
      <button class="index">Volver</button>
   </div>`*/
-  //Fin de clase actions, contenedor 
+  //Fin de clase actionsEvento, contenedor 
   //view += `</div></div>\n`;
   return view;
 };
@@ -127,6 +127,8 @@ const showView = (carrera) => {
 
 const showServiciosView = (carrera) => {
   view = `
+  <div class="detalleServicios">
+
   <div class="tituloDetalle">${carrera.titulo}</div>
   <div class="contenedorDetalleServicios">
   <img id="miniaturaShowServicios" src=${carrera.miniatura}></img>
@@ -139,19 +141,19 @@ const showServiciosView = (carrera) => {
     <p>Introducir descripción en campo de servicios.js</p>
     <p>Contenido de archivo a continuación</p>-->
     ${carrera.descripcion}
-  </div></div>`
+  </div></div></div>`
 
   //view += `</div>`
   return view;
 };
 
-const inscripcionesView = (web) => {
+/*const inscripcionesView = (web) => {
   alert(web);
   view = "";
   view += `<h2><Inscripciones></h2>
           Introducir  título: <input type="text" id="titulo"> <br>
           Introducir url de la miniatura:<input type="text" id="miniatura"> <br>
-          <div class="actions">
+          <div class="actionsEvento">
             <button class="create">Crear</button>
             <button class="index">Volver</button>
           </div>`;
@@ -160,7 +162,7 @@ const inscripcionesView = (web) => {
 
   //          Introducir fecha:<input type="text" id="fecha"> <br>
 
-};
+};*/
 
 const menuView = () => {
   view = "";
