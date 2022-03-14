@@ -14,13 +14,16 @@ OptionList = [
     "Mushing"
 ]
 
-titulos = ['Categoría', 'Título', 'Fecha', 'Hora', 'Distancia', 'Organizador', 'Miniatura', 'Inscripciones']
+titulos = ['Categoría', 'Título', 'Fecha', 'Hora',
+           'Distancia', 'Organizador', 'Miniatura', 'Inscripciones']
 
 
 root = tk.Tk()
 root.geometry("800x700")  # Tamaño por defecto
 root.title("Añadir Próximos Eventos RS-Sport")  # Titulo de ventana
 root.config(background="aliceblue")
+root.iconbitmap("img/assets/RS_logo.ico")
+
 
 entries = []
 i = 0
@@ -70,7 +73,8 @@ def print_all(entries):
 
 
 def draw_final_button():
-    button = Button(text="Añadir Próximo Evento", command=lambda: lectura_escritura())
+    button = Button(text="Añadir Próximo Evento",
+                    command=lambda: lectura_escritura())
     button.grid(column=1, row=20)
 
 
@@ -78,18 +82,17 @@ def draw_instructions():
     label = Label(root, text="\nFecha: dd/mm/aaaa", justify=LEFT)
     label.grid(column=0, row=22, columnspan=1)
     label.config(background="aliceblue")
-    label = Label(root, text="Miniatura: poner imagen en su carpeta correspondiente, copiar solo nombre: image.jpg.\nNo usar ñ ni espacios.\n", justify=LEFT)
+    label = Label(root, text="Miniatura: guardar imagen en su carpeta correspondiente, copiar solo nombre: image.jpg.\nNo usar ñ ni espacios.\n", justify=LEFT)
     label.grid(column=0, row=23, columnspan=2)
     label.config(background="aliceblue")
     label = Label(
-        root, text="Link: poner link completo, sea de PDF o web.\n Por ejemplo: clasificaciones/clasificacionesBTT2022.pdf, http://www.ogromaraton.com", justify=LEFT)
+        root, text="Link: escribir link completo, sea de PDF o web.\n Por ejemplo: clasificaciones/clasificacionesBTT2022.pdf, http://www.ogromaraton.com", justify=LEFT)
     label.grid(column=0, row=24, columnspan=2)
     label.config(background="aliceblue")
     label = Label(
-        root, text="Inscripciones: Guardar archivo en detalles-evento y listado-participantes.\nPoner solo el nombre de archivo: 6-II-dia-patin.html", justify=LEFT)
+        root, text="Inscripciones: Guardar archivo en detalles-evento y listado-participantes.\nEscribir solo el nombre de archivo: 6-II-dia-patin.html", justify=LEFT)
     label.grid(column=0, row=25, columnspan=2)
     label.config(background="aliceblue")
-
 
 
 def start_app():
@@ -104,7 +107,7 @@ def lectura_escritura():
     mensaje = leer_archivo()
     mensaje = add_race(mensaje)
     guardar_archivo(mensaje)
-    #copiar_img()
+    # copiar_img()
     label = Label(root, text="\nEvento Añadido", justify=LEFT)
     label.grid(column=3, row=20, columnspan=1)
     label.config(background="aliceblue")
@@ -113,14 +116,15 @@ def lectura_escritura():
 def copiar_img():
     year = parse_date(entries[2].get())
     shutil.move(entries[6].get(), "img/"+year+"/"+entries[6].get())
-    
-    #print("año" + parse_date(entries[1].get()))
+
+    # print("año" + parse_date(entries[1].get()))
 
 
 def parse_date(date):
     date_string = ""
     date_string = datetime.strptime(date, "%d/%m/%Y")
     return str(date_string.year)
+
 
 def leer_archivo():
     fichero = open('proximos.js', 'r', encoding="utf8")
@@ -145,7 +149,8 @@ def add_race(mensaje):
     textoCompleto += "\thora: " + "\"" + entries[3].get() + "\",\n"
     textoCompleto += "\tdistancia: " + "\"" + entries[4].get() + "\",\n"
     textoCompleto += "\torganizador: " + "\"" + entries[5].get() + "\",\n"
-    textoCompleto += "\tminiatura: " + "\"img/" +year+"/" + entries[6].get() + "\",\n"
+    textoCompleto += "\tminiatura: " + "\"img/" + \
+        year+"/" + entries[6].get() + "\",\n"
 
     textoCompleto += "\tbotones:\n"+"\t\t[\n"
 
@@ -155,12 +160,14 @@ def add_race(mensaje):
         textoCompleto += "\t\t\t\tarchivo: \"" + entries[2*j+9].get() + "\",\n"
 
         textoCompleto += "\t\t\t},\n"
-    
-    textoCompleto += "\n\t\t],\n"
-    if(entries[7].get()!=""):
-        textoCompleto += "\tinscripciones: " + "\"inscripciones/detalles-evento/evento/" + entries[7].get() + "\",\n"
 
-    #textoCompleto+="\tbotones: " + "\"" + botonesResultado.get() + "\",\n"
+    textoCompleto += "\n\t\t],\n"
+    if(entries[7].get() != ""):
+        textoCompleto += "\tinscripciones: " + \
+            "\"inscripciones/detalles-evento/evento/" + \
+            entries[7].get() + "\",\n"
+
+    # textoCompleto+="\tbotones: " + "\"" + botonesResultado.get() + "\",\n"
 
     textoCompleto += "\n},\n"
     textoCompleto += mensaje
@@ -173,7 +180,9 @@ def guardar_archivo(mensaje):
     fichero = open('proximos.js', 'w', encoding="utf8")
     fichero.write(mensaje)
 
-labelProximosEventos = Label(root, text="PRÓXIMOS EVENTOS\n\n\n",font = ('Courier', 15, 'bold') )
+
+labelProximosEventos = Label(
+    root, text="PRÓXIMOS EVENTOS\n\n\n", font=('Courier', 15, 'bold'))
 labelProximosEventos.grid(column=0, row=0)
 labelProximosEventos.config(background="aliceblue")
 labelNumBotones = Label(root, text="Introduce el número de botones")
@@ -182,7 +191,6 @@ labelNumBotones.config(background="aliceblue")
 
 entradaNumBotones = Entry()
 entradaNumBotones.grid(column=1, row=0)
-
 
 
 button = Button(text="Aceptar", command=lambda: start_app())

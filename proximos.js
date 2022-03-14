@@ -1,20 +1,6 @@
 proximos = [
 
 {
-	titulo: "I Canicross de Torrecilla en Cameros 2022",
-	fecha: "13/03/2022",
-	categoria: "Mushing",
-	hora: "9:30 / 11:30 / 12:30",
-	distancia: "6.8km, 1.5km, 450m ",
-	organizador: "Club Rioiia Mushing",
-	miniatura: "img/2022/62-cartel-canicross-torrecilla-cameros-2022.jpg",
-	botones:
-		[
-		],
-	inscripciones: "https://www.rs-sport.es/inscripciones/detalles-evento/evento/62-i-canicross-torrecilla-cameros-2022",
-},
-
-{
 	titulo: "I Trail Run Haciendo Sed Burgos 2022",
 	fecha: "03/04/2022",
 	categoria: "Carreras a pie",

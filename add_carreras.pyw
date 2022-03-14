@@ -13,13 +13,15 @@ OptionList = [
     "Mushing"
 ]
 
-titulos = ['Categoría', 'Título', 'Fecha', 'Hora', 'Distancia', 'Organizador', 'Miniatura']
+titulos = ['Categoría', 'Título', 'Fecha', 'Hora',
+           'Distancia', 'Organizador', 'Miniatura']
 
 
 root = tk.Tk()
 root.geometry("800x700")  # Tamaño por defecto
 root.title("Añadir Clasificaciones RS-Sport")  # Titulo de ventana
-#root.config(background="aliceblue")
+root.iconbitmap("img/assets/RS_logo.ico")
+# root.config(background="aliceblue")
 """entry = Entry()
 entry.place(x=50, y=50)"""
 # Esta segunda caja de texto no puede recibir el foco
@@ -85,17 +87,18 @@ def print_all(entries):
 
 
 def draw_final_button():
-    button = Button(text="Añadir Clasificaciones Evento", command=lambda: lectura_escritura())
+    button = Button(text="Añadir Clasificaciones Evento",
+                    command=lambda: lectura_escritura())
     button.grid(column=1, row=20)
 
 
 def draw_instructions():
     label = Label(root, text="\nFecha: dd/mm/aaaa", justify=LEFT)
     label.grid(column=0, row=22, columnspan=1)
-    label = Label(root, text="Miniatura: poner imagen en su carpeta correspondiente, copiar solo nombre: image.jpg.\nNo usar ñ ni espacios.\n", justify=LEFT)
+    label = Label(root, text="Miniatura: guardar imagen en su carpeta correspondiente, copiar solo nombre: image.jpg.\nNo usar ñ ni espacios.\n", justify=LEFT)
     label.grid(column=0, row=23, columnspan=2)
     label = Label(
-        root, text="Link: poner link completo, sea de PDF o web.\n Por ejemplo: clasificaciones/clasificacionesBTT2022.pdf, http://www.ogromaraton.com", justify=LEFT)
+        root, text="Link: escribir link completo, sea de PDF o web.\n Por ejemplo: clasificaciones/clasificacionesBTT2022.pdf, http://www.ogromaraton.com", justify=LEFT)
     label.grid(column=0, row=24, columnspan=2)
 
 
@@ -112,14 +115,14 @@ def lectura_escritura():
     mensaje = leer_archivo()
     mensaje = add_race(mensaje)
     guardar_archivo(mensaje)
-    #copiar_img()
+    # copiar_img()
     label = Label(root, text="\nEvento Añadido", justify=LEFT)
     label.grid(column=3, row=20, columnspan=1)
 
 
 def copiar_img():
     year = parse_date(entries[2].get())
-    #descomentar para mover
+    # descomentar para mover
     shutil.move(entries[6].get(), "img/"+year+"/"+entries[6].get())
     #print("año" + parse_date(entries[1].get()))
 
@@ -166,7 +169,8 @@ def add_race(mensaje):
     textoCompleto += "\thora: " + "\"" + entries[3].get() + "\",\n"
     textoCompleto += "\tdistancia: " + "\"" + entries[4].get() + "\",\n"
     textoCompleto += "\torganizador: " + "\"" + entries[5].get() + "\",\n"
-    textoCompleto += "\tminiatura: " + "\"img/" +year+"/" + entries[6].get() + "\",\n"
+    textoCompleto += "\tminiatura: " + "\"img/" + \
+        year+"/" + entries[6].get() + "\",\n"
 
     textoCompleto += "\tbotones:\n"+"\t\t[\n"
 
@@ -204,7 +208,8 @@ def guardar_archivo(mensaje):
     fichero.write(mensaje)
 
 
-labelCarreras = Label(root, text="CLASIFICACIONES\n\n\n",font = ('courier', 15, 'bold') )
+labelCarreras = Label(root, text="CLASIFICACIONES\n\n\n",
+                      font=('courier', 15, 'bold'))
 labelCarreras.grid(column=0, row=0)
 labelNumBotones = Label(root, text="Introduce el número de botones")
 labelNumBotones.grid(column=0, row=0)
