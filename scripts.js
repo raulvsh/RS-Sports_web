@@ -102,31 +102,17 @@ const showView = (carrera) => {
     <div class="actionsEvento">`;
 
 	if (carrera.inscripciones != undefined) {
-		//view+=`<p>hola</p>`
-		//view+=`${carrera.inscripciones}`
 		enlace_inscripciones = carrera.inscripciones;
-		//view += `<div class="actionsEvento">`
-		//view += `<a class = "new" href=${carrera.inscripciones} target=_blank><button class="new">Inscripciones</button></a> `;
-		view += `<button class="inscripciones botondetallecarrera">Inscripciones</button>`; /*${carrera.inscripciones}*/
-
-		//view += `</div>`
+		view += `<button class="inscripciones botondetallecarrera">Inscripciones</button>`;
 	}
 	for (let j = 0; j < carrera.botones.length; j++) {
 		view += `<a href=${carrera.botones[j].archivo} target=_blank><button class=botondetallecarrera>${carrera.botones[j].titulo}</button></a> `;
-		//view += `<button href=${carrera.clasificaciones[j].archivo} target=_blank>${carrera.clasificaciones[j].titulo}</button> `;
-		//view+=`${carrera.inscripciones}`;
 	}
 
 	view += `</div>`; //Cierre actionsEvento
-
 	view += `</div>`; //Cierre contenedorDetalle
 	view += `</div>`; //Cierre detalleevento
 
-	/*view+=`<div class="actionsEvento">
-     <button class="index">Volver</button>
-  </div>`*/
-	//Fin de clase actionsEvento, contenedor
-	//view += `</div></div>\n`;
 	return view;
 };
 
@@ -148,26 +134,14 @@ const showServiciosView = (carrera) => {
     ${carrera.descripcion}
   </div></div></div>`;
 
-	//view += `</div>`
 	return view;
 };
 
-/*const inscripcionesView = (web) => {
-  alert(web);
-  view = "";
-  view += `<h2><Inscripciones></h2>
-          Introducir  título: <input type="text" id="titulo"> <br>
-          Introducir url de la miniatura:<input type="text" id="miniatura"> <br>
-          <div class="actionsEvento">
-            <button class="create">Crear</button>
-            <button class="index">Volver</button>
-          </div>`;
-          view+=`${web}`;
-  return view;
-
-  //          Introducir fecha:<input type="text" id="fecha"> <br>
-
-};*/
+const inscripcionesView = (enlace_inscripciones) => {
+	view = "";
+	view += `<object class="htmlinscripciones" type="text/html" data="${enlace_inscripciones}" ></object>`;
+	return view;
+};
 
 const menuView = () => {
 	view = "";
@@ -243,15 +217,7 @@ const contactoView = () => {
     <h3>Samuel: 666666666</h3>
     <h3>email: rssports@666666666</h3>
 
-  </div>
-
-  
-
-
-
-
-  
-  `;
+  </div>`;
 
 	return view;
 };
@@ -263,12 +229,8 @@ const indexContr = () => {
 };
 
 const proximosContr = () => {
-	//let mis_carreras = JSON.parse(localStorage.mis_carreras);
-	//let mis_carreras = carreras;
-
-	//reset
+	//Igualo la lista de resultados búsqueda al archivo de próximos eventos
 	resultados_busqueda = proximos;
-	//document.getElementById("main").innerHTML = indexView(carreras_local);
 	document.getElementById("main").innerHTML = indexView(proximos, "proximos");
 };
 
@@ -283,10 +245,7 @@ const showContr = (i) => {
 };
 
 const showServiciosContr = (i) => {
-	// let carrera = JSON.parse(localStorage.mis_carreras)[i];
-	//let carrera = carreras[i];
 	let carrera = resultados_busqueda[i];
-
 	document.getElementById("main").innerHTML = showServiciosView(carrera);
 };
 
@@ -337,21 +296,10 @@ const contactoContr = () => {
 
 //CONTROLADORES SIN USAR
 const inscripcionesContr = () => {
-	//document.getElementById("main") = fetch("/inscripciones/detalles-evento/evento/1-prueba(copiar%20de%20aqui).html")//'/inscripciones/detalles-evento/evento/1-prueba(copiar%20de%20aqui).html';//inscripcionesView(web);
-	//document.getu
-	//document.getElementById("main").innerHTML = "";inscripcionesView(web);
-	/*fetch("/inscripciones/detalles-evento/evento/1-prueba(copiar%20de%20aqui).html").then(response=>{
-    return response.text()
-  }).then(data=>{
-    document.getElementById("main").innerHTML=data;
-  })*/
-	//alert(enlace_inscripciones)
-	//document.getElementById("main").innerHTML='<object type="text/html" data="/inscripciones/detalles-evento/evento/1-prueba(copiar%20de%20aqui).html" ></object>';
 	document.getElementById(
 		"main"
-	).innerHTML = `<object class="htmlinscripciones" type="text/html" data="${enlace_inscripciones}" ></object>`;
-
-	//document.getElementById("main").innerHTML=`<div w3-include-html="/inscripciones/detalles-evento/evento/1-prueba(copiar%20de%20aqui).html"></div>`
+		//).innerHTML = `<object class="htmlinscripciones" type="text/html" data="${enlace_inscripciones}" ></object>`;
+	).innerHTML = inscripcionesView(enlace_inscripciones);
 };
 
 /*const createContr = () => {
@@ -456,47 +404,35 @@ function parseDate(str) {
 	return m ? new Date(m[3], m[2] - 1, m[1]) : null;
 }
 
-//Funciones menú desplegable
+/*MENÚ DESPLEGABLE*/
+//Se recorre la lista de índices y se muestra en pantalla
 function ver(lista) {
 	for (i in lista) {
 		document.getElementById("subseccion" + lista[i]).style.display = "block";
 	}
 }
+//Se recorre la lista de índices y se oculta
 function ocultar(lista) {
 	for (i in lista) {
 		document.getElementById("subseccion" + lista[i]).style.display = "none";
 	}
 }
-
+//Resetea los booleanos para mostrar/ocultar los botones del menú
 function reset() {
 	for (i in isClicked) {
 		isClicked[i] = false;
 	}
 }
-
+//Función que se activa al hacer click en un menú
 function clickMenu(indiceMenus) {
 	for (i in indiceMenus) {
+		//Al hacer click, invierte el estado del booleano
 		isClicked[indiceMenus[i]] = !isClicked[indiceMenus[i]];
-		/*alert(
-			"isclicked completo " +
-				isClicked +
-				" i " +
-				i +
-				" indicemenus[i]: " +
-				indiceMenus[i]
-		);*/
-		//alert(i);
-		//alert(indiceMenus[i]);
+		//Dependiendo del booleano isClicked, se muestra/oculta el botón corrrespondiente
 		if (isClicked[indiceMenus[i]]) {
-			//alert("ver " + indiceMenus[i]);
 			ver(indiceMenus);
 		} else {
-			//alert("ocultar " + indiceMenus[i]);
-
 			ocultar(indiceMenus);
 		}
 	}
 }
-/*function ocultar(n) {
-	document.getElementById("subseccion" + n).style.display = "none";
-}*/
