@@ -3,6 +3,7 @@ const categorias = ["Carreras a pie", "Ciclismo", "BTT", "Mushing"];
 let carreras_local;
 let resultados_busqueda;
 let enlace_inscripciones;
+let isClicked = [false, false, false, false, false, false, false, false];
 
 // VISTAS
 const indexView = (carreras, seccion) => {
@@ -172,21 +173,24 @@ const menuView = () => {
 	view = "";
 
 	view += `<ul class="listabotones">
-            <li class="proximos" onmouseover="ocultar(3), ocultar(5), ocultar(7)">
+            <li class="proximos" onmouseover="ocultar([3,5,7])">
               <p class="proximos">próximos eventos </p>
             </li>
 
-            <li class="servicios" onmouseover="ocultar(3), ocultar(5), ocultar(7)">
+            <li class="servicios" onmouseover="ocultar([3,5,7])">
             <p class="servicios">servicios</p>
             </li>
 
-            <li  onmouseover="ver(3), ver(5), ver(7)">
-                <p onmouseout="ocultar(3), ocultar(5), ocultar(7)">Clasificaciones</p>
-                <div  id="subseccion3"  onmouseover="ver(4), ocultar(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)" >
-                  <button class="botonmenu" ">por año</button>
+            <!--<li  onmouseover="ver(3), ver(5), ver(7)" onclick="clickMenu(3)">-->
+            <!--<li onmouseover="ver(3), ver(5), ver(7)" >-->
+            <li onmouseover="ver([3,5,7])" >
+
+                <p onmouseout="ocultar([3,5,7])" onclick="clickMenu([3, 5, 7])">Clasificaciones</p>
+                <div  id="subseccion3"  onmouseover="ver([4]), ocultar(6)" onmouseout="ocultar([3,4,5,6,7])">
+                  <button class="botonmenu" onclick="clickMenu([4])" >por año</button>
                 </div>
-                <div id="subseccion4" onmouseover="ver(3), ver(4), ocultar(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)" >
-                  <ul class="listasubapartados" onclick="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)">
+                <div id="subseccion4" onmouseover="ver([3,4]), ocultar(6)" onmouseout="ocultar([3,4,5,6,7])" >
+                  <ul class="listasubapartados" onclick="ocultar([3,4,5,6,7]), reset()">
                   <button class="searchDate botonmenu" data-my-id="${2022}" >2022</button>
                   <button class="searchDate botonmenu" data-my-id="${2021}" >2021</button>
                   <button class="searchDate botonmenu" data-my-id="${2020}" >2020</button>
@@ -197,24 +201,24 @@ const menuView = () => {
                   <button class="searchDate botonmenu" data-my-id="${2015}" >2015</button>
                   </ul> 
                 </div>
-                <div id="subseccion5" onmouseover="ver(6), ocultar(4)", onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)" >
-                  <button class="botonmenu">por categoría</button>
+                <div id="subseccion5" onmouseover="ver([6]), ocultar(4)", onmouseout="ocultar([3,4,5,6,7])" >
+                  <button class="botonmenu" onclick="clickMenu([6])">por categoría</button>
                 </div>
-                <div id="subseccion6" onmouseover="ver(5), ver(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)" >
-                  <ul class="listasubapartados" onclick="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)">
+                <div id="subseccion6" onmouseover="ver([5,6])" onmouseout="ocultar([3,4,5,6,7])" >
+                  <ul class="listasubapartados" onclick="ocultar([3,4,5,6,7]), reset()">
                     <button class="searchCat botonmenu" data-my-id="${0}">Carreras a pie</button>
                     <button class="searchCat botonmenu" data-my-id="${1}">ciclismo</button>
                     <button class="searchCat botonmenu" data-my-id="${2}">BTT</button>
                     <button class="searchCat botonmenu" data-my-id="${3}">mushing</button>
                   </ul>
                 </div>
-                <div id="subseccion7" onmouseover="ocultar(6)" onmouseout="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)">
-                  <button class="reset botonmenu" onclick="ocultar(3), ocultar(4), ocultar(5), ocultar(6), ocultar(7)">Listado Completo</button>
+                <div id="subseccion7" onmouseover="ocultar(6)" onmouseout="ocultar([3,4,5,6,7])">
+                  <button class="reset botonmenu" onclick="ocultar([3,4,5,6,7]), reset()">Listado Completo</button>
                 </div>
               
                </li>
                
-            <li class="contacto" onmouseover="ocultar(3), ocultar(5), ocultar(7)">
+            <li class="contacto" onmouseover="ocultar([3,5,7])">
               <p class="contacto">contacto</p>
             </li>
             
@@ -453,9 +457,46 @@ function parseDate(str) {
 }
 
 //Funciones menú desplegable
-function ver(n) {
-	document.getElementById("subseccion" + n).style.display = "block";
+function ver(lista) {
+	for (i in lista) {
+		document.getElementById("subseccion" + lista[i]).style.display = "block";
+	}
 }
-function ocultar(n) {
+function ocultar(lista) {
+	for (i in lista) {
+		document.getElementById("subseccion" + lista[i]).style.display = "none";
+	}
+}
+
+function reset() {
+	for (i in isClicked) {
+		isClicked[i] = false;
+	}
+}
+
+function clickMenu(indiceMenus) {
+	for (i in indiceMenus) {
+		isClicked[indiceMenus[i]] = !isClicked[indiceMenus[i]];
+		/*alert(
+			"isclicked completo " +
+				isClicked +
+				" i " +
+				i +
+				" indicemenus[i]: " +
+				indiceMenus[i]
+		);*/
+		//alert(i);
+		//alert(indiceMenus[i]);
+		if (isClicked[indiceMenus[i]]) {
+			//alert("ver " + indiceMenus[i]);
+			ver(indiceMenus);
+		} else {
+			//alert("ocultar " + indiceMenus[i]);
+
+			ocultar(indiceMenus);
+		}
+	}
+}
+/*function ocultar(n) {
 	document.getElementById("subseccion" + n).style.display = "none";
-}
+}*/
