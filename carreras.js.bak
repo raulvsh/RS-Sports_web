@@ -1,5 +1,81 @@
 carreras = [
 
+{
+	titulo: "Green Series Bilbao 2022",
+	fecha: "20/03/2022",
+	categoria: "BTT",
+	hora: "09:30",
+	distancia: "",
+	organizador: "",
+	miniatura: "img/2022/cartelGreenSeries2022.jpg",
+	botones:
+		[
+			{
+				titulo: "Página Web",
+				archivo: "https://greenseriesxco.com/",
+			},
+			{
+				titulo: "Circuitos",
+				archivo: "https://greenseriesxco.com/circuitos/bilbao",
+			},
+			{
+				titulo: "Clasificaciones",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesGreenSeriesBilbao2022.pdf",
+			},
+			{
+				titulo: "Tiempos por vuelta",
+				archivo: "https://www.rs-sport.es/Clasificaciones/TiemposVueltasGreenSeriesBilbao2022.pdf",
+			},
+			{
+				titulo: "Generales",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesGreenSeriesGeneral2022.pdf",
+			},
+
+		],
+},
+
+{
+	titulo: "Copa de España Mushing Salas de los Infantes 2022",
+	fecha: "19/03/2022",
+	categoria: "Mushing",
+	hora: "08:00",
+	distancia: "",
+	organizador: "",
+	miniatura: "img/2022/catelmushingsalas2022.jpg",
+	botones:
+		[
+			{
+				titulo: "Clasif. Manga 1",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesSalasInfantes2022SprintManga1.pdf",
+			},
+			{
+				titulo: "Clasif. Manga 2",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesSalasInfantes2022SprintManga2.pdf",
+			},
+
+		],
+},
+	{
+		titulo: "Canicross Torrecilla en Cameros 2022",
+		fecha: "13/03/2022",
+		categoria: "Mushing",
+		hora: "9:30 / 11:30 / 12:30",
+		distancia: "6.8km, 1.5km, 450m ",
+		organizador: "Club Rioiia Mushing",
+		miniatura: "img/2022/62-cartel-canicross-torrecilla-cameros-2022.jpg",
+		botones: [
+			{
+				titulo: "Clasif. Largo",
+				archivo:
+					"https://www.rs-sport.es/Clasificaciones/ClasificacionesCanicrossTorrecillaLargo2022.pdf",
+			},
+			{
+				titulo: "Clasif. Corto Promo",
+				archivo:
+					"https://www.rs-sport.es/Clasificaciones/ClasificacionesCanicrossTorrecillaCorto2022.pdf",
+			},
+		],
+	},
 	{
 		titulo: "Green Series Balmaseda 2022",
 		fecha: "06/03/2022",

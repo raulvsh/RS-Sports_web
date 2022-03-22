@@ -1,4 +1,87 @@
 carreras = [
+
+{
+	titulo: "Green Series Bilbao 2022",
+	fecha: "20/03/2022",
+	categoria: "BTT",
+	hora: "09:30",
+	distancia: "",
+	organizador: "",
+	miniatura: "img/2022/cartelGreenSeries2022.jpg",
+	botones:
+		[
+			{
+				titulo: "Página Web",
+				archivo: "https://greenseriesxco.com/",
+			},
+			{
+				titulo: "Circuitos",
+				archivo: "https://greenseriesxco.com/circuitos/bilbao",
+			},
+			{
+				titulo: "Clasificaciones",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesGreenSeriesBilbao2022.pdf",
+			},
+			{
+				titulo: "Tiempos por vuelta",
+				archivo: "https://www.rs-sport.es/Clasificaciones/TiemposVueltasGreenSeriesBilbao2022.pdf",
+			},
+			{
+				titulo: "Generales",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesGreenSeriesGeneral2022.pdf",
+			},
+
+		],
+},
+
+{
+	titulo: "XXXIX Carrera de San José 2022",
+	fecha: "20/03/2022",
+	categoria: "Carreras a pie",
+	hora: "12:15",
+	distancia: "10 km",
+	organizador: "C.A. Valle de Mena - IDJ Diputación de Burgos",
+	miniatura: "img/2022/cartelSanJose2022.jpg",
+	botones:
+		[
+			{
+				titulo: "Página Web",
+				archivo: "https://avaibooksports.com/inscripcion/xxxix-carrera-de-san-jose-gran-premio-diputacion-de-burgos-1/?lang=es",
+			},
+			{
+				titulo: "Reglamento",
+				archivo: "https://avaibooksports.com/inscripcion/xxxix-carrera-de-san-jose-gran-premio-diputacion-de-burgos-1/ficheros/?filetype=reglamento",
+			},
+			{
+				titulo: "Clasificaciones",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesSanJose20032020.pdf",
+			},
+
+		],
+
+},
+
+{
+	titulo: "Copa de España Mushing Salas de los Infantes 2022",
+	fecha: "19/03/2022",
+	categoria: "Mushing",
+	hora: "08:00",
+	distancia: "",
+	organizador: "",
+	miniatura: "img/2022/catelmushingsalas2022.jpg",
+	botones:
+		[
+			{
+				titulo: "Clasif. Manga 1",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesSalasInfantes2022SprintManga1.pdf",
+			},
+			{
+				titulo: "Clasif. Manga 2",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesSalasInfantes2022SprintManga2.pdf",
+			},
+
+		],
+},
 	{
 		titulo: "Canicross Torrecilla en Cameros 2022",
 		fecha: "13/03/2022",
