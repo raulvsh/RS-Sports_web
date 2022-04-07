@@ -1,25 +1,5 @@
 proximos = [
 
-
-
-{
-	titulo: "I Trail Run Haciendo Sed Burgos 2022",
-	fecha: "03/04/2022",
-	categoria: "Carreras a pie",
-	hora: "",
-	distancia: "",
-	organizador: "",
-	miniatura: "img/2022/61-cartel-trail-run-haciendo-sed-burgos-2022.jpg",
-	botones:
-		[
-			{
-				titulo: "Página Web",
-				archivo: "https://trail.haciendosedburgos.com/",
-			},
-		],
-	inscripciones: "https://www.rs-sport.es/inscripciones/detalles-evento/evento/61-trail-run-haciendo-sed-burgos-2022",
-},
-
 {
 	titulo: "Sampol Experience 7",
 	fecha: "24/04/2022",

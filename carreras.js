@@ -1,6 +1,91 @@
 carreras = [
 
 {
+	titulo: "GREEN SERIES BERRIZ 2022",
+	fecha: "03/04/2022",
+	categoria: "BTT",
+	hora: "09:30",
+	distancia: "",
+	organizador: "",
+	miniatura: "img/2022/cartelGreenSeries2022.jpg",
+	botones:
+		[
+			{
+				titulo: "Página Web",
+				archivo: "https://greenseriesxco.com/",
+			},
+			{
+				titulo: "Circuito",
+				archivo: "https://greenseriesxco.com/circuitos/berriz",
+			},
+			{
+				titulo: "Clasificaciones",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesGreenSeriesBerriz2022.pdf",
+			},
+			{
+				titulo: "Tiempos por Vuelta",
+				archivo: "https://www.rs-sport.es/Clasificaciones/TiemposVueltasGreenSeriesBerriz2022.pdf",
+			},
+			{
+				titulo: "Generales",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesGreenSeriesGeneral2022.pdf",
+			},
+
+		],
+},
+
+{
+	titulo: "I Trail Run Haciendo Sed Burgos 2022",
+	fecha: "03/04/2022",
+	categoria: "Carreras a pie",
+	hora: "",
+	distancia: "",
+	organizador: "",
+	miniatura: "img/2022/61-cartel-trail-run-haciendo-sed-burgos-2022.jpg",
+	botones:
+		[
+			{
+				titulo: "Página Web",
+				archivo: "https://trail.haciendosedburgos.com/",
+			},
+			{
+				titulo: "Clasificaciones 10km",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesHaciendoSed10km2022.pdf",
+			},
+			{
+				titulo: "Clasificaciones 18km",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesHaciendoSed18km2022.pdf",
+			},
+		],
+},
+
+{
+	titulo: "3ª Carrera Popular \"Running por África\"",
+	fecha: "03/04/2022",
+	categoria: "Carreras a pie",
+	hora: "10:00",
+	distancia: "17km / 6km",
+	organizador: "Alumnos CFGM Administrativo C. Paula Montal",
+	miniatura: "img/2022/cartelRunningPorAfrica2022.jpg",
+	botones:
+		[
+			{
+				titulo: "Página Web",
+				archivo: "https://www.runningporafrica.wordpress.com/",
+			},
+			{
+				titulo: "Clasificaciones 17km",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesRunningAfrica17km2022.pdf",
+			},
+			{
+				titulo: "Clasificaciones 6km",
+				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesRunningAfrica6km2022.pdf",
+			},
+
+		],
+},
+
+{
 	titulo: "Green Series Bilbao 2022",
 	fecha: "20/03/2022",
 	categoria: "BTT",

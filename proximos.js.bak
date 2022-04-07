@@ -1,31 +1,6 @@
 proximos = [
 
-{
-	titulo: "XXXIX Carrera de San José 2022",
-	fecha: "20/03/2022",
-	categoria: "Carreras a pie",
-	hora: "12:15",
-	distancia: "10 km",
-	organizador: "C.A. Valle de Mena - IDJ Diputación de Burgos",
-	miniatura: "img/2022/cartelSanJose2022.jpg",
-	botones:
-		[
-			{
-				titulo: "Página Web",
-				archivo: "https://avaibooksports.com/inscripcion/xxxix-carrera-de-san-jose-gran-premio-diputacion-de-burgos-1/?lang=es",
-			},
-			{
-				titulo: "Reglamento",
-				archivo: "https://avaibooksports.com/inscripcion/xxxix-carrera-de-san-jose-gran-premio-diputacion-de-burgos-1/ficheros/?filetype=reglamento",
-			},
-			{
-				titulo: "Clasificaciones",
-				archivo: "https://www.rs-sport.es/Clasificaciones/ClasificacionesSanJose20032020.pdf",
-			},
 
-		],
-
-},
 
 {
 	titulo: "I Trail Run Haciendo Sed Burgos 2022",

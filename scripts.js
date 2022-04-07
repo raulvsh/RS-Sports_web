@@ -140,6 +140,8 @@ const showServiciosView = (carrera) => {
 const inscripcionesView = (enlace_inscripciones) => {
 	view = "";
 	view += `<object class="htmlinscripciones" type="text/html" data="${enlace_inscripciones}" ></object>`;
+	//view += `<iframe class="htmlinscripciones" src="${enlace_inscripciones}"frameborder="0"></iframe>`;
+
 	return view;
 };
 
@@ -354,7 +356,6 @@ const matchEvent = (ev, sel) => ev.target.matches(sel);
 const myId = (ev) => Number(ev.target.dataset.myId);
 
 document.addEventListener("click", (ev) => {
-	//Añadir nueva clase de boton para las de inicio (próximos)
 	if (matchEvent(ev, ".reset")) resetContr(carreras);
 	else if (matchEvent(ev, ".proximos")) proximosContr();
 	else if (matchEvent(ev, ".servicios")) serviciosContr();
@@ -363,9 +364,9 @@ document.addEventListener("click", (ev) => {
 	else if (matchEvent(ev, ".searchDate")) searchDateContr(myId(ev));
 	else if (matchEvent(ev, ".searchCat")) searchCatContr(myId(ev));
 	else if (matchEvent(ev, ".contacto")) contactoContr();
+	else if (matchEvent(ev, ".inscripciones")) inscripcionesContr();
 	//Controladores no usados en esta versión
 	//if (matchEvent(ev, ".index")) indexContr();
-	else if (matchEvent(ev, ".inscripciones")) inscripcionesContr();
 	//else if (matchEvent(ev, ".create")) createContr();
 	//else if (matchEvent(ev, ".delete")) deleteContr(myId(ev));
 	//else if (matchEvent(ev, ".edit")) editContr(myId(ev));
