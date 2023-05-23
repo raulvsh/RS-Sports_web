@@ -27,7 +27,7 @@ div.carrera:hover {
 
 div.carrera:hover div.title {
 	transition: ease-in 0.2s all;
-	color: var(--primary);
+	color: var(--secondary);
 }
 
 div.carrera div.carrera-img img {

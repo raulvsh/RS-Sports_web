@@ -1,219 +1,439 @@
-proximos = [
+const categorias = ["Carreras a pie", "Ciclismo", "BTT", "Mushing"];
 
-{
-	titulo: "Sampol Experience 7",
-	fecha: "24/04/2022",
-	categoria: "Carreras a pie",
-	hora: "08:00 / 09:45 / 10:00",
-	distancia: "28km / 17km",
-	organizador: "Club Calceatense de Montaña SAMPOL",
-	miniatura: "img/2022/64-cartel-sampol-experience-7-2022.jpg",
-	botones:
-		[
-			{
-				titulo: "Página Web",
-				archivo: "https://clubcalceatensesampol.blogspot.com/p/informacion-inscripciones-y-precios.html?m=1",
-			},
-		],
-	inscripciones: "https://www.rs-sport.es/inscripciones/detalles-evento/evento/64-sampol-experience-7-2022",
-},
+let carreras_local;
+let resultados_busqueda;
+let enlace_inscripciones;
+let isClicked = [false, false, false, false, false, false, false, false];
 
-{
-	titulo: "VII Carrera a pie popular \"Los meandros de Briones\" 2022",
-	fecha: "01/05/2022",
-	categoria: "Carreras a pie",
-	hora: "11:30",
-	distancia: "7km / 13km",
-	organizador: "Peña Zamaca",
-	miniatura: "img/2022/63-cartel-meandros-briones-2022.jpg",
-	botones:
-		[
-			{
-				titulo: "Página Web",
-				archivo: "http://meandros-briones.rs-sport.es/",
-			},
-		],
-	inscripciones: "https://www.rs-sport.es/inscripciones/detalles-evento/evento/63-meandros-briones-2022",
-},
+// VISTAS
+const indexView = (carreras, seccion) => {
+	let i = 0;
+	let view = "";
+	//Discrimino entre servicios y el resto, si hubiese que hacer más categorías separar en if / else if
+	let show = seccion == "servicios" ? "showServicios" : "show";
+	view += `<div class=gridGeneral>`;
+	while (i < carreras.length) {
+		view += `
+        <div class="${show} carrera "  data-my-id="${i}">
+        
+          <div class="carrera-img">
+               <img data-my-id="${i}" src="${
+			carreras[i].miniatura
+		}" onerror="this.src='assets/placeholder.png'" class="${show}"/>
+          </div>
+          <div class="title" >
+            <div class="${show}" data-my-id="${i}">
+            ${carreras[i].titulo || "<em>Sin título</em>"}
+            </div>
+          </div>
+          <div class="subtitle">
+            <div class="${show}" data-my-id="${i}">
+            ${carreras[i].fecha || ""}
+            </div>
+          </div>
+          </div>\n
+          `;
+		i = i + 1;
+	}
+	view += `</div>`;
+	return view;
+};
 
-{
-	titulo: "Nájera Xtrem Cuna de Reyes",
-	fecha: "08/05/2022",
-	categoria: "Carreras a pie",
-	hora: "",
-	distancia: "",
-	organizador: "K2 Nájera",
-	miniatura: "img/2022/65-cartel-najera-xtrem.jpg",
-	botones:
-		[
-			{
-				titulo: "Página Web",
-				archivo: "https://clubdemontanak2.blogspot.com/",
-			},
-		],
-	inscripciones: "https://www.rs-sport.es/inscripciones/detalles-evento/evento/65-najera-xtrem-2022",
-},
+/*const editView = (i, carrera) => {
 
-{
-	titulo: "Prueba inscripciones",
-	fecha: "11/11/1111",
-	categoria: "Carreras a pie",
-	hora: "1",
-	distancia: "1",
-	organizador: "1",
-	miniatura: "https://www.colegioraindrop.edu.mx/media/zoo/images/inscripciones-abiertas_7ce2a4da0990c265e5d45cb8cf21848f.jpg",
-	botones:
-		[
-			{
-				titulo: "reglamento",
-				archivo: "https://api.rfedi.es/api/Reglamento/DescargarArchivo/135",
-			},
-			{
-				titulo: "mas informacion",
-				archivo: "http://www.mushingfacil.com/",
-			},
+  /*<div class="field">
+  Fecha <br>
+  <input  type="text" id="fecha" placeholder="Fecha" 
+  value="${carrera.fecha}">
+  </div>
+  return `<h2>Editar Película </h2>
+        <div class="field">
+        Título <br>
+        <input  type="text" id="titulo" placeholder="Título" 
+                value="${carrera.titulo}">
+        </div>
+        
+        </div>
+        <div class="field">
+        Miniatura <br>
+        <input  type="text" id="miniatura" placeholder="URL de la miniatura" 
+                value="${carrera.miniatura}">
+        </div>
+        <div class="actionsEvento">
+            <button class="update" data-my-id="${i}">
+                Actualizar
+            </button>
+            <button class="index">
+                Volver
+            </button></div>
+       `;
+};*/
 
-		],
-	inscripciones: "inscripciones/detalles-evento/evento/1-prueba.html",
+const showView = (carrera) => {
+	view = `
+  <div class="detalleevento">
+  <div class="tituloDetalle">${carrera.titulo}</div>
+  <div class="contenedorDetalle">
+    <img id="miniaturaShow" src=${carrera.miniatura}></img>
 
-},
+    <div class="contentTitle">
+             <div class="elementoTitulo">Fecha:</div>
+             <div class="elementoTitulo">Categoría:</div>
+             <div class="elementoTitulo">Hora: </div>
+             <div class="elementoTitulo">Distancia: </div>             
+             <div class="elementoTitulo">Organizador: </div>
+             
+    </div>
 
+    <div class="contentDescription">
+      <div class="elementoDescripcion">${formatDate(
+				parseDate(carrera.fecha)
+			)}</div>
+      <div class="elementoDescripcion">${carrera.categoria}</div>
+      <div class="elementoDescripcion">${
+				carrera.hora || "Según categoría"
+			}</div>
+      <div class="elementoDescripcion">${
+				carrera.distancia || "Según categoría"
+			}</div>
+      <div class="elementoDescripcion">${carrera.organizador || ""}</div>
+      
+    </div>
+    <div class="actionsEvento">`;
 
+	if (carrera.inscripciones != undefined) {
+		enlace_inscripciones = carrera.inscripciones;
+		view += `<button class="inscripciones botondetallecarrera">Inscripciones</button>`;
+	}
+	for (let j = 0; j < carrera.botones.length; j++) {
+		view += `<a href=${carrera.botones[j].archivo} target=_blank><button class=botondetallecarrera>${carrera.botones[j].titulo}</button></a> `;
+	}
 
+	view += `</div>`; //Cierre actionsEvento
+	view += `</div>`; //Cierre contenedorDetalle
+	view += `</div>`; //Cierre detalleevento
 
-/*	//INICIO CARRERA
-	{
-		titulo: "proximo evento 22",
-		fecha: "20-02-2022",
-		categoria: "Ciclismo",
-		miniatura: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fe00-marca.uecdn.es%2Fassets%2Fmultimedia%2Fimagenes%2F2020%2F01%2F18%2F15793615967979.jpg&f=1&nofb=1",
-		botones:
-			[
-				{
-					titulo: "Clasif prueba",
-					archivo: "pdf/2022/ogro.pdf"
-				},
+	return view;
+};
 
+const showServiciosView = (carrera) => {
+	view = `
+  <div class="detalleServicios">
 
-				{
-					titulo: "Clasif prueba",
-					archivo: "pdf/2022/ogro.pdf"
-				},
-				{
-					titulo: "Clasif prueba",
-					archivo: "pdf/2022/ogro.pdf"
-				},
-				{
-					titulo: "Clasif prueba",
-					archivo: "pdf/2022/ogro.pdf"
-				}
+  <div class="tituloDetalle">${carrera.titulo}</div>
+  <div class="contenedorDetalleServicios">
+  <img id="miniaturaShowServicios" src=${carrera.miniatura}></img>
+  <div class="descServicios">
 
-			],
-	},
-	//FIN CARRERA
+    <!--<h2>Descripcion 1</h2>
 
-	//INICIO CARRERA
-	{
-		titulo: "proximo evento VII Maratón",
-		fecha: "20-02-2022",
-		categoria: "Atletismo",
-		miniatura: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcorprensa-la-prensa-prod.cdn.arcpublishing.com%2Fresizer%2FqjhblvDNdyntbZC9p50HcQbfc1I%3D%2Ffit-in%2F1000x1000%2Fsmart%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fcorprensa%2FRICEP7PGL5AC7BSRVXCEMEWTAM.jpeg&f=1&nofb=1",
-		botones:
-			[
-				{
-					titulo: "Clasif Ogro",
-					archivo: "pdf/2022/ogro.pdf"
-				},
-				{
-					titulo: "Clasif Ogrito",
-					archivo: "pdf/2022/ogrito.pdf"
-				},
-				{
-					titulo: "Listado marcha Ogrito",
-					archivo: "pdf/2022/ogritomarcha.pdf"
-				}
+    <h2>Descripcion 2</h2>
+    <p></p>
+    <p>Introducir descripción en campo de servicios.js</p>
+    <p>Contenido de archivo a continuación</p>-->
+    ${carrera.descripcion}
+  </div></div></div>`;
 
-			],
-	},
-	//FIN CARRERA
+	return view;
+};
 
-	//INICIO CARRERA
-	{
-		titulo: "proximo Copa de España",
-		fecha: "13-02-2022",
-		categoria: "Mushing",
-		miniatura: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthorcanes.es%2Fwp-content%2Fuploads%2F2020%2F04%2FIMG_20200417_172446_769.jpg&f=1&nofb=1",
-		botones:
-			[
-				{
-					titulo: "Clasif Sprint Manga 1",
-					archivo: "pdf/2021/mushing1.pdf"
-				},
-				{
-					titulo: "Clasif Sprint Final",
-					archivo: "pdf/2021/mushing2.pdf"
-				},
+const inscripcionesView = (enlace_inscripciones) => {
+	view = "";
+	view += `<object class="htmlinscripciones" type="text/html" data="${enlace_inscripciones}" ></object>`;
+	//view += `<iframe class="htmlinscripciones" src="${enlace_inscripciones}"frameborder="0"></iframe>`;
 
-			],
-	},
-	//FIN CARRERA
+	return view;
+};
 
-	//INICIO CARRERA
-	{
-		titulo: "proximo I Mushing Villa ",
-		fecha: "18-12-2021",
-		categoria: "Mushing",
-		miniatura: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.nordicexperience.co.uk%2Fsites%2Fnordicexperience.co.uk%2Ffiles%2Fimages%2Ftour%2Fiso-syote_hundeslaede_033.jpg%3F1347539179&f=1&nofb=1",
-		botones:
-			[
-				{
-					titulo: "Reglamento",
-					archivo: "pdf/2021/Reglamento-General-de-Mushing-RFEDI-2021.pdf"
-				},
-				{
-					titulo: "Lista Inscripciones",
-					archivo: "pdf/2021/Listas-de-salida-Lerma.pdf"
-				},
-				{
-					titulo: "Clasificaciones",
-					archivo: "pdf/2021/ClasificacionesMushingLerma2021.pdf"
-				}
+const menuView = () => {
+	view = "";
 
-			],
-	},
-	//FIN CARRERA
+	view += `<ul class="listabotones">
+            <li class="proximos" onmouseover="ocultar([3,5,7])">
+              <p class="proximos">próximos eventos </p>
+            </li>
 
-	//INICIO CARRERA
-	{
-		titulo: "Proximo Desafío de Helios 2020",
-		fecha: "25-01-2020",
-		categoria: "Atletismo",
-		miniatura: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flaservet.es%2Fwp-content%2Fuploads%2F2015%2F09%2Fmushing-300x200.jpg&f=1&nofb=1",
-		botones:
-			[
-				{
-					titulo: "Reglamento",
-					archivo: "pdf/2020/40-reglamento-desafio-helios-2020.pdf"
-				},
-				{
-					titulo: "Clasificaciones BTT",
-					archivo: "pdf/2020/ClasificacionesBTTDesafioHelios2020.pdf"
-				},
-				{
-					titulo: "Clasificaciones Duatlon",
-					archivo: "pdf/2020/ClasificacionesDuatlonDesafioHelios2020.pdf"
-				},
-				{
-					titulo: "Clasificaciones equipos",
-					archivo: "pdf/2020/ClasificacionesEquiposDesafioHelios2020.pdf"
-				},
-				{
-					titulo: "Clasificaciones ultra",
-					archivo: "pdf/2020/ClasificacionesUltraDesafioHelios2020.pdf"
-				}
+            <li class="servicios" onmouseover="ocultar([3,5,7])">
+            <p class="servicios">servicios</p>
+            </li>
 
-			],
-	},
-	//FIN CARRERA*/
+            <!--<li  onmouseover="ver(3), ver(5), ver(7)" onclick="clickMenu(3)">-->
+            <!--<li onmouseover="ver(3), ver(5), ver(7)" >-->
+            <li onmouseover="ver([3,5,7])" >
 
-];
+                <p onmouseout="ocultar([3,5,7])" onclick="clickMenu([3, 5, 7])">Clasificaciones</p>
+                <div  id="subseccion3"  onmouseover="ver([4]), ocultar(6)" onmouseout="ocultar([3,4,5,6,7])">
+                  <button class="botonmenu" onclick="clickMenu([4])" >por año</button>
+                </div>
+                <div id="subseccion4" onmouseover="ver([3,4]), ocultar(6)" onmouseout="ocultar([3,4,5,6,7])" >
+                  <ul class="listasubapartados" onclick="ocultar([3,4,5,6,7]), reset()">
+                  <button class="searchDate botonmenu" data-my-id="${2022}" >2022</button>
+                  <button class="searchDate botonmenu" data-my-id="${2021}" >2021</button>
+                  <button class="searchDate botonmenu" data-my-id="${2020}" >2020</button>
+                  <button class="searchDate botonmenu" data-my-id="${2019}" >2019</button>
+                  <button class="searchDate botonmenu" data-my-id="${2018}" >2018</button>
+                  <button class="searchDate botonmenu" data-my-id="${2017}" >2017</button>
+                  <button class="searchDate botonmenu" data-my-id="${2016}" >2016</button>
+                  <button class="searchDate botonmenu" data-my-id="${2015}" >2015</button>
+                  </ul> 
+                </div>
+                <div id="subseccion5" onmouseover="ver([6]), ocultar(4)", onmouseout="ocultar([3,4,5,6,7])" >
+                  <button class="botonmenu" onclick="clickMenu([6])">por categoría</button>
+                </div>
+                <div id="subseccion6" onmouseover="ver([5,6])" onmouseout="ocultar([3,4,5,6,7])" >
+                  <ul class="listasubapartados" onclick="ocultar([3,4,5,6,7]), reset()">
+                    <button class="searchCat botonmenu" data-my-id="${0}">Carreras a pie</button>
+                    <button class="searchCat botonmenu" data-my-id="${1}">ciclismo</button>
+                    <button class="searchCat botonmenu" data-my-id="${2}">BTT</button>
+                    <button class="searchCat botonmenu" data-my-id="${3}">mushing</button>
+                  </ul>
+                </div>
+                <div id="subseccion7" onmouseover="ocultar(6)" onmouseout="ocultar([3,4,5,6,7])">
+                  <button class="reset botonmenu" onclick="ocultar([3,4,5,6,7]), reset()">Listado Completo</button>
+                </div>
+              
+               </li>
+               
+            <li class="contacto" onmouseover="ocultar([3,5,7])">
+              <p class="contacto">contacto</p>
+            </li>
+            
+          </ul>`;
+
+	return view;
+};
+
+const contactoView = () => {
+	view = "";
+
+	view += `
+  <div class="formulariocontacto">
+    
+    <h1 class="h1contacto">Formulario de contacto</h1>
+
+  
+    <p>Si quiere ponerse en contacto con nosotros hágalo a través, cualquiera de estos medios:
+    teléfono, e-mail o rellene el formulario que tiene a continuación.</p>
+
+    <h3>Rubén: 666666666</h3>
+    <h3>Samuel: 666666666</h3>
+    <h3>email: rssports@666666666</h3>
+
+  </div>`;
+
+	return view;
+};
+
+// CONTROLADORES
+const indexContr = () => {
+	carreras_local = carreras;
+	resetContr(carreras_local);
+};
+
+const proximosContr = () => {
+	//Igualo la lista de resultados búsqueda al archivo de próximos eventos
+	resultados_busqueda = proximos;
+	document.getElementById("main").innerHTML = indexView(proximos, "proximos");
+};
+
+const serviciosContr = () => {
+	resultados_busqueda = servicios;
+	document.getElementById("main").innerHTML = indexView(servicios, "servicios");
+};
+
+const showContr = (i) => {
+	let carrera = resultados_busqueda[i];
+	document.getElementById("main").innerHTML = showView(carrera);
+};
+
+const showServiciosContr = (i) => {
+	let carrera = resultados_busqueda[i];
+	document.getElementById("main").innerHTML = showServiciosView(carrera);
+};
+
+const resetContr = (carreras) => {
+	resultados_busqueda = carreras;
+	document.getElementById("main").innerHTML = indexView(
+		resultados_busqueda,
+		"clasificaciones"
+	);
+};
+
+const searchDateContr = (year) => {
+	let resultado = [];
+
+	for (i = 0; i < carreras.length; i++) {
+		if (parseDate(carreras[i].fecha).getFullYear() == year) {
+			//Encontrado
+			resultado.push(carreras[i]);
+		}
+	}
+	resultados_busqueda = resultado;
+
+	document.getElementById("main").innerHTML = indexView(
+		resultado,
+		"clasifDate"
+	);
+};
+
+const searchCatContr = (cat) => {
+	let resultado = [];
+	for (i = 0; i < carreras.length; i++) {
+		if (carreras[i].categoria == categorias[cat]) {
+			//Encontrado
+			resultado.push(carreras[i]);
+		}
+	}
+	resultados_busqueda = resultado;
+	document.getElementById("main").innerHTML = indexView(resultado, "clasifCat");
+};
+
+const menuContr = () => {
+	document.getElementById("navegador").innerHTML = menuView();
+};
+
+const contactoContr = () => {
+	document.getElementById("main").innerHTML = contactoView();
+};
+
+//CONTROLADORES SIN USAR
+const inscripcionesContr = () => {
+	document.getElementById(
+		"main"
+		//).innerHTML = `<object class="htmlinscripciones" type="text/html" data="${enlace_inscripciones}" ></object>`;
+	).innerHTML = inscripcionesView(enlace_inscripciones);
+};
+
+/*const createContr = () => {
+  let mis_carreras = JSON.parse(localStorage.mis_carreras);
+
+  mis_carreras.push({
+    titulo: document.getElementById("titulo").value,
+    //fecha: document.getElementById("fecha").value,
+    miniatura: document.getElementById("miniatura").value,
+  });
+  localStorage.mis_carreras = JSON.stringify(mis_carreras);
+  //mis_peliculas_iniciales.push(JSON.stringify(mis_peliculas))
+
+  indexContr();
+};*/
+
+/*const editContr = (i) => {
+  let carrera = JSON.parse(localStorage.mis_carreras)[i];
+  document.getElementById("main").innerHTML = editView(i, carrera);
+};*/
+
+/*const updateContr = (i) => {
+  let mis_carreras = JSON.parse(localStorage.mis_carreras);
+  mis_carreras[i].titulo = document.getElementById("titulo").value;
+  //mis_carreras[i].fecha = document.getElementById("fecha").value;
+  mis_carreras[i].miniatura = document.getElementById("miniatura").value;
+  localStorage.mis_carreras = JSON.stringify(mis_carreras);
+  indexContr();
+};*/
+
+/*const deleteContr = (i) => {
+  let mis_carreras = JSON.parse(localStorage.mis_carreras);
+
+  if (
+    confirm(
+      `¿Está seguro de que desea borrar la película ${mis_carreras[i].titulo}?`
+    )
+  ) {
+    mis_carreras.splice(i, 1);
+    localStorage.mis_carreras = JSON.stringify(mis_carreras);
+  }
+  indexContr();
+
+};*/
+
+// Inicialización
+document.addEventListener("DOMContentLoaded", proximosContr);
+document.addEventListener("DOMContentLoaded", menuContr);
+
+// ROUTER de eventos
+const matchEvent = (ev, sel) => ev.target.matches(sel);
+const myId = (ev) => Number(ev.target.dataset.myId);
+
+document.addEventListener("click", (ev) => {
+	if (matchEvent(ev, ".reset")) resetContr(carreras);
+	else if (matchEvent(ev, ".proximos")) proximosContr();
+	else if (matchEvent(ev, ".servicios")) serviciosContr();
+	else if (matchEvent(ev, ".show")) showContr(myId(ev));
+	else if (matchEvent(ev, ".showServicios")) showServiciosContr(myId(ev));
+	else if (matchEvent(ev, ".searchDate")) searchDateContr(myId(ev));
+	else if (matchEvent(ev, ".searchCat")) searchCatContr(myId(ev));
+	else if (matchEvent(ev, ".contacto")) contactoContr();
+	else if (matchEvent(ev, ".inscripciones")) inscripcionesContr();
+	//Controladores no usados en esta versión
+	//if (matchEvent(ev, ".index")) indexContr();
+	//else if (matchEvent(ev, ".create")) createContr();
+	//else if (matchEvent(ev, ".delete")) deleteContr(myId(ev));
+	//else if (matchEvent(ev, ".edit")) editContr(myId(ev));
+	//else if (matchEvent(ev, ".update")) updateContr(myId(ev));
+});
+
+//Formateo de fechas
+const formatDate = (current_datetime) => {
+	const months = [
+		"Enero",
+		"Febrero",
+		"Marzo",
+		"Abril",
+		"Mayo",
+		"Junio",
+		"Julio",
+		"Agosto",
+		"Septiembre",
+		"Octubre",
+		"Noviembre",
+		"Diciembre",
+	];
+	let formatted_date =
+		current_datetime.getDate() +
+		" de " +
+		months[current_datetime.getMonth()] +
+		" de " +
+		current_datetime.getFullYear();
+	return formatted_date;
+};
+
+function parseDate(str) {
+	//var m = str.match(/^(\d{1,2})-(\d{1,2})-(\d{4})$/);
+	//Formato dd/mm/aaaa o dd-mm-aaaa
+	var m = str.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);
+	return m ? new Date(m[3], m[2] - 1, m[1]) : null;
+}
+
+/*MENÚ DESPLEGABLE*/
+//Se recorre la lista de índices y se muestra en pantalla
+function ver(lista) {
+	for (i in lista) {
+		document.getElementById("subseccion" + lista[i]).style.display = "block";
+	}
+}
+//Se recorre la lista de índices y se oculta
+function ocultar(lista) {
+	for (i in lista) {
+		document.getElementById("subseccion" + lista[i]).style.display = "none";
+	}
+}
+//Resetea los booleanos para mostrar/ocultar los botones del menú
+function reset() {
+	for (i in isClicked) {
+		isClicked[i] = false;
+	}
+}
+//Función que se activa al hacer click en un menú
+function clickMenu(indiceMenus) {
+	for (i in indiceMenus) {
+		//Al hacer click, invierte el estado del booleano
+		isClicked[indiceMenus[i]] = !isClicked[indiceMenus[i]];
+		//Dependiendo del booleano isClicked, se muestra/oculta el botón corrrespondiente
+		if (isClicked[indiceMenus[i]]) {
+			ver(indiceMenus);
+		} else {
+			ocultar(indiceMenus);
+		}
+	}
+}
