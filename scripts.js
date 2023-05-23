@@ -150,18 +150,18 @@ const menuView = () => {
 
 	view += `<ul class="listabotones">
             <li class="proximos" onmouseover="ocultar([3,5,7])">
-              <p class="proximos">próximos eventos </p>
+              <p class="proximos">Aceitunas Lucio</p>
             </li>
 
             <li class="servicios" onmouseover="ocultar([3,5,7])">
-            <p class="servicios">servicios</p>
+            <p class="servicios">Bacalao y conservas</p>
             </li>
 
             <!--<li  onmouseover="ver(3), ver(5), ver(7)" onclick="clickMenu(3)">-->
             <!--<li onmouseover="ver(3), ver(5), ver(7)" >-->
             <li onmouseover="ver([3,5,7])" >
 
-                <p onmouseout="ocultar([3,5,7])" onclick="clickMenu([3, 5, 7])">Clasificaciones</p>
+                <p onmouseout="ocultar([3,5,7])" onclick="clickMenu([3, 5, 7])">Bebidas, refrescos y licores</p>
                 <div  id="subseccion3"  onmouseover="ver([4]), ocultar(6)" onmouseout="ocultar([3,4,5,6,7])">
                   <button class="botonmenu" onclick="clickMenu([4])" >por año</button>
                 </div>
@@ -215,9 +215,9 @@ const contactoView = () => {
     <p>Si quiere ponerse en contacto con nosotros hágalo a través, cualquiera de estos medios:
     teléfono, e-mail o rellene el formulario que tiene a continuación.</p>
 
-    <h3>Rubén: 666666666</h3>
-    <h3>Samuel: 666666666</h3>
-    <h3>email: rssports@666666666</h3>
+    <h3>Raúl: 666666666</h3>
+    <h3>Alejandro: 666666666</h3>
+    <h3>email: aceitunaslucio@gmail.com</h3>
 
   </div>`;
 

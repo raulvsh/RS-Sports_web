@@ -8,15 +8,17 @@
 
 /*ATRIBUTOS GENERALES*/
 body {
-	--primary: #01b7ff;
-	--secondary: #01b7ff;
+	/*--primary: #01b7ff;
+	--secondary: #01b7ff;*/
+	--primary:  #b3792d;
+	--secondary: #601A22;
 	margin: 0px;
 	width: 100%;
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0px;
-	background-color: aliceblue;
+	background-color: #f5e8d6;
 }
 
 button {
@@ -42,7 +44,7 @@ button {
 
 button:hover {
 	background: var(--primary);
-	color: white;
+	color: var(--secondary);
 	box-shadow: 2px 2px 7px grey;
 	transition: ease-in 0.2s all;
 }
@@ -60,7 +62,7 @@ a {
 }
 
 a:hover {
-	color: white;
+	color: var(--secondary);
 }
 
 /*PÁGINA PRINCIPAL*/
